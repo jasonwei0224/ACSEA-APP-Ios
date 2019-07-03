@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 class TorQRCodeScanner: UIViewController {
 
     override func viewDidLoad() {
@@ -27,4 +27,10 @@ class TorQRCodeScanner: UIViewController {
     }
     */
 
+    
+    @IBAction func startFunStopProgram(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorFunStopProgram = storyBoard.instantiateViewController(withIdentifier: "TorFunStopProgram") as! TorFunStopProgram;
+        self.present(TorFunStopProgram, animated: true, completion: nil)
+    }
 }

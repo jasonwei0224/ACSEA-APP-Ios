@@ -27,4 +27,33 @@ class TorMainMenu: UIViewController {
     }
     */
 
+    @IBAction func startTorAbout(_ sender: Any,forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorAbout = storyBoard.instantiateViewController(withIdentifier: "TorAbout") as! TorAbout;
+        self.present(TorAbout, animated: true, completion: nil)
+    }
+    
+    @IBAction func startTorVenueMap(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorVenueMap = storyBoard.instantiateViewController(withIdentifier: "TorVenueMap") as! TorVenueMap;
+        self.present(TorVenueMap, animated: true, completion: nil)
+    }
+    
+    @IBAction func startTorFunStop(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorRule = storyBoard.instantiateViewController(withIdentifier: "TorRule") as! TorRule;
+        self.present(TorRule, animated: true, completion: nil)
+    }
+    
+    @IBAction func startTorSponsor(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorSponsor = storyBoard.instantiateViewController(withIdentifier: "TorSponsor") as! TorSponsor;
+        self.present(TorSponsor, animated: true, completion: nil)
+    }
+
+    @IBAction func startTorSchedule(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorSchedule = storyBoard.instantiateViewController(withIdentifier: "TorSchedule") as! TorSchedule;
+        self.present(TorSchedule, animated: true, completion: nil)
+    }
 }

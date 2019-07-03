@@ -27,8 +27,16 @@ class LocationMenu: UIViewController {
     }
     */
 
-    @IBAction func startTorActivity(_ sender: Any, forEvent event: UIEvent) {
-    }
+    
     @IBAction func startVanActivity(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanMainMenu = storyBoard.instantiateViewController(withIdentifier: "VanMainMenu") as! VanMainMenu;
+        self.present(VanMainMenu, animated: true, completion: nil)
+    }
+   
+    @IBAction func startTorMenu(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorMainMenu = storyBoard.instantiateViewController(withIdentifier: "TorMainMenu") as! TorMainMenu;
+        self.present(TorMainMenu, animated: true, completion: nil)
     }
 }

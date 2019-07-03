@@ -27,4 +27,9 @@ class TorFunStopMap: UIViewController {
     }
     */
 
+    @IBAction func startFunStopProgram(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorFunStopProgram = storyBoard.instantiateViewController(withIdentifier: "TorFunStopProgram") as! TorFunStopProgram;
+        self.present(TorFunStopProgram, animated: true, completion: nil)
+    }
 }

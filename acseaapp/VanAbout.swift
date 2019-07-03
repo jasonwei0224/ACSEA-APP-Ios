@@ -26,5 +26,9 @@ class VanAbout: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func startVanMenuActivity(_ sender: UIButton, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanMainMenu = storyBoard.instantiateViewController(withIdentifier: "VanMainMenu") as! VanMainMenu;
+        self.present(VanMainMenu, animated: true, completion: nil)
+    }
 }

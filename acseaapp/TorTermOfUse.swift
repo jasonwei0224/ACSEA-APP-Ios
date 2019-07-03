@@ -27,4 +27,9 @@ class TorTermOfUse: UIViewController {
     }
     */
 
+    @IBAction func startTorTermOfUse(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorMainMenu = storyBoard.instantiateViewController(withIdentifier: "TorMainMenu") as! TorMainMenu;
+        self.present(TorMainMenu, animated: true, completion: nil)
+    }
 }

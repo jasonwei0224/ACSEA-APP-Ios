@@ -27,4 +27,10 @@ class VanQRCodeScanner: UIViewController {
     }
     */
 
+    @IBAction func startVanFunStopProgram(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanFunStopProgram = storyBoard.instantiateViewController(withIdentifier: "VanFunStopProgram") as! VanFunStopProgram;
+        self.present(VanFunStopProgram, animated: true, completion: nil)
+    }
+    
 }

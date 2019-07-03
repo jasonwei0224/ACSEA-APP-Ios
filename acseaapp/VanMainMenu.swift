@@ -28,14 +28,33 @@ class VanMainMenu: UIViewController {
     */
 
     @IBAction func startVanMap(_ sender: Any, forEvent event: UIEvent) {
+
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanVenueMap = storyBoard.instantiateViewController(withIdentifier: "VanVenueMap") as! VanVenueMap;
+        self.present(VanVenueMap, animated: true, completion: nil)
+        
     }
   
     @IBAction func startVanFunStop(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanFunStopRule = storyBoard.instantiateViewController(withIdentifier: "VanFunStopRule") as! VanFunStopRule;
+        self.present(VanFunStopRule, animated: true, completion: nil)
     }
     @IBAction func startVanSchedule(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanSchedule = storyBoard.instantiateViewController(withIdentifier: "VanSchedule") as! VanSchedule;
+        self.present(VanSchedule, animated: true, completion: nil)
+        
     }
     @IBAction func startVanSponsor(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanSponsor = storyBoard.instantiateViewController(withIdentifier: "VanSponsor") as! VanSponsor;
+        self.present(VanSponsor, animated: true, completion: nil)
     }
     @IBAction func startVanAbout(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanAbout = storyBoard.instantiateViewController(withIdentifier: "VanAbout") as! VanAbout;
+        self.present(VanAbout, animated: true, completion: nil)
+        
     }
 }

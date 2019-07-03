@@ -27,4 +27,9 @@ class TorAbout: UIViewController {
     }
     */
 
+    @IBAction func startTorMainMenu(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorMainMenu = storyBoard.instantiateViewController(withIdentifier: "TorMainMenu") as! TorMainMenu;
+        self.present(TorMainMenu, animated: true, completion: nil)
+    }
 }

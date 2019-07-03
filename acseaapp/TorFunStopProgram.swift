@@ -27,4 +27,25 @@ class TorFunStopProgram: UIViewController {
     }
     */
 
+    @IBAction func startTorFunStopRule(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorRule = storyBoard.instantiateViewController(withIdentifier: "TorRule") as! TorRule;
+        self.present(TorRule, animated: true, completion: nil)
+    }
+    @IBAction func startTorFunStopMap(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorFunStopMap = storyBoard.instantiateViewController(withIdentifier: "TorFunStopMap") as! TorFunStopMap;
+        self.present(TorFunStopMap, animated: true, completion: nil)
+    }
+    @IBAction func startTorCamera(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorQRCodeScanner = storyBoard.instantiateViewController(withIdentifier: "TorQRCodeScanner") as! TorQRCodeScanner;
+        self.present(TorQRCodeScanner, animated: true, completion: nil)
+    }
+    
+    @IBAction func startTorMainMenu(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorMainMenu = storyBoard.instantiateViewController(withIdentifier: "TorMainMenu") as! TorMainMenu;
+        self.present(TorMainMenu, animated: true, completion: nil)
+    }
 }
