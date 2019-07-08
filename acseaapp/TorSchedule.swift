@@ -9,9 +9,16 @@
 import UIKit
 
 class TorSchedule: UIViewController {
-
+    @IBOutlet weak var containerViewA: UIView!
+    @IBOutlet weak var containerViewB: UIView!
+    @IBOutlet weak var containerViewC: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+     ///   self.containerViewA.alpha = 1;
+       // self.containerViewB.alpha = 0; 
 
         // Do any additional setup after loading the view.
     }
@@ -31,5 +38,20 @@ class TorSchedule: UIViewController {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let TorMainMenu = storyBoard.instantiateViewController(withIdentifier: "TorMainMenu") as! TorMainMenu;
         self.present(TorMainMenu, animated: true, completion: nil)
+    }
+    @IBAction func showDayOne(_ sender: UIButton, forEvent event: UIEvent) {
+        self.containerViewA.alpha = 1;
+        self.containerViewB.alpha = 0;
+        self.containerViewC.alpha = 0;
+    }
+    @IBAction func showDayTwo(_ sender: UIButton, forEvent event: UIEvent) {
+        self.containerViewA.alpha = 0;
+        self.containerViewB.alpha = 1
+        self.containerViewC.alpha = 0;
+    }
+    @IBAction func showDayThree(_ sender: UIButton, forEvent event: UIEvent) {
+        self.containerViewA.alpha = 0;
+        self.containerViewB.alpha = 0;
+        self.containerViewC.alpha = 1;
     }
 }
