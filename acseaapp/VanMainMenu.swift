@@ -57,4 +57,16 @@ class VanMainMenu: UIViewController {
         self.present(VanAbout, animated: true, completion: nil)
         
     }
+    @IBAction func startVanPrivacyPolicy(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanPrivacyPolicy = storyBoard.instantiateViewController(withIdentifier: "VanPrivacyPolicy") as! VanPrivacyPolicy;
+        VanPrivacyPolicy.loggedIn = true
+        self.present(VanPrivacyPolicy, animated: true, completion: nil)
+    }
+    @IBAction func startVanTermOfUse(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let VanTermOfUse = storyBoard.instantiateViewController(withIdentifier: "VanTermOfUse") as! VanTermOfUse;
+        VanTermOfUse.loggedIn = true
+        self.present(VanTermOfUse, animated: true, completion: nil)
+    }
 }

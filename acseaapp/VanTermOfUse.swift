@@ -9,27 +9,25 @@
 import UIKit
 
 class VanTermOfUse: UIViewController {
-
+    var loggedIn: Bool!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     @IBAction func startVanMenuActivity(_ sender: UIButton, forEvent event: UIEvent) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let VanMainMenu = storyBoard.instantiateViewController(withIdentifier: "VanMainMenu") as! VanMainMenu;
-        self.present(VanMainMenu, animated: true, completion: nil)
+        
+        if(loggedIn){
+            let VanMainMenu = storyBoard.instantiateViewController(withIdentifier: "VanMainMenu") as! VanMainMenu;
+            self.present(VanMainMenu, animated: true, completion: nil)
+        }
+        else{
+            let login = storyBoard.instantiateViewController(withIdentifier: "Login") as! Login;
+            self.present(login, animated: true, completion: nil)
+        }
+        
+
     }
 }

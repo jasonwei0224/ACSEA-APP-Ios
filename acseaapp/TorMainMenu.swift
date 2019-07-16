@@ -56,4 +56,17 @@ class TorMainMenu: UIViewController {
         let TorSchedule = storyBoard.instantiateViewController(withIdentifier: "TorSchedule") as! TorSchedule;
         self.present(TorSchedule, animated: true, completion: nil)
     }
+    
+    @IBAction func startTorPrivacyPolicy(_ sender: Any, forEvent event: UIEvent) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorPrivacyPolicy = storyBoard.instantiateViewController(withIdentifier: "TorPrivacyPolicy") as! TorPrivacyPolicy;
+        TorPrivacyPolicy.loggedIn = true
+        self.present(TorPrivacyPolicy, animated: true, completion: nil)
+    }
+    @IBAction func startTorTermOfUse(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorTermOfUse = storyBoard.instantiateViewController(withIdentifier: "TorTermOfUse") as! TorTermOfUse;
+        TorTermOfUse.loggedIn = true
+        self.present(TorTermOfUse, animated: true, completion: nil)
+    }
 }

@@ -7,25 +7,38 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+import FirebaseAuth
 
 class LocationMenu: UIViewController {
-
+    var token: String!
+    var signedIn: Bool!
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let user = Auth.auth().currentUser
+        InstanceID.instanceID().instanceID{ (result, erorr) in
+            if let result = result{
+            print("Remodte instance id toake: \(result.token)")
+            self.token = result.token
+            let myDatabse = Database.database().reference()
+                myDatabse.child("user/\(user!.uid)/token").setValue(self.token)
+            }
+        }
+        
+        print(user?.email)
+        if(user == nil){
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let locationMenu = storyBoard.instantiateViewController(withIdentifier: "LocationMenu") as! LocationMenu;
+            self.signedIn = true;
+            locationMenu.signedIn = true;
+            self.present(locationMenu, animated: true, completion: nil)
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     
     @IBAction func startVanActivity(_ sender: Any, forEvent event: UIEvent) {

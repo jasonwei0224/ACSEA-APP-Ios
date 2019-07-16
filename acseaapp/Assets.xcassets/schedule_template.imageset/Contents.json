@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "65302491_2289108677872767_1482289322332782592_n.png",
+      "filename" : "schedule_template.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "schedule_template-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "schedule_template-2.png",
       "scale" : "3x"
     }
   ],

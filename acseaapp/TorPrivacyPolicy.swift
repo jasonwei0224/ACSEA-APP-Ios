@@ -9,7 +9,7 @@
 import UIKit
 
 class TorPrivacyPolicy: UIViewController {
-
+    var loggedIn: Bool!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,9 +28,18 @@ class TorPrivacyPolicy: UIViewController {
     */
 
     @IBAction func startTorMainMenu(_ sender: Any, forEvent event: UIEvent) {
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let TorMainMenu = storyBoard.instantiateViewController(withIdentifier: "TorMainMenu") as! TorMainMenu;
-        self.present(TorMainMenu, animated: true, completion: nil)
+        
+        if(loggedIn){
+            let TorMainMenu = storyBoard.instantiateViewController(withIdentifier: "TorMainMenu") as! TorMainMenu;
+            self.present(TorMainMenu, animated: true, completion: nil)
+        }else{
+            let login = storyBoard.instantiateViewController(withIdentifier: "Login") as! Login;
+            self.present(login, animated: true, completion: nil)
+        }
+        
+        
     }
     
 }

@@ -2,16 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "location_menu_templatepng.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "64386466_2122992827827069_3344546524372664320_n@2x.png",
+      "filename" : "location_menu_templatepng-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "64386466_2122992827827069_3344546524372664320_n.png",
+      "filename" : "location_menu_templatepng-2.png",
       "scale" : "3x"
     }
   ],

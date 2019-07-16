@@ -9,7 +9,11 @@
 import UIKit
 
 class VanSchedule: UIViewController {
-
+    
+    @IBOutlet weak var Day1: UIView!
+    @IBOutlet weak var Day2: UIView!
+    @IBOutlet weak var Day3: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,5 +34,20 @@ class VanSchedule: UIViewController {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let VanMainMenu = storyBoard.instantiateViewController(withIdentifier: "VanMainMenu") as! VanMainMenu;
         self.present(VanMainMenu, animated: true, completion: nil)
+    }
+    @IBAction func showDayOne(_ sender: Any) {
+        self.Day1.alpha = 1;
+        self.Day2.alpha = 0;
+        self.Day3.alpha = 0;
+    }
+    @IBAction func showDayTwo(_ sender: Any) {
+        self.Day1.alpha = 0;
+        self.Day2.alpha = 1;
+        self.Day3.alpha = 0;
+    }
+    @IBAction func showDayThree(_ sender: Any) {
+        self.Day1.alpha = 0;
+        self.Day2.alpha = 0;
+        self.Day3.alpha = 1;
     }
 }

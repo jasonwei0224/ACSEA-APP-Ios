@@ -7,30 +7,93 @@
 //
 
 import UIKit
+import Firebase
 
+import FirebaseAuth
 class Login: UIViewController {
-
+    
+    @IBOutlet weak var emailTextField:UITextField!
+    @IBOutlet weak var passwordTextField:UITextField!
+   
+    let defaults = UserDefaults.standard
+    var agreeToProgramNotification: Bool!
+    var agreeToBigPrize: Bool!
+    var agreeToReceiveEmail: Bool!
+    var city: String!
+    var token: String!
+    var signedIn: Bool!
+    var userid: String!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       
+        //signIn((Any).self)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
+        self.view.addGestureRecognizer(tapGesture)
+        
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        signedIn = (defaults.bool(forKey: "signin"))
+        if(signedIn){
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let locationMenu = storyBoard.instantiateViewController(withIdentifier: "LocationMenu") as! LocationMenu;
+            self.signedIn = true;
+            locationMenu.signedIn = true;
+            self.present(locationMenu, animated: true, completion: nil)
+        }
     }
-    */
-    @IBAction func onClick(_ sender: UIButton, forEvent event: UIEvent) {
+    
+    @objc func dismissKeyboard(_ sender: UITapGestureRecognizer){
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+    }
+    
+    @IBAction func signIn(_ sender: Any) {
+    
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!){
+                (user, error) in
+                if error != nil{
+                    
+                    let alert = UIAlertController(title: "ERROR", message: error?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert,animated: true, completion: nil)
+                    
+                }else{
+                    let user = Auth.auth().currentUser
+                    InstanceID.instanceID().instanceID{ (result, erorr) in if let error = error{
+                        print("error fetching")
+                    }else if let result = result{
+                        print("Remodte instance id toake: \(result.token)")
+                        self.token = result.token
+                        let myDatabse = Database.database().reference()
+                        myDatabse.child("user/\(user!.uid)/token").setValue([self.token])
+                        }
+                    }
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let locationMenu = storyBoard.instantiateViewController(withIdentifier: "LocationMenu") as! LocationMenu;
+                    self.signedIn = true;
+                    self.defaults.set(self.signedIn, forKey: "signin")
+                    self.defaults.synchronize()
+                    locationMenu.signedIn = true;
+                    self.present(locationMenu, animated: true, completion: nil)
+                }
+            
+        }
+        
+    }
+    @IBAction func startTorSponsor(_ sender: Any, forEvent event: UIEvent) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let locationMenu = storyBoard.instantiateViewController(withIdentifier: "LocationMenu") as! LocationMenu;
-        self.present(locationMenu, animated: true, completion: nil)
+        let TorPrivacyPolicy = storyBoard.instantiateViewController(withIdentifier: "TorPrivacyPolicy") as! TorPrivacyPolicy;
+        TorPrivacyPolicy.loggedIn = false
+        self.present(TorPrivacyPolicy, animated: true, completion: nil)
     }
     
+    @IBAction func startTorTermOfUse(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorTermOfUse = storyBoard.instantiateViewController(withIdentifier: "TorTermOfUse") as! TorTermOfUse;
+        TorTermOfUse.loggedIn = false
+        self.present(TorTermOfUse, animated: true, completion: nil)
+    }
 }

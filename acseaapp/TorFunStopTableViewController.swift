@@ -10,19 +10,20 @@
 import UIKit
 
 struct TorFunStopCellData{
-    let icon : UIImage?
+    var icon : UIImage?
     let image  : UIImage?
     let message: String?
 }
 class TorFunStopTableViewController: UITableViewController {
     var data1 = [TorFunStopCellData]()
+    var programOneComplete = false
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.dataSource = self
-        //tableView.delegate = self
-        dayOne();
         
-        self.tableView.register(FunStopCell.self, forCellReuseIdentifier: "custom")     // Do any additional setup after loading the view.
+        
+        self.tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+        self.tableView.register(FunStopCell.self, forCellReuseIdentifier: "custom3")
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
         self.tableView.bounces = true;
@@ -30,7 +31,7 @@ class TorFunStopTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! FunStopCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! FunStopCell
         cell.iconImage = data1[indexPath.row].image
         cell.mainImage = data1[indexPath.row].image
         cell.message = data1[indexPath.row].message
@@ -41,28 +42,8 @@ class TorFunStopTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data1.count
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    func dayOne(){
-        data1 = [TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),
-                 TorFunStopCellData.init(icon: UIImage(named: "gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: "One" ),  ]
-        
+    func chagedImage(newIcon: UIImage){
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! FunStopCell
+        cell.iconImage = newIcon
     }
-    
 }
