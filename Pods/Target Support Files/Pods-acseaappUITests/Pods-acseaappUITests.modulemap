@@ -1,0 +1,6 @@
+framework module Pods_acseaappUITests {
+  umbrella header "Pods-acseaappUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
