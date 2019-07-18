@@ -96,4 +96,10 @@ class Login: UIViewController {
         TorTermOfUse.loggedIn = false
         self.present(TorTermOfUse, animated: true, completion: nil)
     }
+    @IBAction func startRegister(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let register = storyBoard.instantiateViewController(withIdentifier:  "Register")as!
+        Register;
+        self.present(register, animated: true, completion: nil)
+    }
 }
