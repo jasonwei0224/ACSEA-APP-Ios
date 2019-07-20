@@ -14,6 +14,10 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HoY-R2-07Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="9r1-mW-UNE"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,13 +29,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O7J-7K-eIh"/>
-                            <constraint firstItem="Tzw-g0-vux" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OAj-GY-nJW"/>
-                            <constraint firstItem="Tzw-g0-vux" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VS9-ga-GeY"/>
+                            <constraint firstItem="Tzw-g0-vux" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="OAj-GY-nJW"/>
+                            <constraint firstItem="Tzw-g0-vux" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="VS9-ga-GeY"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jY2-Sk-ai2"/>
-                            <constraint firstItem="Tzw-g0-vux" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="t67-LD-OWj"/>
+                            <constraint firstItem="Tzw-g0-vux" firstAttribute="bottom" secondItem="9r1-mW-UNE" secondAttribute="top" id="t67-LD-OWj"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="yGa-f4-hkT"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="bvi-QS-eFI"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
