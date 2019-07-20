@@ -372,7 +372,7 @@
 				};
 			};
 			buildConfigurationList = 96E68DE622B19A9B00C116D0 /* Build configuration list for PBXProject "acseaapp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
