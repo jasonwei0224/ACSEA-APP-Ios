@@ -5,8 +5,8 @@
     </device>
     <dependencies>
         <deployment version="1792" identifier="iOS"/>
+        <development version="8000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -103,7 +103,6 @@
                             <constraint firstItem="bAU-M1-I52" firstAttribute="leading" secondItem="yw5-Me-RGE" secondAttribute="leading" constant="82" id="oOn-rS-RwA"/>
                             <constraint firstAttribute="trailing" secondItem="qep-T0-cZ7" secondAttribute="trailing" constant="266" id="xIy-eF-vpG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hWR-gE-wTV"/>
                     </view>
                     <connections>
                         <outlet property="agreeToBigPrizeSwitch" destination="BAL-UX-UHU" id="KEg-tW-fHa"/>
@@ -197,7 +196,6 @@
                             <constraint firstAttribute="bottom" secondItem="gug-Qn-1qm" secondAttribute="bottom" id="yeD-RB-i0q"/>
                             <constraint firstItem="gug-Qn-1qm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zBa-eC-Zbr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="EaJ-Xe-IXm"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="QeG-pS-ghH"/>
@@ -353,7 +351,6 @@
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="top" secondItem="dpy-N3-de8" secondAttribute="bottom" constant="8" id="y6i-dt-YdX"/>
                             <constraint firstItem="afd-cm-qLR" firstAttribute="top" secondItem="h0h-ju-Zfc" secondAttribute="bottom" constant="108" id="zEJ-6F-B8c"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Ch7-N8-XEO"/>
                     </view>
                     <connections>
                         <outlet property="containerViewA" destination="aIc-wy-DcS" id="Ppt-MZ-WYu"/>
@@ -485,7 +482,6 @@
                             <constraint firstAttribute="trailing" secondItem="2L1-sp-Fqu" secondAttribute="trailing" constant="16" id="thA-To-DhH"/>
                             <constraint firstItem="2Dm-3t-6pY" firstAttribute="top" secondItem="1TA-7B-fbv" secondAttribute="bottom" constant="58" id="x1A-3S-umC"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="i5t-Qs-zh9"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywx-9W-nQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -528,7 +524,6 @@
                             <constraint firstItem="9n5-MB-Db1" firstAttribute="top" secondItem="MOa-Fm-iNL" secondAttribute="bottom" constant="27" id="PtI-5V-OyO"/>
                             <constraint firstAttribute="trailing" secondItem="9n5-MB-Db1" secondAttribute="trailing" constant="16" id="W7s-Np-nrA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="IQW-3t-Axw"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Snn-4q-8N8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -572,7 +567,6 @@
                             <constraint firstItem="8qj-t1-dbA" firstAttribute="top" secondItem="oao-nf-ZQI" secondAttribute="bottom" constant="20" id="lxV-BC-rpQ"/>
                             <constraint firstItem="oao-nf-ZQI" firstAttribute="top" secondItem="7yI-2B-CEq" secondAttribute="bottom" constant="76" id="xTL-Tm-0qz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5h9-9g-ZaP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QmC-9n-4EW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -672,7 +666,6 @@
                             <constraint firstItem="Uce-08-kar" firstAttribute="top" secondItem="uR9-Pe-rJo" secondAttribute="bottom" constant="20" id="Och-aE-MaD"/>
                             <constraint firstItem="uR9-Pe-rJo" firstAttribute="top" secondItem="FNC-9g-r6b" secondAttribute="bottom" constant="78" id="bdZ-hH-zDj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="h0H-CL-fWy"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHA-Im-9Sr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -811,7 +804,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VJ9-no-U4a" secondAttribute="trailing" symbolic="YES" id="lLb-y8-SDB"/>
                             <constraint firstAttribute="trailing" secondItem="wxK-sL-LaH" secondAttribute="trailing" constant="20" id="oa9-1j-zja"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QGc-b1-aGt"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CzC-kC-roa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -862,7 +854,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="3om-sn-Gab" firstAttribute="centerX" secondItem="mHb-H9-kY7" secondAttribute="centerX" id="th8-M3-x9f"/>
                             <constraint firstAttribute="trailing" secondItem="eNt-Ll-Ocb" secondAttribute="trailing" constant="42" id="xrq-Sb-RdR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hah-v9-lPL"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RzY-Pg-c97" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -966,7 +957,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="0dz-H2-Gid" firstAttribute="top" secondItem="ozV-4r-qYn" secondAttribute="bottom" constant="29" id="v2E-Hh-9kq"/>
                             <constraint firstItem="jUj-Y4-bHZ" firstAttribute="leading" secondItem="B3K-YZ-cjT" secondAttribute="leading" constant="16" id="yEe-Zx-Klq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="woU-w4-exP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8l-hZ-U7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1014,7 +1004,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="w9P-Qy-VdF" firstAttribute="top" secondItem="BHp-T9-FgG" secondAttribute="top" id="fkO-pb-IWj"/>
                             <constraint firstAttribute="bottom" secondItem="w9P-Qy-VdF" secondAttribute="bottom" id="i9Y-l0-vJD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="mFC-U6-Ili"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59n-kO-WdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1048,7 +1037,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="HgK-Dr-SOD"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geJ-0G-4Sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1126,7 +1114,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="AmB-gu-EbG" firstAttribute="trailing" secondItem="ErI-ru-WIJ" secondAttribute="trailing" id="uUe-Ju-aMo"/>
                             <constraint firstItem="AmB-gu-EbG" firstAttribute="leading" secondItem="ErI-ru-WIJ" secondAttribute="leading" id="whL-v5-TYm"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cYc-SJ-iYG"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSc-Pf-P1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1191,7 +1178,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="Zoo-cf-cdL" firstAttribute="leading" secondItem="vPN-En-30y" secondAttribute="leading" constant="16" id="fXA-6s-Itf"/>
                             <constraint firstItem="oTk-6m-QbN" firstAttribute="top" secondItem="Zoo-cf-cdL" secondAttribute="bottom" constant="20" id="zZa-gc-jEV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Tm9-jc-ZIs"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhV-xS-Xe0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1244,7 +1230,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="ity-0F-WAH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="svg-pA-P63" secondAttribute="leading" id="aqR-Qq-pPe"/>
                             <constraint firstItem="ity-0F-WAH" firstAttribute="top" secondItem="svg-pA-P63" secondAttribute="bottom" constant="8" symbolic="YES" id="rYz-g3-kbX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="qyZ-bp-RsP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZ7-kM-OfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1350,7 +1335,6 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstAttribute="bottom" secondItem="H7p-yh-EOx" secondAttribute="bottom" id="icK-Y5-lXm"/>
                             <constraint firstAttribute="trailing" secondItem="fU1-qN-EZ7" secondAttribute="trailing" constant="18" id="vU6-xZ-g1s"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7HV-wi-Qwb"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jHE-cd-atg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1563,7 +1547,6 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="hhh-wk-jtZ" firstAttribute="top" secondItem="rgp-gC-Ecm" secondAttribute="bottom" constant="157" id="uKD-is-h5q"/>
                             <constraint firstItem="rgp-gC-Ecm" firstAttribute="leading" secondItem="eZN-tD-4wl" secondAttribute="leading" constant="55" id="zL7-ZL-2aK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Fhc-HR-Hie"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeO-wd-vZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1641,7 +1624,6 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstAttribute="trailing" secondItem="Ite-NZ-Uqq" secondAttribute="trailing" constant="16" id="rBe-lv-TGr"/>
                             <constraint firstItem="Ite-NZ-Uqq" firstAttribute="leading" secondItem="T4a-tF-p0W" secondAttribute="leading" constant="20" id="rQd-9r-Dtr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="R1M-TX-C0Y"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sba-KX-Slw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1708,7 +1690,6 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="QvM-ZP-xXv" firstAttribute="leading" secondItem="yNY-jh-ZJa" secondAttribute="leading" constant="13" id="k0Y-7P-yXw"/>
                             <constraint firstItem="JOg-j0-E5a" firstAttribute="top" secondItem="Ju4-Wq-Yxw" secondAttribute="bottom" constant="29" id="tHy-0T-vJD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="yII-mP-FxH"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdT-59-lBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1858,7 +1839,6 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="vCd-Ey-NLk" firstAttribute="top" secondItem="fOc-um-CMP" secondAttribute="bottom" constant="8" id="ai8-ok-Fxg"/>
                             <constraint firstItem="fOc-um-CMP" firstAttribute="centerX" secondItem="lMT-gk-WrO" secondAttribute="centerX" id="e1c-z2-GaN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aYb-1k-Onh"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmM-4K-qYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1978,7 +1958,6 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="D3b-rQ-W3C" firstAttribute="leading" secondItem="fOQ-a8-qMd" secondAttribute="trailing" constant="11" id="u4X-8F-U9R"/>
                             <constraint firstItem="iYt-ZO-6LC" firstAttribute="top" secondItem="fOQ-a8-qMd" secondAttribute="bottom" constant="18" id="yvF-L7-Fb1"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="lh3-Fz-FWG"/>
                     </view>
                     <connections>
                         <outlet property="Day1" destination="fRf-cp-SX1" id="eKp-fI-HwN"/>
@@ -2085,7 +2064,6 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="NBF-ox-o9A" firstAttribute="top" secondItem="RcS-bn-xvU" secondAttribute="bottom" constant="95" id="srF-7e-YIb"/>
                             <constraint firstAttribute="bottom" secondItem="1ft-Fk-iGW" secondAttribute="bottom" id="wbR-J0-X1V"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="u41-Mf-j61"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufA-Uh-Dyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2128,7 +2106,6 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="MZs-SH-NiX" firstAttribute="leading" secondItem="HaU-iY-mJ6" secondAttribute="leading" constant="11" id="EPX-sc-aOK"/>
                             <constraint firstItem="MZs-SH-NiX" firstAttribute="top" secondItem="BWl-Cm-JY7" secondAttribute="bottom" constant="29" id="v78-bm-NRO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="2wa-Jt-dbg"/>
                     </view>
                     <connections>
                         <outlet property="test" destination="hbT-ms-gZ1" id="dgq-Ns-uzl"/>
@@ -2269,7 +2246,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="usZ-1z-lS9" firstAttribute="top" secondItem="Twp-51-25v" secondAttribute="top" id="piQ-4y-ous"/>
                             <constraint firstItem="zyg-dB-Ilb" firstAttribute="leading" secondItem="Twp-51-25v" secondAttribute="leading" constant="31" id="u2M-FH-tAP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fge-mt-pTc"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Yh-AC-8NX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2357,7 +2333,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="GWV-5m-RnF" firstAttribute="top" secondItem="UhW-DI-O1L" secondAttribute="bottom" constant="51" id="jgL-3w-qB3"/>
                             <constraint firstItem="jGZ-Nr-vT6" firstAttribute="top" secondItem="GWV-5m-RnF" secondAttribute="bottom" constant="83" id="qQG-aq-MXG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zjU-MA-Ubs"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJ8-hT-xKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2512,7 +2487,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="SVs-dR-CbQ" firstAttribute="centerY" secondItem="AGZ-5d-IlI" secondAttribute="centerY" id="yOB-Jz-wvb"/>
                             <constraint firstItem="bPa-RD-mjX" firstAttribute="top" secondItem="GID-NW-VSY" secondAttribute="bottom" constant="37" id="yzS-hy-jXH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="u69-c4-0w2"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8J-5p-rqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
