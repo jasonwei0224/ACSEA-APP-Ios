@@ -10,9 +10,17 @@ import Foundation
 import UIKit
 
 class SponsorTableCell: UITableViewCell{
-   
+    var message: String?
     var mainImage: UIImage?
     
+    var messageView: UITextView={
+        var textView = UITextView()
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.isScrollEnabled = false
+        textView.isEditable = false
+        return textView
+        
+    }()
     
     var mainImageView: UIImageView = {
         var imageView = UIImageView()
@@ -20,27 +28,34 @@ class SponsorTableCell: UITableViewCell{
         return imageView
     }()
     
+    var middleImageView: UIImageView = {
+        var imageView2 = UIImageView()
+        imageView2.translatesAutoresizingMaskIntoConstraints = false
+        return imageView2
+    }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style:style, reuseIdentifier: reuseIdentifier)
         self.addSubview(mainImageView)
-       
+        self.addSubview(messageView)
         
         mainImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         mainImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         mainImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        mainImageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        mainImageView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
-        mainImageView.heightAnchor.constraint(equalTo: mainImageView.widthAnchor, multiplier: 1.0/1.0).isActive = true
-       //b mainImageView.widthAnchor.constraint(equalTo: mainImageView.heightAnchor, multiplier: 2.0/1.0).isActive = true
-      //  mainImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true // width of image
-      //  mainImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true //height of image
-  
+        mainImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true // width of image
+        mainImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true //height of image
+        
+        messageView.leftAnchor.constraint(equalTo: self.mainImageView.rightAnchor).isActive = true
+        messageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        messageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        messageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         // messageView.widthAnchor.constraint(equalTo:self.heightAnchor).isActive = true
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-  
+        if let message = message{
+            messageView.text = message
+        }
         if let mainImage = mainImage{
             mainImageView.image = mainImage
         }

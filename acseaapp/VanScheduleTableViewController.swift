@@ -8,10 +8,10 @@
 
 import UIKit
 struct VanScheduleCellData{
-    let image  : UIImage?
-    let message: String?
+    let image  : UIImage
+    let message: String
 }
-class VabScheduleTableViewController: UITableViewController {
+class VanScheduleTableViewController: UITableViewController {
     
     var data = [VanScheduleCellData]()
     override func viewDidLoad() {
@@ -45,7 +45,7 @@ class VabScheduleTableViewController: UITableViewController {
      }
      */
     func dayOne(){
-        data = [VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png"), message: "Day1" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), ]
+        data = [VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png") ?? <#default value#>, message: "Day1" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png") ?? <#default value#>, message: "One" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png") ?? <#default value#>, message: "One" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png")!, message: "One" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), VanScheduleCellData.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), ]
         self.tableView.register(FunStopCell.self, forCellReuseIdentifier: "custom")
     }
     

@@ -13,7 +13,7 @@ struct TorScheduleCellData3{
 }
 class TorScheduleTableViewController3: UITableViewController {
     
-    var data1 = [TorScheduleCellData3]()
+    var data = [VanScheduleCellData]()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -27,14 +27,16 @@ class TorScheduleTableViewController3: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom2") as! CustomCell
-        cell.mainImage = data1[indexPath.row].image
-        cell.message = data1[indexPath.row].message
+        cell.mainImage = data[indexPath.row].mainImage
+        cell.iconImage = data[indexPath.row].iconImage
+        cell.programName = data[indexPath.row].programName
+       // cell.artistName = data[indexPath.row].artist
         cell.layoutSubviews()
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data1.count
+        return data.count
     }
     /*
      // MARK: - Navigation
@@ -46,7 +48,7 @@ class TorScheduleTableViewController3: UITableViewController {
      }
      */
     func dayOne(){
-        data1 = [TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ),TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), TorScheduleCellData3.init(image: UIImage(named:"gobackbtn.png"), message: "One" ), ]
+        data = []
         
     }
     

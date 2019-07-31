@@ -2,10 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/Jason/APP test/acseaapp/acseaapp/VanScheduleTableViewController2.swift">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/Jason/APP test/acseaapp/acseaapp/SponsorTableCell.swift">
+      location = "group:VanScheduleTableViewController.swift">
    </FileRef>
    <FileRef
       location = "group:acseaapp.xcodeproj">

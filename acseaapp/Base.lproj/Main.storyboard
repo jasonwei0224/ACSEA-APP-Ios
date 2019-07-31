@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ozT-Um-aQk">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment version="1792" identifier="iOS"/>
-        <development version="8000" identifier="xcode"/>
+        <deployment version="2304" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,11 +19,17 @@
                         <viewControllerLayoutGuide type="bottom" id="OlH-Js-6hU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="yw5-Me-RGE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Y-je-Bsd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" background="btnbgpurple" translatesAutoresizingMaskIntoConstraints="NO" id="tNn-ek-m1h" colorLabel="IBBuiltInLabel-Blue">
-                                <rect key="frame" x="23" y="90" width="327" height="43"/>
+                                <rect key="frame" x="23" y="66" width="272" height="43"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="mt0-yy-uQH"/>
@@ -34,7 +40,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" background="btnbgpurple" translatesAutoresizingMaskIntoConstraints="NO" id="SzB-LQ-2YB" userLabel="Password">
-                                <rect key="frame" x="23" y="159" width="327" height="45"/>
+                                <rect key="frame" x="23" y="135" width="272" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="AmT-J7-YeB"/>
                                     <constraint firstAttribute="height" constant="45" id="X4I-CC-0v3"/>
@@ -44,48 +50,44 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAL-UX-UHU">
-                                <rect key="frame" x="40" y="359" width="51" height="31"/>
+                                <rect key="frame" x="40" y="335" width="51" height="31"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ico-Px-Cc8">
-                                <rect key="frame" x="36" y="242" width="51" height="31"/>
+                                <rect key="frame" x="36" y="218" width="51" height="31"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAU-M1-I52">
-                                <rect key="frame" x="82" y="503" width="211" height="231"/>
+                                <rect key="frame" x="82" y="479" width="156" height="45"/>
                                 <state key="normal" image="submitbtn"/>
                                 <connections>
                                     <action selector="sendVerificationEmail:" destination="wx8-Go-r0Z" eventType="touchUpInside" id="F8q-4w-6B0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qep-T0-cZ7">
-                                <rect key="frame" x="16" y="20" width="93" height="60"/>
+                                <rect key="frame" x="16" y="20" width="38" height="36"/>
                                 <state key="normal" image="gobackbtn"/>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-yi-uYi">
-                                <rect key="frame" x="40" y="299" width="51" height="31"/>
+                                <rect key="frame" x="40" y="275" width="51" height="31"/>
                             </switch>
                             <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHQ-3t-G79">
-                                <rect key="frame" x="0.0" y="416" width="320" height="74"/>
+                                <rect key="frame" x="0.0" y="392" width="320" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="xYo-Jr-stY"/>
                                 </constraints>
                             </pickerView>
-                            <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundnowaves" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Y-je-Bsd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Y6Y-je-Bsd" firstAttribute="leading" secondItem="yw5-Me-RGE" secondAttribute="leading" id="0ms-b9-xsE"/>
                             <constraint firstItem="EXh-yi-uYi" firstAttribute="leading" secondItem="BAL-UX-UHU" secondAttribute="leading" id="2YD-YJ-70G"/>
                             <constraint firstItem="ico-Px-Cc8" firstAttribute="leading" secondItem="yw5-Me-RGE" secondAttribute="leading" constant="36" id="3X8-2S-oND"/>
+                            <constraint firstAttribute="trailing" secondItem="Y6Y-je-Bsd" secondAttribute="trailing" id="6Vc-n6-DrH"/>
                             <constraint firstAttribute="trailing" secondItem="SzB-LQ-2YB" secondAttribute="trailing" constant="25" id="80r-LV-yh7"/>
                             <constraint firstItem="tNn-ek-m1h" firstAttribute="top" secondItem="E1o-Ye-UuL" secondAttribute="bottom" constant="46" id="9ei-52-nPF"/>
                             <constraint firstItem="SzB-LQ-2YB" firstAttribute="top" secondItem="tNn-ek-m1h" secondAttribute="bottom" constant="26" id="B0G-S0-KCf"/>
                             <constraint firstItem="tNn-ek-m1h" firstAttribute="leading" secondItem="yw5-Me-RGE" secondAttribute="leading" constant="23" id="BgT-Du-rQp"/>
+                            <constraint firstItem="Y6Y-je-Bsd" firstAttribute="top" secondItem="yw5-Me-RGE" secondAttribute="top" id="Cds-KO-B9u"/>
                             <constraint firstItem="sHQ-3t-G79" firstAttribute="top" secondItem="BAL-UX-UHU" secondAttribute="bottom" constant="26" id="GED-c2-gDs"/>
                             <constraint firstAttribute="trailing" secondItem="tNn-ek-m1h" secondAttribute="trailing" constant="25" id="M5S-ee-bPi"/>
                             <constraint firstItem="BAL-UX-UHU" firstAttribute="top" secondItem="EXh-yi-uYi" secondAttribute="bottom" constant="29" id="Pdz-rC-JBK"/>
@@ -100,9 +102,11 @@
                             <constraint firstItem="bAU-M1-I52" firstAttribute="top" secondItem="sHQ-3t-G79" secondAttribute="bottom" constant="13" id="dD2-Hx-Ajx"/>
                             <constraint firstItem="ico-Px-Cc8" firstAttribute="top" secondItem="SzB-LQ-2YB" secondAttribute="bottom" constant="38" id="gfy-xi-Fi7"/>
                             <constraint firstItem="qep-T0-cZ7" firstAttribute="top" secondItem="yw5-Me-RGE" secondAttribute="top" constant="20" id="huF-xD-a7q"/>
+                            <constraint firstAttribute="bottom" secondItem="Y6Y-je-Bsd" secondAttribute="bottom" id="lfG-bt-Rgz"/>
                             <constraint firstItem="bAU-M1-I52" firstAttribute="leading" secondItem="yw5-Me-RGE" secondAttribute="leading" constant="82" id="oOn-rS-RwA"/>
                             <constraint firstAttribute="trailing" secondItem="qep-T0-cZ7" secondAttribute="trailing" constant="266" id="xIy-eF-vpG"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="JKi-e8-AgX"/>
                     </view>
                     <connections>
                         <outlet property="agreeToBigPrizeSwitch" destination="BAL-UX-UHU" id="KEg-tW-fHa"/>
@@ -115,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kfp-gm-GIO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1884.057971014493" y="115.84821428571428"/>
+            <point key="canvasLocation" x="-1886.25" y="114.08450704225352"/>
         </scene>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
@@ -126,7 +130,7 @@
                         <viewControllerLayoutGuide type="bottom" id="QAX-yq-qYr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" background="btnbgpurple" translatesAutoresizingMaskIntoConstraints="NO" id="7Dj-E5-wAI" colorLabel="IBBuiltInLabel-Blue">
@@ -181,8 +185,8 @@
                                     <action selector="startRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="muA-Yx-4J7"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundnowaves" translatesAutoresizingMaskIntoConstraints="NO" id="gug-Qn-1qm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gug-Qn-1qm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeG-pS-ghH">
                                 <rect key="frame" x="10" y="382" width="240" height="128"/>
@@ -191,11 +195,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gug-Qn-1qm" secondAttribute="bottom" id="OIT-XJ-p35"/>
+                            <constraint firstItem="gug-Qn-1qm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WqN-wV-85e"/>
                             <constraint firstItem="gug-Qn-1qm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bPY-Dr-haY"/>
+                            <constraint firstItem="gug-Qn-1qm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fog-Nc-i7o"/>
                             <constraint firstItem="gug-Qn-1qm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ggB-Yt-fFC"/>
+                            <constraint firstAttribute="trailing" secondItem="gug-Qn-1qm" secondAttribute="trailing" id="qtS-GL-xyl"/>
                             <constraint firstAttribute="bottom" secondItem="gug-Qn-1qm" secondAttribute="bottom" id="yeD-RB-i0q"/>
                             <constraint firstItem="gug-Qn-1qm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zBa-eC-Zbr"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="bfe-mh-Lcj"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="QeG-pS-ghH"/>
@@ -229,7 +238,7 @@
                                 <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EOk-BL-1MB" id="EUm-ni-bOM">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -253,7 +262,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eeF-vK-VjQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hf6-d5-mHb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aoR-ov-Gfr">
@@ -297,7 +306,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpy-N3-de8">
-                                <rect key="frame" x="22" y="152" width="85" height="56"/>
+                                <rect key="frame" x="22" y="128" width="85" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="AJi-s1-RmA"/>
@@ -309,7 +318,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afd-cm-qLR">
-                                <rect key="frame" x="118" y="152" width="85" height="56"/>
+                                <rect key="frame" x="118" y="128" width="85" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="P8G-tV-zqh"/>
@@ -321,7 +330,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYm-Un-gIb">
-                                <rect key="frame" x="215" y="152" width="85" height="56"/>
+                                <rect key="frame" x="215" y="128" width="85" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="OQl-mg-4br"/>
@@ -332,6 +341,10 @@
                                     <action selector="showDayThree:forEvent:" destination="QJQ-oE-4wj" eventType="touchUpInside" id="DhM-AR-Wa8"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HaY-aM-Mo6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -351,6 +364,7 @@
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="top" secondItem="dpy-N3-de8" secondAttribute="bottom" constant="8" id="y6i-dt-YdX"/>
                             <constraint firstItem="afd-cm-qLR" firstAttribute="top" secondItem="h0h-ju-Zfc" secondAttribute="bottom" constant="108" id="zEJ-6F-B8c"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hml-z8-rSv"/>
                     </view>
                     <connections>
                         <outlet property="containerViewA" destination="aIc-wy-DcS" id="Ppt-MZ-WYu"/>
@@ -360,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vn-mX-6P7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1269" y="1457"/>
+            <point key="canvasLocation" x="1268.1159420289855" y="1456.4732142857142"/>
         </scene>
         <!--Tor Fun Stop Table View Controller-->
         <scene sceneID="plG-ON-UPL">
@@ -375,7 +389,7 @@
                                 <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="apG-bo-qgY" id="kwP-SN-obf">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -399,11 +413,15 @@
                         <viewControllerLayoutGuide type="bottom" id="VTK-Gf-eBz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="J5B-uJ-I7p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VJO-Y6-JEI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L1-sp-Fqu">
-                                <rect key="frame" x="319" y="72" width="40" height="40"/>
+                                <rect key="frame" x="264" y="48" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="tYL-3y-BJi"/>
                                     <constraint firstAttribute="width" constant="40" id="yE4-Xg-4XL"/>
@@ -446,7 +464,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1TA-7B-fbv">
-                                <rect key="frame" x="66" y="73" width="40" height="39"/>
+                                <rect key="frame" x="11" y="49" width="40" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="XkN-Z7-yLS"/>
                                     <constraint firstAttribute="width" constant="40" id="nFM-hh-7tE"/>
@@ -457,7 +475,7 @@
                                     <action selector="startVanMainMenu:forEvent:" destination="FUM-7a-fIP" eventType="touchUpInside" id="IaY-hc-n83"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11U-fy-KVj">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11U-fy-KVj">
                                 <rect key="frame" x="182" y="145" width="122" height="51"/>
                                 <state key="normal" title="Camera" image="camerabtn"/>
                                 <connections>
@@ -482,11 +500,12 @@
                             <constraint firstAttribute="trailing" secondItem="2L1-sp-Fqu" secondAttribute="trailing" constant="16" id="thA-To-DhH"/>
                             <constraint firstItem="2Dm-3t-6pY" firstAttribute="top" secondItem="1TA-7B-fbv" secondAttribute="bottom" constant="58" id="x1A-3S-umC"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aud-yB-RxU"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywx-9W-nQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4595.625" y="1456.6901408450703"/>
+            <point key="canvasLocation" x="4594.202898550725" y="1456.4732142857142"/>
         </scene>
         <!--TorQRCodeScanner-->
         <scene sceneID="FoT-Bf-2VZ">
@@ -497,9 +516,13 @@
                         <viewControllerLayoutGuide type="bottom" id="Hxy-ZI-buD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Waj-Uy-lYz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WWg-GE-uSB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9n5-MB-Db1">
                                 <rect key="frame" x="12" y="65" width="347" height="426"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -524,11 +547,12 @@
                             <constraint firstItem="9n5-MB-Db1" firstAttribute="top" secondItem="MOa-Fm-iNL" secondAttribute="bottom" constant="27" id="PtI-5V-OyO"/>
                             <constraint firstAttribute="trailing" secondItem="9n5-MB-Db1" secondAttribute="trailing" constant="16" id="W7s-Np-nrA"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6fA-jC-IS7"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Snn-4q-8N8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5762.3999999999996" y="1885.9070464767617"/>
+            <point key="canvasLocation" x="5762.3188405797109" y="1885.7142857142856"/>
         </scene>
         <!--TorFunStopMap-->
         <scene sceneID="TYs-Iu-tLz">
@@ -539,11 +563,15 @@
                         <viewControllerLayoutGuide type="bottom" id="8qj-t1-dbA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gJz-fc-rBa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="IdR-dp-bKr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNO-vV-d9I">
-                                <rect key="frame" x="11" y="73" width="40" height="39"/>
+                                <rect key="frame" x="11" y="49" width="40" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="2w8-5L-Vce"/>
                                     <constraint firstAttribute="height" constant="39" id="73t-jB-oWR"/>
@@ -554,7 +582,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oao-nf-ZQI">
-                                <rect key="frame" x="11" y="120" width="348" height="638"/>
+                                <rect key="frame" x="11" y="96" width="293" height="452"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -567,26 +595,27 @@
                             <constraint firstItem="8qj-t1-dbA" firstAttribute="top" secondItem="oao-nf-ZQI" secondAttribute="bottom" constant="20" id="lxV-BC-rpQ"/>
                             <constraint firstItem="oao-nf-ZQI" firstAttribute="top" secondItem="7yI-2B-CEq" secondAttribute="bottom" constant="76" id="xTL-Tm-0qz"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="X1I-Ba-vKs"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QmC-9n-4EW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5761.875" y="1115.4929577464789"/>
+            <point key="canvasLocation" x="5760.8695652173919" y="1114.9553571428571"/>
         </scene>
         <!--Tor Sponsor Table View Controller-->
         <scene sceneID="F1K-wB-pof">
             <objects>
                 <tableViewController id="8Jy-rI-hnS" customClass="TorSponsorTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WTJ-2o-bCW">
-                        <rect key="frame" x="0.0" y="0.0" width="346" height="636"/>
+                        <rect key="frame" x="0.0" y="0.0" width="291" height="450"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="azj-oL-BBP">
-                                <rect key="frame" x="0.0" y="28" width="346" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="291" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="azj-oL-BBP" id="HxP-1q-TPt">
-                                    <rect key="frame" x="0.0" y="0.0" width="346" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="291" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -610,17 +639,21 @@
                         <viewControllerLayoutGuide type="bottom" id="Uce-08-kar"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ohm-sM-AdF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="acC-AR-63A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-Pe-rJo">
-                                <rect key="frame" x="13" y="122" width="346" height="636"/>
+                                <rect key="frame" x="13" y="98" width="291" height="450"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYf-Fe-k5g">
-                                        <rect key="frame" x="0.0" y="0.0" width="346" height="636"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="450"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-SR-YLs">
-                                                <rect key="frame" x="0.0" y="0.0" width="346" height="636"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="291" height="450"/>
                                                 <connections>
                                                     <segue destination="8Jy-rI-hnS" kind="embed" id="Ju8-OY-9Ns"/>
                                                 </connections>
@@ -666,11 +699,12 @@
                             <constraint firstItem="Uce-08-kar" firstAttribute="top" secondItem="uR9-Pe-rJo" secondAttribute="bottom" constant="20" id="Och-aE-MaD"/>
                             <constraint firstItem="uR9-Pe-rJo" firstAttribute="top" secondItem="FNC-9g-r6b" secondAttribute="bottom" constant="78" id="bdZ-hH-zDj"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="fL8-X9-uWm"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHA-Im-9Sr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1843" y="2960"/>
+            <point key="canvasLocation" x="1842.0289855072465" y="2959.8214285714284"/>
         </scene>
         <!--VanPrivacyPolicy-->
         <scene sceneID="1LB-Ef-KOy">
@@ -681,11 +715,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Wq2-50-W3u"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="i5G-QG-par">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="S9x-Gh-tm5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kms-4g-48j">
                                 <rect key="frame" x="64" y="171" width="260" height="476"/>
@@ -804,6 +838,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VJ9-no-U4a" secondAttribute="trailing" symbolic="YES" id="lLb-y8-SDB"/>
                             <constraint firstAttribute="trailing" secondItem="wxK-sL-LaH" secondAttribute="trailing" constant="20" id="oa9-1j-zja"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="RRz-hO-aHW"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CzC-kC-roa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -819,21 +854,21 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="gll-J3-sTW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mHb-H9-kY7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_menu_templatepng" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUx-rI-4jN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithwaves" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUx-rI-4jN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3om-sn-Gab">
-                                <rect key="frame" x="42" y="195" width="291" height="54"/>
+                                <rect key="frame" x="15" y="140" width="291" height="54"/>
                                 <state key="normal" image="torontobtn"/>
                                 <connections>
                                     <action selector="startTorMenu:" destination="qj6-4S-78F" eventType="touchUpInside" id="wLJ-9f-dzh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-Ll-Ocb">
-                                <rect key="frame" x="42" y="288" width="291" height="56"/>
+                                <rect key="frame" x="42" y="227" width="236" height="56"/>
                                 <state key="normal" image="vancouverbtn"/>
                                 <connections>
                                     <action selector="startVanActivity:forEvent:" destination="qj6-4S-78F" eventType="touchUpInside" id="BLL-TW-Ijw"/>
@@ -854,6 +889,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="3om-sn-Gab" firstAttribute="centerX" secondItem="mHb-H9-kY7" secondAttribute="centerX" id="th8-M3-x9f"/>
                             <constraint firstAttribute="trailing" secondItem="eNt-Ll-Ocb" secondAttribute="trailing" constant="42" id="xrq-Sb-RdR"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="FlN-t6-bip"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RzY-Pg-c97" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -869,11 +905,15 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="28M-Ap-K6z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="B3K-YZ-cjT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="IyC-1E-PDI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvG-Ai-R26">
-                                <rect key="frame" x="163" y="167" width="141" height="46"/>
+                                <rect key="frame" x="163" y="143" width="141" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="EvZ-Wf-2Fd"/>
                                     <constraint firstAttribute="width" constant="141" id="ljf-LP-U2U"/>
@@ -883,8 +923,8 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                     <action selector="startVanFunStopCamera:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="wG8-FG-7iT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dz-H2-Gid">
-                                <rect key="frame" x="264" y="73" width="39" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dz-H2-Gid">
+                                <rect key="frame" x="265" y="35" width="39" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="q8g-sI-x5L"/>
                                     <constraint firstAttribute="width" constant="39" id="ydB-jl-VId"/>
@@ -903,17 +943,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 <state key="normal" image="mapbtn"/>
                                 <connections>
                                     <action selector="startVanFunStopMap:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="mzo-Zf-iDQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZK-O7-Q46">
-                                <rect key="frame" x="16" y="73" width="39" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Lbg-dj-JhC"/>
-                                    <constraint firstAttribute="width" constant="39" id="oGy-Kd-aC4"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="gobackbtn"/>
-                                <connections>
-                                    <action selector="startVanMainMenu:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="sLD-m1-cwd"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ft5-f8-ofn">
@@ -935,6 +964,17 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                     </view>
                                 </subviews>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZK-O7-Q46">
+                                <rect key="frame" x="16" y="35" width="39" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lbg-dj-JhC"/>
+                                    <constraint firstAttribute="width" constant="39" id="oGy-Kd-aC4"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="gobackbtn"/>
+                                <connections>
+                                    <action selector="startVanMainMenu:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="sLD-m1-cwd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -957,11 +997,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="0dz-H2-Gid" firstAttribute="top" secondItem="ozV-4r-qYn" secondAttribute="bottom" constant="29" id="v2E-Hh-9kq"/>
                             <constraint firstItem="jUj-Y4-bHZ" firstAttribute="leading" secondItem="B3K-YZ-cjT" secondAttribute="leading" constant="16" id="yEe-Zx-Klq"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="hsq-xj-4N2"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8l-hZ-U7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4388" y="-1055.6221889055473"/>
+            <point key="canvasLocation" x="4385.625" y="-1056.338028169014"/>
         </scene>
         <!--VanQRCodeScanner-->
         <scene sceneID="mor-PY-XrA">
@@ -972,11 +1013,11 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="fPF-FK-nU6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BHp-T9-FgG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9P-Qy-VdF">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gt3-dT-Rtq">
                                         <rect key="frame" x="8" y="74" width="304" height="452"/>
@@ -1004,6 +1045,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="w9P-Qy-VdF" firstAttribute="top" secondItem="BHp-T9-FgG" secondAttribute="top" id="fkO-pb-IWj"/>
                             <constraint firstAttribute="bottom" secondItem="w9P-Qy-VdF" secondAttribute="bottom" id="i9Y-l0-vJD"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="ds5-Ov-hhe"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59n-kO-WdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1019,9 +1061,13 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="vz8-uz-uVi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LLq-E4-Zft">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-7s-pim">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP6-Rw-KCQ">
                                 <rect key="frame" x="135" y="714" width="124" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1037,11 +1083,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OjL-AR-PNh"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geJ-0G-4Sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6819" y="195"/>
+            <point key="canvasLocation" x="6818.8405797101459" y="194.86607142857142"/>
         </scene>
         <!--VanAbout-->
         <scene sceneID="fQt-X6-WDl">
@@ -1052,20 +1099,20 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="23s-ls-KYD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ErI-ru-WIJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="AmB-gu-EbG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l20-ez-zVR">
-                                <rect key="frame" x="54" y="183" width="267" height="471"/>
+                                <rect key="frame" x="54" y="159" width="212" height="285"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGW-mO-lU5">
-                                        <rect key="frame" x="0.0" y="0.0" width="267" height="471"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="212" height="285"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO3-de-Lt2">
-                                                <rect key="frame" x="0.0" y="0.0" width="267" height="442"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="212" height="256"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1114,6 +1161,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="AmB-gu-EbG" firstAttribute="trailing" secondItem="ErI-ru-WIJ" secondAttribute="trailing" id="uUe-Ju-aMo"/>
                             <constraint firstItem="AmB-gu-EbG" firstAttribute="leading" secondItem="ErI-ru-WIJ" secondAttribute="leading" id="whL-v5-TYm"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="zLU-UJ-KIa"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSc-Pf-P1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1129,9 +1177,13 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="oTk-6m-QbN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vPN-En-30y">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-Il-bxz">
+                                <rect key="frame" x="0.0" y="-2" width="414" height="898"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-Iu-b5b">
                                 <rect key="frame" x="11" y="49" width="40" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1141,13 +1193,13 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zoo-cf-cdL">
-                                <rect key="frame" x="16" y="134" width="343" height="624"/>
+                                <rect key="frame" x="16" y="110" width="288" height="438"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5U-xb-82Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="624"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="438"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vEh-QJ-6A1">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="624"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="438"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1178,11 +1230,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="Zoo-cf-cdL" firstAttribute="leading" secondItem="vPN-En-30y" secondAttribute="leading" constant="16" id="fXA-6s-Itf"/>
                             <constraint firstItem="oTk-6m-QbN" firstAttribute="top" secondItem="Zoo-cf-cdL" secondAttribute="bottom" constant="20" id="zZa-gc-jEV"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="kQZ-CL-k0s"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhV-xS-Xe0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2460" y="-1186.2676056338028"/>
+            <point key="canvasLocation" x="2459.4202898550725" y="-1186.6071428571429"/>
         </scene>
         <!--TorVenueMap-->
         <scene sceneID="dyw-nl-E6a">
@@ -1193,7 +1246,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="5Gh-V0-te2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qSJ-HB-eLK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svg-pA-P63">
@@ -1203,11 +1256,15 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                     <action selector="startTorMainMenu:forEvent:" destination="edA-HH-bSp" eventType="touchUpInside" id="IDg-J1-lSW"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XpK-1t-gEX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ity-0F-WAH">
-                                <rect key="frame" x="16" y="119" width="343" height="639"/>
+                                <rect key="frame" x="16" y="95" width="288" height="453"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f4A-dm-392">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="639"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="453"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -1230,11 +1287,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="ity-0F-WAH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="svg-pA-P63" secondAttribute="leading" id="aqR-Qq-pPe"/>
                             <constraint firstItem="ity-0F-WAH" firstAttribute="top" secondItem="svg-pA-P63" secondAttribute="bottom" constant="8" symbolic="YES" id="rYz-g3-kbX"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="mf7-AK-K8z"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZ7-kM-OfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1515" y="660.21126760563379"/>
+            <point key="canvasLocation" x="1514.4927536231885" y="659.59821428571422"/>
         </scene>
         <!--VanTermOfUse-->
         <scene sceneID="OgF-f7-8u7">
@@ -1245,11 +1303,11 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="Y4a-T1-y0c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AKW-qy-AyU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="H7p-yh-EOx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-qN-EZ7">
                                 <rect key="frame" x="59" y="185" width="270" height="466"/>
@@ -1335,16 +1393,17 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstAttribute="bottom" secondItem="H7p-yh-EOx" secondAttribute="bottom" id="icK-Y5-lXm"/>
                             <constraint firstAttribute="trailing" secondItem="fU1-qN-EZ7" secondAttribute="trailing" constant="18" id="vU6-xZ-g1s"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="vL4-Uy-csM"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jHE-cd-atg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2458.4000000000001" y="-2013.5467980295568"/>
         </scene>
-        <!--Vab Schedule Table View Controller-->
+        <!--Van Schedule Table View Controller-->
         <scene sceneID="pKf-mM-Ogl">
             <objects>
-                <tableViewController id="ZRk-9t-ilM" customClass="VabScheduleTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ZRk-9t-ilM" customClass="VanScheduleTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="seR-ok-aXl">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="364"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1354,7 +1413,7 @@ These linked sites are only for your convenience and therefore you access them a
                                 <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pgZ-UI-FSX" id="GOm-qs-PQq">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1369,10 +1428,10 @@ These linked sites are only for your convenience and therefore you access them a
             </objects>
             <point key="canvasLocation" x="3159" y="-2019"/>
         </scene>
-        <!--Vab Schedule Table View Controller2-->
+        <!--Van Schedule Table View Controller2-->
         <scene sceneID="s5v-KM-1eu">
             <objects>
-                <tableViewController id="5l4-Rp-BVx" customClass="VabScheduleTableViewController2" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="5l4-Rp-BVx" customClass="VanScheduleTableViewController2" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hrI-DW-X2l">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="360"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1382,7 +1441,7 @@ These linked sites are only for your convenience and therefore you access them a
                                 <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pDa-mu-Cug" id="E3x-ZI-weR">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1397,10 +1456,10 @@ These linked sites are only for your convenience and therefore you access them a
             </objects>
             <point key="canvasLocation" x="3791" y="-2021"/>
         </scene>
-        <!--Vab Schedule Table View Controller3-->
+        <!--Van Schedule Table View Controller3-->
         <scene sceneID="zUf-mF-89g">
             <objects>
-                <tableViewController id="2Fl-h8-ziu" customClass="VabScheduleTableViewController3" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="2Fl-h8-ziu" customClass="VanScheduleTableViewController3" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wFk-4L-Lmy">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="360"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1410,7 +1469,7 @@ These linked sites are only for your convenience and therefore you access them a
                                 <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lhm-de-kdI" id="5Tc-2f-dZL">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1434,20 +1493,20 @@ These linked sites are only for your convenience and therefore you access them a
                         <viewControllerLayoutGuide type="bottom" id="hhh-wk-jtZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eZN-tD-4wl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="mgy-Xv-YyH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgp-gC-Ecm">
-                                <rect key="frame" x="55" y="170" width="278" height="451"/>
+                                <rect key="frame" x="55" y="146" width="223" height="265"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrb-Ry-mSY">
-                                        <rect key="frame" x="0.0" y="14" width="258" height="437"/>
+                                        <rect key="frame" x="0.0" y="14" width="203" height="251"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlc-D2-Qkc">
-                                                <rect key="frame" x="0.0" y="13" width="258" height="424"/>
+                                                <rect key="frame" x="0.0" y="13" width="203" height="238"/>
                                                 <string key="text">General Terms and Conditions of Use
  
 Thank you for using https://www.acsea.ca/ (our “Site”). By visiting our site or using any associated app and user interfaces, you indicate your acknowledgment and acceptance of the Terms and Conditions and Privacy Policy. If you do not agree or cannot comply with these terms and conditions, then you may not use this site or any associated app and user interfaces.
@@ -1547,6 +1606,7 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="hhh-wk-jtZ" firstAttribute="top" secondItem="rgp-gC-Ecm" secondAttribute="bottom" constant="157" id="uKD-is-h5q"/>
                             <constraint firstItem="rgp-gC-Ecm" firstAttribute="leading" secondItem="eZN-tD-4wl" secondAttribute="leading" constant="55" id="zL7-ZL-2aK"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="KCQ-ae-D7p"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeO-wd-vZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1562,32 +1622,32 @@ These linked sites are only for your convenience and therefore you access them a
                         <viewControllerLayoutGuide type="bottom" id="jqw-sN-ul6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="T4a-tF-p0W">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ite-NZ-Uqq">
-                                <rect key="frame" x="20" y="103" width="339" height="511"/>
+                                <rect key="frame" x="20" y="79" width="284" height="325"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2. At each location ask a volunteer for Fun Stop QR Code" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xir-Xg-Vvk">
-                                        <rect key="frame" x="0.0" y="97" width="339" height="48"/>
+                                        <rect key="frame" x="0.0" y="97" width="284" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4. Once all QR Codes are scan visit Fun Stop Booth for a chance to win a prize!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-Xj-zf2">
-                                        <rect key="frame" x="0.0" y="231" width="339" height="74"/>
+                                        <rect key="frame" x="0.0" y="231" width="284" height="74"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3. Scan the QR code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qR-Ym-eeJ">
-                                        <rect key="frame" x="0.0" y="171" width="339" height="26"/>
+                                        <rect key="frame" x="0.0" y="171" width="284" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. Visit all location show on the map" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zV-zA-4Co">
-                                        <rect key="frame" x="0.0" y="17" width="331" height="53"/>
+                                        <rect key="frame" x="0.0" y="17" width="276" height="53"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1606,13 +1666,17 @@ These linked sites are only for your convenience and therefore you access them a
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWj-ct-YfN">
-                                <rect key="frame" x="121" y="665" width="133" height="30"/>
+                                <rect key="frame" x="121" y="455" width="78" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="startTorFunStopProgram:forEvent:" destination="oii-j7-dWQ" eventType="touchUpInside" id="aJZ-an-4HB"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HMi-xa-pW9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1624,11 +1688,12 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstAttribute="trailing" secondItem="Ite-NZ-Uqq" secondAttribute="trailing" constant="16" id="rBe-lv-TGr"/>
                             <constraint firstItem="Ite-NZ-Uqq" firstAttribute="leading" secondItem="T4a-tF-p0W" secondAttribute="leading" constant="20" id="rQd-9r-Dtr"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="lhg-Bb-YEI"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sba-KX-Slw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3482" y="2039"/>
+            <point key="canvasLocation" x="3481.1594202898555" y="2038.3928571428571"/>
         </scene>
         <!--VanSponsor-->
         <scene sceneID="8PU-Js-ddL">
@@ -1639,17 +1704,21 @@ These linked sites are only for your convenience and therefore you access them a
                         <viewControllerLayoutGuide type="bottom" id="jJN-Rj-wTu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yNY-jh-ZJa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BfA-h4-RWM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QvM-ZP-xXv">
-                                <rect key="frame" x="13" y="122" width="346" height="636"/>
+                                <rect key="frame" x="13" y="98" width="291" height="450"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63G-W2-JoQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="346" height="636"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="291" height="450"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ag-B0-kHx">
-                                                <rect key="frame" x="0.0" y="186" width="346" height="450"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="291" height="450"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <connections>
                                                     <segue destination="2am-QC-bBA" kind="embed" id="LiJ-wY-4f8"/>
@@ -1669,7 +1738,7 @@ These linked sites are only for your convenience and therefore you access them a
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOg-j0-E5a">
-                                <rect key="frame" x="11" y="73" width="40" height="39"/>
+                                <rect key="frame" x="11" y="49" width="40" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="7Vg-Cx-6Tv"/>
                                     <constraint firstAttribute="width" constant="40" id="UZ1-fg-WmE"/>
@@ -1690,11 +1759,12 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="QvM-ZP-xXv" firstAttribute="leading" secondItem="yNY-jh-ZJa" secondAttribute="leading" constant="13" id="k0Y-7P-yXw"/>
                             <constraint firstItem="JOg-j0-E5a" firstAttribute="top" secondItem="Ju4-Wq-Yxw" secondAttribute="bottom" constant="29" id="tHy-0T-vJD"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="ehD-pe-kjR"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdT-59-lBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="-2408"/>
+            <point key="canvasLocation" x="691.304347826087" y="-2408.0357142857142"/>
         </scene>
         <!--VanMainMenu-->
         <scene sceneID="QV6-hK-2I1">
@@ -1705,11 +1775,11 @@ These linked sites are only for your convenience and therefore you access them a
                         <viewControllerLayoutGuide type="bottom" id="MXr-D2-Jwa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lMT-gk-WrO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCd-Ey-NLk">
-                                <rect key="frame" x="0.0" y="379" width="375" height="399"/>
+                                <rect key="frame" x="0.0" y="169" width="320" height="399"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cia-gw-ONW">
                                         <rect key="frame" x="50" y="8" width="220" height="195"/>
@@ -1816,7 +1886,7 @@ These linked sites are only for your convenience and therefore you access them a
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOc-um-CMP">
-                                <rect key="frame" x="66.666666666666686" y="325" width="242" height="46"/>
+                                <rect key="frame" x="39" y="115" width="242" height="46"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="VPe-a4-N9w"/>
@@ -1827,6 +1897,10 @@ These linked sites are only for your convenience and therefore you access them a
                                     <action selector="startVanAbout:forEvent:" destination="m2J-4k-pix" eventType="touchUpInside" id="JJc-ax-2K3"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="c13-sO-Ccx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1839,11 +1913,12 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="vCd-Ey-NLk" firstAttribute="top" secondItem="fOc-um-CMP" secondAttribute="bottom" constant="8" id="ai8-ok-Fxg"/>
                             <constraint firstItem="fOc-um-CMP" firstAttribute="centerX" secondItem="lMT-gk-WrO" secondAttribute="centerX" id="e1c-z2-GaN"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Lb-qQ-HNW"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmM-4K-qYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="740.625" y="-474.29577464788736"/>
+            <point key="canvasLocation" x="738.75" y="-475.35211267605632"/>
         </scene>
         <!--VanSchedule-->
         <scene sceneID="34L-Gc-znF">
@@ -1854,9 +1929,12 @@ These linked sites are only for your convenience and therefore you access them a
                         <viewControllerLayoutGuide type="bottom" id="dNj-Li-xG3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TnW-Rm-eg5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hIl-jq-zoP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYt-ZO-6LC">
                                 <rect key="frame" x="16" y="188" width="288" height="360"/>
                                 <subviews>
@@ -1890,17 +1968,8 @@ These linked sites are only for your convenience and therefore you access them a
                                     </view>
                                 </subviews>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAw-90-0qa">
-                                <rect key="frame" x="11" y="49" width="40" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="gobackbtn"/>
-                                <connections>
-                                    <action selector="startVanMenuActivity:forEvent:" destination="ozT-Um-aQk" eventType="touchUpInside" id="TiS-UH-Rdq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOQ-a8-qMd">
-                                <rect key="frame" x="61" y="156" width="59" height="38"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="61" y="132" width="59" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="7z3-VS-znv"/>
                                     <constraint firstAttribute="width" secondItem="fOQ-a8-qMd" secondAttribute="height" multiplier="59:38" id="FCc-Wz-xFw"/>
@@ -1912,8 +1981,7 @@ These linked sites are only for your convenience and therefore you access them a
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3b-rQ-W3C">
-                                <rect key="frame" x="131" y="156" width="59" height="38"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="131" y="132" width="59" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="D3b-rQ-W3C" secondAttribute="height" multiplier="59:38" id="6li-vw-uWu"/>
                                     <constraint firstAttribute="width" constant="59" id="Iu0-6l-eMA"/>
@@ -1925,8 +1993,7 @@ These linked sites are only for your convenience and therefore you access them a
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLQ-Iq-HeC">
-                                <rect key="frame" x="198" y="155" width="59" height="39"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="198" y="131" width="59" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="59" id="LC7-ib-NJq"/>
                                     <constraint firstAttribute="width" secondItem="lLQ-Iq-HeC" secondAttribute="height" multiplier="59:39" id="R0B-TQ-00V"/>
@@ -1937,27 +2004,45 @@ These linked sites are only for your convenience and therefore you access them a
                                     <action selector="showDayThree:" destination="ozT-Um-aQk" eventType="touchUpInside" id="utS-We-VrL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAw-90-0qa">
+                                <rect key="frame" x="16" y="34" width="40" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="FEx-zl-b51"/>
+                                    <constraint firstAttribute="height" constant="39" id="MpZ-FZ-g3O"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="gobackbtn"/>
+                                <connections>
+                                    <action selector="startVanMenuActivity:forEvent:" destination="ozT-Um-aQk" eventType="touchUpInside" id="TiS-UH-Rdq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dNj-Li-xG3" firstAttribute="top" secondItem="iYt-ZO-6LC" secondAttribute="bottom" constant="20" id="1za-ye-ozm"/>
-                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="top" secondItem="ONP-SO-fBr" secondAttribute="bottom" constant="168" id="5lp-v5-UbE"/>
+                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="top" secondItem="TnW-Rm-eg5" secondAttribute="topMargin" constant="168" id="08C-hJ-qV5"/>
                             <constraint firstItem="lLQ-Iq-HeC" firstAttribute="top" secondItem="ONP-SO-fBr" secondAttribute="bottom" constant="111" id="7Aa-Jp-6Ja"/>
                             <constraint firstAttribute="trailing" secondItem="lLQ-Iq-HeC" secondAttribute="trailing" constant="63" id="7Bs-3h-WTQ"/>
-                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="leading" secondItem="TnW-Rm-eg5" secondAttribute="leading" constant="16" id="CLx-2g-Fhr"/>
-                            <constraint firstItem="dNj-Li-xG3" firstAttribute="top" secondItem="iYt-ZO-6LC" secondAttribute="bottom" constant="20" id="ECa-vI-lch"/>
+                            <constraint firstItem="hIl-jq-zoP" firstAttribute="top" secondItem="TnW-Rm-eg5" secondAttribute="top" id="8iE-j0-vA5"/>
+                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="leading" secondItem="TnW-Rm-eg5" secondAttribute="leadingMargin" id="93T-8w-joC"/>
+                            <constraint firstAttribute="trailing" secondItem="hIl-jq-zoP" secondAttribute="trailing" id="9qd-ya-FAM"/>
+                            <constraint firstItem="Wx9-I9-qbA" firstAttribute="trailing" secondItem="UAw-90-0qa" secondAttribute="trailing" constant="264" id="Dta-v1-D7c"/>
                             <constraint firstItem="D3b-rQ-W3C" firstAttribute="top" secondItem="ONP-SO-fBr" secondAttribute="bottom" constant="112" id="FcY-CB-b4v"/>
-                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="top" secondItem="lLQ-Iq-HeC" secondAttribute="bottom" constant="18" id="GNc-5d-5to"/>
+                            <constraint firstItem="hIl-jq-zoP" firstAttribute="leading" secondItem="TnW-Rm-eg5" secondAttribute="leading" id="Hd8-1o-cSL"/>
                             <constraint firstItem="lLQ-Iq-HeC" firstAttribute="leading" secondItem="D3b-rQ-W3C" secondAttribute="trailing" constant="8" id="JfI-zb-pOo"/>
+                            <constraint firstAttribute="bottom" secondItem="hIl-jq-zoP" secondAttribute="bottom" id="KA0-g2-wfK"/>
+                            <constraint firstItem="hIl-jq-zoP" firstAttribute="top" secondItem="TnW-Rm-eg5" secondAttribute="top" id="MzC-6e-BuJ"/>
+                            <constraint firstItem="dNj-Li-xG3" firstAttribute="top" secondItem="hIl-jq-zoP" secondAttribute="bottom" id="NRn-lH-KAg"/>
+                            <constraint firstItem="UAw-90-0qa" firstAttribute="leading" secondItem="Wx9-I9-qbA" secondAttribute="leading" constant="16" id="NuV-Or-a6X"/>
+                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="top" secondItem="UAw-90-0qa" secondAttribute="bottom" constant="115" id="Pk3-M7-bJp"/>
+                            <constraint firstItem="UAw-90-0qa" firstAttribute="top" secondItem="ONP-SO-fBr" secondAttribute="bottom" constant="14" id="QSl-In-qEv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="iYt-ZO-6LC" secondAttribute="bottom" constant="20" id="QTI-gs-D70"/>
+                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="trailing" secondItem="TnW-Rm-eg5" secondAttribute="trailingMargin" id="U37-2K-Bhe"/>
                             <constraint firstItem="fOQ-a8-qMd" firstAttribute="leading" secondItem="TnW-Rm-eg5" secondAttribute="leading" constant="61" id="YSS-VP-Fp2"/>
-                            <constraint firstAttribute="trailing" secondItem="iYt-ZO-6LC" secondAttribute="trailing" constant="16" id="eaN-y5-ZDg"/>
-                            <constraint firstAttribute="trailing" secondItem="iYt-ZO-6LC" secondAttribute="trailing" constant="16" id="ex1-1e-tHb"/>
-                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="leading" secondItem="TnW-Rm-eg5" secondAttribute="leading" constant="16" id="h4o-MY-aFc"/>
+                            <constraint firstItem="hIl-jq-zoP" firstAttribute="leading" secondItem="Wx9-I9-qbA" secondAttribute="leading" id="dlN-9d-yE1"/>
                             <constraint firstItem="fOQ-a8-qMd" firstAttribute="top" secondItem="ONP-SO-fBr" secondAttribute="bottom" constant="112" id="jHs-Pq-D2W"/>
-                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="top" secondItem="D3b-rQ-W3C" secondAttribute="bottom" constant="18" id="tu3-gW-FsK"/>
+                            <constraint firstItem="hIl-jq-zoP" firstAttribute="trailing" secondItem="Wx9-I9-qbA" secondAttribute="trailing" id="nbs-JU-1vf"/>
                             <constraint firstItem="D3b-rQ-W3C" firstAttribute="leading" secondItem="fOQ-a8-qMd" secondAttribute="trailing" constant="11" id="u4X-8F-U9R"/>
-                            <constraint firstItem="iYt-ZO-6LC" firstAttribute="top" secondItem="fOQ-a8-qMd" secondAttribute="bottom" constant="18" id="yvF-L7-Fb1"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wx9-I9-qbA"/>
                     </view>
                     <connections>
                         <outlet property="Day1" destination="fRf-cp-SX1" id="eKp-fI-HwN"/>
@@ -1967,7 +2052,7 @@ These linked sites are only for your convenience and therefore you access them a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIb-s9-RHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3789" y="-2763"/>
+            <point key="canvasLocation" x="3787.5" y="-2764.4366197183099"/>
         </scene>
         <!--Van Fun Stop Table View Controller-->
         <scene sceneID="y35-qo-NaN">
@@ -1982,7 +2067,7 @@ These linked sites are only for your convenience and therefore you access them a
                                 <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vvH-E2-zyQ" id="ePl-aN-wCQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -2006,21 +2091,21 @@ These linked sites are only for your convenience and therefore you access them a
                         <viewControllerLayoutGuide type="bottom" id="cfT-c1-gyB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kWq-Ro-2zD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="1ft-Fk-iGW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcS-bn-xvU">
-                                <rect key="frame" x="30" y="44" width="38" height="38.333333333333343"/>
+                                <rect key="frame" x="30" y="20" width="16" height="18"/>
                                 <state key="normal" backgroundImage="gobackbtn"/>
                                 <connections>
                                     <action selector="startTorMainMenu:forEvent:" destination="rGE-o8-odr" eventType="touchUpInside" id="ZR9-Io-9ds"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBF-ox-o9A">
-                                <rect key="frame" x="46" y="177.33333333333334" width="282" height="458.66666666666663"/>
+                                <rect key="frame" x="46" y="133" width="227" height="293"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2C-eL-lpG">
                                         <rect key="frame" x="8" y="8" width="305" height="526"/>
@@ -2064,6 +2149,7 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="NBF-ox-o9A" firstAttribute="top" secondItem="RcS-bn-xvU" secondAttribute="bottom" constant="95" id="srF-7e-YIb"/>
                             <constraint firstAttribute="bottom" secondItem="1ft-Fk-iGW" secondAttribute="bottom" id="wbR-J0-X1V"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="aAe-N2-2bY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufA-Uh-Dyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2079,11 +2165,11 @@ These linked sites are only for your convenience and therefore you access them a
                         <viewControllerLayoutGuide type="bottom" id="Lk5-M0-Vr6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HaU-iY-mJ6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZs-SH-NiX">
-                                <rect key="frame" x="11" y="73" width="40" height="39"/>
+                                <rect key="frame" x="11" y="49" width="40" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="9Zm-Fs-2DH"/>
                                     <constraint firstAttribute="height" constant="39" id="aUA-cQ-MCR"/>
@@ -2100,12 +2186,17 @@ These linked sites are only for your convenience and therefore you access them a
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dE3-Af-47b">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MZs-SH-NiX" firstAttribute="leading" secondItem="HaU-iY-mJ6" secondAttribute="leading" constant="11" id="EPX-sc-aOK"/>
                             <constraint firstItem="MZs-SH-NiX" firstAttribute="top" secondItem="BWl-Cm-JY7" secondAttribute="bottom" constant="29" id="v78-bm-NRO"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="mXd-Ib-46O"/>
                     </view>
                     <connections>
                         <outlet property="test" destination="hbT-ms-gZ1" id="dgq-Ns-uzl"/>
@@ -2113,7 +2204,7 @@ These linked sites are only for your convenience and therefore you access them a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y19-dy-7Ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5645" y="-1298"/>
+            <point key="canvasLocation" x="5644.9275362318849" y="-1298.4375"/>
         </scene>
         <!--TorPrivacyPolicy-->
         <scene sceneID="l3B-p0-rDm">
@@ -2124,20 +2215,20 @@ These linked sites are only for your convenience and therefore you access them a
                         <viewControllerLayoutGuide type="bottom" id="KkR-dg-klm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Twp-51-25v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="usZ-1z-lS9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyC-oh-LUu">
-                                <rect key="frame" x="50" y="169" width="278" height="482"/>
+                                <rect key="frame" x="50" y="145" width="223" height="296"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZjQ-aM-OOV">
-                                        <rect key="frame" x="0.0" y="0.0" width="278" height="482"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="223" height="296"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6B-Tt-f7w">
-                                                <rect key="frame" x="0.0" y="8" width="275" height="466"/>
+                                                <rect key="frame" x="0.0" y="8" width="220" height="280"/>
                                                 <string key="text">PRIVACY POLICY
  
 Asian-Canadian Special Events Association (ACSEA) is committed to protecting the privacy and security of personal information held about its patrons. Our purpose is to assure anyone who does business with us that ACSEA complies with the Privacy Act, the Personal Information Protection and Electronic Documents Act, and Canada’s Anti-Spam Legislation.
@@ -2246,6 +2337,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="usZ-1z-lS9" firstAttribute="top" secondItem="Twp-51-25v" secondAttribute="top" id="piQ-4y-ous"/>
                             <constraint firstItem="zyg-dB-Ilb" firstAttribute="leading" secondItem="Twp-51-25v" secondAttribute="leading" constant="31" id="u2M-FH-tAP"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="qRt-UK-WWp"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Yh-AC-8NX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2261,20 +2353,24 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="jGZ-Nr-vT6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LSM-ip-sT1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jfR-ke-f7q">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhW-DI-O1L">
-                                <rect key="frame" x="20" y="103" width="339" height="511"/>
+                                <rect key="frame" x="20" y="79" width="284" height="325"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. At each location ask a volunteer for Fun Stop QR Code" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1d-su-7e3">
-                                        <rect key="frame" x="0.0" y="97" width="339" height="48"/>
+                                        <rect key="frame" x="0.0" y="97" width="284" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Once all QR Codes are scan visit Fun Stop Booth for a chance to win a prize!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk2-ZG-jCr">
-                                        <rect key="frame" x="0.0" y="231" width="339" height="74"/>
+                                        <rect key="frame" x="0.0" y="231" width="284" height="74"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="74" id="Gnv-bx-t3U"/>
                                         </constraints>
@@ -2283,13 +2379,13 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Scan the QR code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7b-aw-Geg">
-                                        <rect key="frame" x="0.0" y="171" width="339" height="26"/>
+                                        <rect key="frame" x="0.0" y="171" width="284" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Visit all location show on the map" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVI-D4-vmC">
-                                        <rect key="frame" x="0.0" y="17" width="331" height="53"/>
+                                        <rect key="frame" x="0.0" y="17" width="276" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="Or3-2o-NkR"/>
                                         </constraints>
@@ -2315,7 +2411,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWV-5m-RnF">
-                                <rect key="frame" x="121" y="665" width="133" height="30"/>
+                                <rect key="frame" x="121" y="455" width="78" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -2333,11 +2429,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="GWV-5m-RnF" firstAttribute="top" secondItem="UhW-DI-O1L" secondAttribute="bottom" constant="51" id="jgL-3w-qB3"/>
                             <constraint firstItem="jGZ-Nr-vT6" firstAttribute="top" secondItem="GWV-5m-RnF" secondAttribute="bottom" constant="83" id="qQG-aq-MXG"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="klM-jr-hvH"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJ8-hT-xKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3396" y="-716"/>
+            <point key="canvasLocation" x="3395.652173913044" y="-716.51785714285711"/>
         </scene>
         <!--TorMainMenu-->
         <scene sceneID="w9j-sS-EQu">
@@ -2348,14 +2445,14 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <viewControllerLayoutGuide type="bottom" id="7dm-Qt-XGt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AGZ-5d-IlI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundnowaves" translatesAutoresizingMaskIntoConstraints="NO" id="SVs-dR-CbQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="SVs-dR-CbQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GID-NW-VSY">
-                                <rect key="frame" x="66.666666666666686" y="325" width="242" height="46"/>
+                                <rect key="frame" x="39" y="115" width="242" height="46"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="5X9-Ng-q1l"/>
@@ -2367,7 +2464,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 </connections>
                             </button>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHH-Tt-W1r">
-                                <rect key="frame" x="0.0" y="379" width="375" height="399"/>
+                                <rect key="frame" x="0.0" y="169" width="320" height="399"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPa-RD-mjX">
                                         <rect key="frame" x="63" y="8" width="194" height="188"/>
@@ -2487,6 +2584,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="SVs-dR-CbQ" firstAttribute="centerY" secondItem="AGZ-5d-IlI" secondAttribute="centerY" id="yOB-Jz-wvb"/>
                             <constraint firstItem="bPa-RD-mjX" firstAttribute="top" secondItem="GID-NW-VSY" secondAttribute="bottom" constant="37" id="yzS-hy-jXH"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="EcE-6a-ycc"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8J-5p-rqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2506,7 +2604,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sYE-mQ-fmj" id="oJ4-UR-OyA">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -2534,7 +2632,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 <rect key="frame" x="0.0" y="28" width="288" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jPP-V4-AZV" id="n38-eO-wZD">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -2554,15 +2652,15 @@ Should an error be made by ACSEA or its financial institution, full refunds will
             <objects>
                 <tableViewController id="2am-QC-bBA" customClass="VanSponsorTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WXb-Ac-qX0">
-                        <rect key="frame" x="0.0" y="0.0" width="346" height="450"/>
+                        <rect key="frame" x="0.0" y="0.0" width="291" height="450"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dJA-Ag-L17">
-                                <rect key="frame" x="0.0" y="28" width="346" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="291" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dJA-Ag-L17" id="Qv6-Kf-REI">
-                                    <rect key="frame" x="0.0" y="0.0" width="346" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="291" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -2579,25 +2677,25 @@ Should an error be made by ACSEA or its financial institution, full refunds will
         </scene>
     </scenes>
     <resources>
-        <image name="aboutbtn" width="302" height="59"/>
-        <image name="aug31btn" width="128.66667175292969" height="84"/>
-        <image name="backgroundnowaves" width="414" height="896"/>
-        <image name="backgroundwithblue" width="414.33334350585938" height="896.33331298828125"/>
-        <image name="btnbgpurple" width="417" height="55"/>
-        <image name="camerabtn" width="160" height="57.666667938232422"/>
-        <image name="funstopicon" width="157.33332824707031" height="157.33332824707031"/>
-        <image name="gobackbtn" width="38" height="38.333332061767578"/>
-        <image name="infobtn" width="38.333332061767578" height="38.333332061767578"/>
-        <image name="location_menu_templatepng" width="414.33334350585938" height="896.33331298828125"/>
-        <image name="mapbtn" width="159.66667175292969" height="57.666667938232422"/>
-        <image name="mapicon" width="157.33332824707031" height="157.33332824707031"/>
-        <image name="scheduleicon" width="157.33332824707031" height="157.33332824707031"/>
-        <image name="sept1btn" width="128.66667175292969" height="84"/>
-        <image name="sept2btn" width="128.66667175292969" height="84"/>
-        <image name="sponsoricon" width="157.33332824707031" height="157.33332824707031"/>
-        <image name="submitbtn" width="201" height="58"/>
-        <image name="torontobtn" width="645" height="115"/>
-        <image name="vancouverbtn" width="645" height="114.66666412353516"/>
+        <image name="aboutbtn" width="453" height="88.5"/>
+        <image name="aug31btn" width="193" height="126"/>
+        <image name="background" width="621.5" height="1104.5"/>
+        <image name="backgroundwithblue" width="621.5" height="1104.5"/>
+        <image name="backgroundwithwaves" width="621.5" height="1104.5"/>
+        <image name="btnbgpurple" width="625.5" height="82.5"/>
+        <image name="camerabtn" width="240" height="86.5"/>
+        <image name="funstopicon" width="236" height="236"/>
+        <image name="gobackbtn" width="57" height="57.5"/>
+        <image name="infobtn" width="57.5" height="57.5"/>
+        <image name="mapbtn" width="239.5" height="86.5"/>
+        <image name="mapicon" width="236" height="236"/>
+        <image name="scheduleicon" width="236" height="236"/>
+        <image name="sept1btn" width="193" height="126"/>
+        <image name="sept2btn" width="193" height="126"/>
+        <image name="sponsoricon" width="236" height="236"/>
+        <image name="submitbtn" width="301.5" height="87"/>
+        <image name="torontobtn" width="967.5" height="172.5"/>
+        <image name="vancouverbtn" width="967.5" height="172"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
