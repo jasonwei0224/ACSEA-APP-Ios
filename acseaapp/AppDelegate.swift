@@ -21,8 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Override point for customization after application launch.
 
         
-        Messaging.messaging().delegate = self
+        
         FirebaseApp.configure()
+        Messaging.messaging().delegate = self
         self.registerForPushNotification()
         
         

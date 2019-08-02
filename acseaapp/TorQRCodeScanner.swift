@@ -90,11 +90,16 @@ class TorQRCodeScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate
             found(code: stringValue)
         }
         
-        dismiss(animated: true)
+        //dismiss(animated: true)
     }
     
     func found(code: String) {
-        print("The code is :" + code)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorFunStopProgram = storyBoard.instantiateViewController(withIdentifier: "TorFunStopProgram") as! TorFunStopProgram;
+        TorFunStopProgram.torProgramCode = code
+        self.present(TorFunStopProgram, animated: true, completion: nil)
+        
+        print(code)
     }
     
     override var prefersStatusBarHidden: Bool {

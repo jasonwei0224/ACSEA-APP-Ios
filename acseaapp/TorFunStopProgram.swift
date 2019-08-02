@@ -8,45 +8,53 @@
 
 import UIKit
 
+import FirebaseAuth
+import Firebase
+import FirebaseDatabase
+
+
 class TorFunStopProgram: UIViewController {
-    var programCode = "0" ;
-    var programOneComplete = false;
-    var programTwoComplete = false;
-    var programThreeComplete = false;
-    var programFourComplete = false;
-    var programFiveComplete = false;
-    var programSixComplete = false;
-    var programSevenComplete = false;
-    var programEightComplete = false;
-    var programNineComplete = false;
-    var programTenComplete = false;
+    var torProgramCode = "0" ;
+    var torProgramOneComplete = false;
+    var torProgramTwoComplete = false;
+    var torProgramThreeComplete = false;
+    var torProgramFourComplete = false;
+    var torProgramFiveComplete = false;
+    var torProgramSixComplete = false;
+    var torProgramSevenComplete = false;
+    var torProgramEightComplete = false;
+    var torProgramNineComplete = false;
+    var torProgramTenComplete = false;
+    var torProgramElevenComplete = false;
     
-    let programOneKey = "programOneComplete"
-    let programTwoKey = "programTwoComplete"
-    let programThreeKey = "programThreeComplete"
-    let programFourKey = "programFourComplete"
-    let programFiveKey = "programFiveComplete"
-    let programSixKey = "programSixComplete"
-    let programSevenKey = "programSevenComplete"
-    let programEightKey = "programEightComplete"
-    let programNineKey = "programNineComplete"
-    let programTenKey = "programTenComplete"
+    let torProgramOneKey = "torprogramOneComplete"
+    let torProgramTwoKey = "torprogramTwoComplete"
+    let torProgramThreeKey = "torprogramThreeComplete"
+    let torProgramFourKey = "torprogramFourComplete"
+    let torProgramFiveKey = "torprogramFiveComplete"
+    let torProgramSixKey = "torprogramSixComplete"
+    let torProgramSevenKey = "torprogramSevenComplete"
+    let torProgramEightKey = "torprogramEightComplete"
+    let torProgramNineKey = "torprogramNineComplete"
+    let torProgramTenKey = "torprogramTenComplete"
+    let torProgramElevenKey = "torprogramElevenComplete"
     
-    var programOneText = "Program One"
-    let programTwoText = "Program Two"
-    let programThreeText = "Program Three"
-    let programFourText = "Program Four"
-    let programFiveText = "Program Five"
-    let programSixText = "Program Six"
-    let programSevenText = "Program Seven"
-    let programEightText = "Program Eight"
-    let programNineText = "Program Nine"
-    let programTenText = "Program Ten"
+    var torProgramOneText = "Program One"
+    let torProgramTwoText = "Program Two"
+    let torProgramThreeText = "Program Three"
+    let torProgramFourText = "Program Four"
+    let torProgramFiveText = "Program Five"
+    let torProgramSixText = "Program Six"
+    let torProgramSevenText = "Program Seven"
+    let torProgramEightText = "Program Eight"
+    let torProgramNineText = "Program Nine"
+    let torProgramTenText = "Program Ten"
+    let torProgramElevenText = "Program Eleven"
     
-    let defaults = UserDefaults.standard
+    let torontoDefaults = UserDefaults.standard
     
-    
-    
+    let segueID = "TorFunStopSegue"
+    var funStopComplete = false;
     
     override  func viewDidLoad() {
         super.viewDidLoad()
@@ -55,153 +63,178 @@ class TorFunStopProgram: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        var funStopProgramList = [
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programOneText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programTwoText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programThreeText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programFourText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programFiveText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programSixText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programSevenText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programEightText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programNineText),
-            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programTenText),
+        var torFunStopProgramList = [
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramOneText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramTwoText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramThreeText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramFourText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramFiveText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramSixText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramSevenText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramEightText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramNineText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramTenText),
+            TorFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: torProgramElevenText)
             
             ];
         
         
-        programOneComplete = (defaults.bool(forKey: programOneKey))
-        programTwoComplete = (defaults.bool(forKey: programTwoKey))
-        programThreeComplete = (defaults.bool(forKey: programThreeKey))
-        programFourComplete = (defaults.bool(forKey: programFourKey))
-        programFiveComplete = (defaults.bool(forKey: programFiveKey))
-        programSixComplete = (defaults.bool(forKey: programSixKey))
-        programSevenComplete = (defaults.bool(forKey: programSevenKey))
-        programEightComplete = (defaults.bool(forKey: programEightKey))
-        programNineComplete = (defaults.bool(forKey: programNineKey))
-        programTenComplete = (defaults.bool(forKey: programTenKey))
-        if(segue.identifier == "TorFunStopSegue"){
+        torProgramOneComplete = (torontoDefaults.bool(forKey: torProgramOneKey))
+        torProgramTwoComplete = (torontoDefaults.bool(forKey: torProgramTwoKey))
+        torProgramThreeComplete = (torontoDefaults.bool(forKey: torProgramThreeKey))
+        torProgramFourComplete = (torontoDefaults.bool(forKey: torProgramFourKey))
+        torProgramFiveComplete = (torontoDefaults.bool(forKey: torProgramFiveKey))
+        torProgramSixComplete = (torontoDefaults.bool(forKey: torProgramSixKey))
+        torProgramSevenComplete = (torontoDefaults.bool(forKey: torProgramSevenKey))
+        torProgramEightComplete = (torontoDefaults.bool(forKey: torProgramEightKey))
+        torProgramNineComplete = (torontoDefaults.bool(forKey: torProgramNineKey))
+        torProgramTenComplete = (torontoDefaults.bool(forKey: torProgramTenKey))
+        torProgramElevenComplete = (torontoDefaults.bool(forKey: torProgramElevenKey))
+        if(segue.identifier == segueID){
             let table = segue.destination as! TorFunStopTableViewController
-            table.data1 = funStopProgramList
+            table.data1 = torFunStopProgramList
         }
         
         
-        if (programOneComplete || programCode == "1"){
-            funStopProgramList[0] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p1")
+        if (torProgramOneComplete || torProgramCode == "1"){
+            torFunStopProgramList[0] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p1")
+            print("Step 1 complete")
             
-            programOneComplete = true;
-            self.defaults.set(self.programOneComplete, forKey: programOneKey)
-            if(segue.identifier == "TorFunStopSegue"){
+            torProgramOneComplete = true;
+            self.torontoDefaults.set(self.torProgramOneComplete, forKey: torProgramOneKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
+                print("Step Two Complete")
             }
         }
-        if(programTwoComplete || programCode == "2"){
-            funStopProgramList[1] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p2")
-            programTwoComplete = true
-            self.defaults.set(self.programTwoComplete, forKey: programTwoKey)
-            if(segue.identifier == "TorFunStopSegue"){
+        if(torProgramTwoComplete || torProgramCode == "2"){
+            torFunStopProgramList[1] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p2")
+            torProgramTwoComplete = true
+            self.torontoDefaults.set(self.torProgramTwoComplete, forKey: torProgramTwoKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
             }
         }
-        if(programThreeComplete || programCode == "3"){
-            funStopProgramList[2] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p3")
-            programThreeComplete = true
-            self.defaults.set(self.programThreeComplete, forKey: programThreeKey)
+        if(torProgramThreeComplete || torProgramCode == "3"){
+            torFunStopProgramList[2] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p3")
+            torProgramThreeComplete = true
+            self.torontoDefaults.set(self.torProgramThreeComplete, forKey: torProgramThreeKey)
             if(segue.identifier == "TorFunStopSegue"){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
             }
         }
-        if(programFourComplete || programCode == "4"){
-            funStopProgramList[3] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p4")
-            programFourComplete = true
-            self.defaults.set(self.programFourComplete, forKey: programFourKey)
-            if(segue.identifier == "TorFunStopSegue"){
+        if(torProgramFourComplete || torProgramCode == "4"){
+            torFunStopProgramList[3] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p4")
+            torProgramFourComplete = true
+            self.torontoDefaults.set(self.torProgramFourComplete, forKey: torProgramFourKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList
             }
         }
-        if(programFiveComplete || programCode == "5"){
-            funStopProgramList[4] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p5")
-            programFiveComplete = true
-            self.defaults.set(self.programFiveComplete, forKey: programFiveKey)
-            if(segue.identifier == "TorFunStopSegue"){
+        if(torProgramFiveComplete || torProgramCode == "5"){
+            torFunStopProgramList[4] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p5")
+            torProgramFiveComplete = true
+            self.torontoDefaults.set(self.torProgramFiveComplete, forKey: torProgramFiveKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
             }
         }
-        if(programSixComplete || programCode == "6"){
-            funStopProgramList[5] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p6")
-            programSixComplete = true
-            self.defaults.set(self.programSixComplete, forKey: programSixKey)
-            if(segue.identifier == "TorFunStopSegue"){
+        if(torProgramSixComplete || torProgramCode == "6"){
+            torFunStopProgramList[5] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p6")
+            torProgramSixComplete = true
+            self.torontoDefaults.set(self.torProgramSixComplete, forKey: torProgramSixKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
             }
         }
-        if(programSevenComplete || programCode == "7"){
-            funStopProgramList[6] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p7")
-            programSevenComplete = true
-            self.defaults.set(self.programSevenComplete, forKey: programSevenKey)
-            if(segue.identifier == "TorFunStopSegue"){
+        if(torProgramSevenComplete || torProgramCode == "7"){
+            torFunStopProgramList[6] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p7")
+            torProgramSevenComplete = true
+            self.torontoDefaults.set(self.torProgramSevenComplete, forKey: torProgramSevenKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
             }
         }
-        if(programEightComplete || programCode == "8"){
-            funStopProgramList[7] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p8")
-            programEightComplete = true
-            self.defaults.set(self.programEightComplete, forKey: programEightKey)
-            if(segue.identifier == "TorFunStopSegue"){
+        if(torProgramEightComplete || torProgramCode == "8"){
+            torFunStopProgramList[7] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p8")
+            torProgramEightComplete = true
+            self.torontoDefaults.set(self.torProgramEightComplete, forKey: torProgramEightKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
             }
         }
-        if(programNineComplete || programCode == "9"){
-            funStopProgramList[8] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p9")
-            programNineComplete = true
-            self.defaults.set(self.programNineComplete, forKey: programNineKey)
-            if(segue.identifier == "TorFunStopSegue"){
+        if(torProgramNineComplete || torProgramCode == "9"){
+            torFunStopProgramList[8] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p9")
+            torProgramNineComplete = true
+            self.torontoDefaults.set(self.torProgramNineComplete, forKey: torProgramNineKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
             }
         }
-        if(programTenComplete || programCode == "10"){
-            funStopProgramList[9] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p10")
-            programTenComplete = true
-            self.defaults.set(self.programTenComplete, forKey: programTenKey)
-            if(segue.identifier == "TorFunStopSegue"){
+        if(torProgramTenComplete || torProgramCode == "10"){
+            torFunStopProgramList[9] = TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p10")
+            torProgramTenComplete = true
+            self.torontoDefaults.set(self.torProgramTenComplete, forKey: torProgramTenKey)
+            if(segue.identifier == segueID){
                 let table = segue.destination as! TorFunStopTableViewController
-                table.data1 = funStopProgramList;
+                table.data1 = torFunStopProgramList;
             }
         }
-        
+        if(torProgramElevenComplete || torProgramCode == "11"){
+            if(torProgramOneComplete && torProgramTwoComplete && torProgramThreeComplete && torProgramFourComplete && torProgramFiveComplete && torProgramSixComplete && torProgramSevenComplete && torProgramEightComplete && torProgramNineComplete && torProgramTenComplete){ torFunStopProgramList[10]=TorFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"infobtn.png"), message: "p11")
+            torProgramElevenComplete = true;
+            self.torontoDefaults.set(self.torProgramElevenComplete, forKey: torProgramElevenKey)
+            if(segue.identifier == segueID){
+                let table = segue.destination as!
+                TorFunStopTableViewController
+                table.data1 = torFunStopProgramList
+            let user = Auth.auth().currentUser
+            let uid = user!.uid
+            let myDatabase = Database.database().reference()
+                funStopComplete = true;
+                myDatabase.child("users").child(uid).child("Complete Fun Stop").setValue("Yes")
+            }else{
+                let alert = UIAlertController(title: "Not Yet!", message: "Please complete all other stations before coming to the funstop staiton", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert,animated: true, completion: nil)
+            }
+        }
     }
+}
     
-    
-    @IBAction func startTorFunStopMap(_ sender: UIButton, forEvent event: UIEvent) {
+    @IBAction func startTorFunStopMap(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
         let TorFunStopMap = storyBoard.instantiateViewController(withIdentifier: "TorFunStopMap") as! TorFunStopMap;
         self.present(TorFunStopMap, animated: true, completion: nil)
     }
-    @IBAction func startTorFunStopRule(_ sender: UIButton, forEvent event: UIEvent) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let TorRule = storyBoard.instantiateViewController(withIdentifier: "TorRule") as! TorRule;
-        self.present(TorRule, animated: true, completion: nil)
-    }
-    @IBAction func startTorFunStopCamera(_ sender: UIButton, forEvent event: UIEvent) {
+    
+    @IBAction func startTorCamera(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let TorQRCodeScanner = storyBoard.instantiateViewController(withIdentifier: "TorQRCodeScanner") as! TorQRCodeScanner;
         self.present(TorQRCodeScanner, animated: true, completion: nil)
     }
-    @IBAction func startTorMainMenu(_ sender: UIButton, forEvent event: UIEvent) {
+    
+    @IBAction func startTorMainMenu(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let TorMainMenu = storyBoard.instantiateViewController(withIdentifier: "TorMainMenu") as! TorMainMenu;
         self.present(TorMainMenu, animated: true, completion: nil)
     }
-    
-    
+    @IBAction func startTorFunStopRule(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let TorRule = storyBoard.instantiateViewController(withIdentifier: "TorRule") as! TorRule;
+        self.present(TorRule, animated: true, completion: nil)
+    }
     
 }
+    
+
+

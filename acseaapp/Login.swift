@@ -67,8 +67,9 @@ class Login: UIViewController {
                     }else if let result = result{
                         print("Remodte instance id toake: \(result.token)")
                         self.token = result.token
+                        let uid = user!.uid
                         let myDatabse = Database.database().reference()
-                        myDatabse.child("user/\(user!.uid)/token").setValue([self.token])
+                        myDatabse.child("users").child(uid).child("token").setValue([self.token])
                         }
                     }
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -79,7 +80,6 @@ class Login: UIViewController {
                     locationMenu.signedIn = true;
                     self.present(locationMenu, animated: true, completion: nil)
                 }
-            
         }
         
     }

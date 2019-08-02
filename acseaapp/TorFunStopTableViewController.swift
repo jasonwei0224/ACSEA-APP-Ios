@@ -23,7 +23,7 @@ class TorFunStopTableViewController: UITableViewController {
         
         self.tableView.reloadData()
         self.refreshControl?.endRefreshing()
-        self.tableView.register(FunStopCell.self, forCellReuseIdentifier: "custom3")
+        self.tableView.register(FunStopCell.self, forCellReuseIdentifier: "custom4")
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
         self.tableView.bounces = true;
@@ -31,7 +31,7 @@ class TorFunStopTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! FunStopCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom4") as! FunStopCell
         cell.iconImage = data1[indexPath.row].image
         cell.mainImage = data1[indexPath.row].image
         cell.message = data1[indexPath.row].message
@@ -43,7 +43,7 @@ class TorFunStopTableViewController: UITableViewController {
         return data1.count
     }
     func chagedImage(newIcon: UIImage){
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! FunStopCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom4") as! FunStopCell
         cell.iconImage = newIcon
     }
 }

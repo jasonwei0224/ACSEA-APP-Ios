@@ -10,17 +10,17 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import FirebaseAuth
-class Register: UIViewController {
+class Register: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var agreeToProgramNotificationSwitch: UISwitch!
     @IBOutlet weak var agreeToBigPrizeSwitch: UISwitch!
     @IBOutlet weak var agreeToReceiveEmailSwitch: UISwitch!
-    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var mypickerView: UIPickerView!
     private var city = ""
     private var token: String!
-    private let dataSource = ["Toronto", "Vancouver"]
+    private var pickerdataSource = [String]()
     
     let defaults = UserDefaults.standard
     var agreeToProgramNotification: Bool!
@@ -29,12 +29,31 @@ class Register: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.pickerdataSource = ["Toronto", "Vancouver"]
+        mypickerView.delegate = self
+        mypickerView.dataSource = self
+        //pickerdataSource.append("Toronto")
+       // pickerdataSource.append("Vancouver")
+        //pickerView.dataSource=self.pickerdataSource
        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
           self.view.addGestureRecognizer(tapGesture)
         
     }
    
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent componenet: Int) -> Int{
+        return pickerdataSource.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        city = pickerdataSource[row]
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerdataSource[row]
+    }
+
     @objc func dismissKeyboard(_ sender: UITapGestureRecognizer){
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
@@ -43,8 +62,8 @@ class Register: UIViewController {
 
     @IBAction func sendVerificationEmail(_ sender: Any) {
         let myDatabse = Database.database().reference()
-        pickerView.dataSource = self
-        pickerView.delegate = self
+        mypickerView.dataSource = self
+        mypickerView.delegate = self
         agreeToBigPrize = agreeToBigPrizeSwitch.isOn;
         agreeToReceiveEmail = agreeToReceiveEmailSwitch.isOn;
         agreeToProgramNotification = agreeToProgramNotificationSwitch.isOn;
@@ -90,22 +109,12 @@ class Register: UIViewController {
             }
         }
     }
+    
+    @IBAction func startLogin(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let Login = storyBoard.instantiateViewController(withIdentifier: "Login") as! Login;
+        self.present(Login, animated: true, completion: nil)
+    }
 }
 
-extension Register: UIPickerViewDelegate, UIPickerViewDataSource{
-    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent componenet: Int) -> Int{
-        return dataSource.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        city = dataSource[row]
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return dataSource[row]
-    }
 
-    
-}

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseDatabase
 
  class VanFunStopProgram: UIViewController {
     var programCode = "0" ;
@@ -20,6 +23,7 @@ import UIKit
     var programEightComplete = false;
     var programNineComplete = false;
     var programTenComplete = false;
+    var programElevenComplete = false;
     
     let programOneKey = "programOneComplete"
     let programTwoKey = "programTwoComplete"
@@ -31,6 +35,7 @@ import UIKit
     let programEightKey = "programEightComplete"
     let programNineKey = "programNineComplete"
     let programTenKey = "programTenComplete"
+    let programElevenKey = "porgramElevenComplete"
    
     var programOneText = "Program One"
     let programTwoText = "Program Two"
@@ -42,10 +47,11 @@ import UIKit
     let programEightText = "Program Eight"
     let programNineText = "Program Nine"
     let programTenText = "Program Ten"
+    let programEleventText = "Program Eleven"
     
     let defaults = UserDefaults.standard
     
-
+    var funStopComplete = false;
     
     
     override  func viewDidLoad() {
@@ -66,7 +72,7 @@ import UIKit
             VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programEightText),
             VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programNineText),
             VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programTenText),
-            
+            VanFunStopCellData.init(icon:UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programEleventText),
             ];
         
         
@@ -80,6 +86,7 @@ import UIKit
         programEightComplete = (defaults.bool(forKey: programEightKey))
         programNineComplete = (defaults.bool(forKey: programNineKey))
         programTenComplete = (defaults.bool(forKey: programTenKey))
+        programElevenComplete = (defaults.bool(forKey: programElevenKey))
         if(segue.identifier == "VanFunStopSegue"){
             let table = segue.destination as! VanFunStopTableViewController
             table.data1 = funStopProgramList
@@ -177,7 +184,28 @@ import UIKit
                 table.data1 = funStopProgramList;
             }
         }
-       
+        if(programElevenComplete || programCode == "11"){
+            if(programOneComplete && programTwoComplete && programThreeComplete && programFourComplete && programFiveComplete && programSixComplete && programSevenComplete && programEightComplete && programNineComplete && programTenComplete){
+                funStopProgramList[10] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"),
+                                                                 image: UIImage(named:"gobackbtn.png"), message: "p11")
+                programElevenComplete = true
+                self.defaults.set(self.programElevenComplete, forKey: programElevenKey)
+                if(segue.identifier == "VanFunStopSegue"){
+                    let table = segue.destination as! VanFunStopTableViewController
+                    table.data1 = funStopProgramList;
+                    let user = Auth.auth().currentUser
+                    let uid = user!.uid
+                    let myDatabse = Database.database().reference()
+                    funStopComplete = true;
+                    myDatabse.child("users").child(uid).child("Complete Fun Stop").setValue("Yes")
+                }
+            }else{
+                let alert = UIAlertController(title: "Not Yet!", message: "Please complete all other stations before coming to the funstop staiton", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert,animated: true, completion: nil)
+            }
+        }
+        
     }
     
 

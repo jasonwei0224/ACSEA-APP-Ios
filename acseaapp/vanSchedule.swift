@@ -39,6 +39,7 @@ class VanSchedule: UIViewController {
         self.Day1.alpha = 1;
         self.Day2.alpha = 0;
         self.Day3.alpha = 0;
+        
     }
     @IBAction func showDayTwo(_ sender: Any) {
         self.Day1.alpha = 0;
