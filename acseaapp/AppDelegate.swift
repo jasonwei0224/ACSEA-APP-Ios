@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 import FirebaseMessaging
-
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
         self.registerForPushNotification()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         
         

@@ -8,6 +8,7 @@ pod 'Firebase/Core'
 	pod 'Firebase/Messaging'
 pod 'Firebase/InAppMessagingDisplay'
 pod 'Firebase/Analytics'
+pod 'Google-Mobile-Ads-SDK'
 
 target 'acseaapp' do
   # Comment the next line if you don't want to use dynamic frameworks
