@@ -10,16 +10,19 @@
 import UIKit
 
 struct VanFunStopCellData{
-    var icon : UIImage?
-    let image  : UIImage?
+   // var iconImage : UIImage?
+    let mainImage  : UIImage?
     let message: String?
+    
 }
 class VanFunStopTableViewController: UITableViewController {
     var data1 = [VanFunStopCellData]()
-    var programOneComplete = false
+
+    
 override func viewDidLoad() {
     super.viewDidLoad()
     
+   
     
     self.tableView.reloadData()
     self.refreshControl?.endRefreshing()
@@ -28,14 +31,23 @@ override func viewDidLoad() {
     self.tableView.estimatedRowHeight = 200
     self.tableView.bounces = true;
     
+    
 }
 
 override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! FunStopCell
-    cell.iconImage = data1[indexPath.row].image
-    cell.mainImage = data1[indexPath.row].image
+    //cell.iconImage = data1[indexPath.row].iconImage
+    cell.mainImage = data1[indexPath.row].mainImage
     cell.message = data1[indexPath.row].message
+    cell.layoutMargins.top = 5
+    cell.layoutMargins.bottom = 10
     cell.layoutSubviews()
+    //cell.mainImageView.frame = CGRect.offsetBy(10)
+    
+   // cell.backgroundColor = UIColor.gray
+    //cell.messageView.backgroundColor = UIColor.gray
+    
+    //cell.iconImage?.frame = CGRect(x: 0, y: 0, width: 38, height: 38)
     return cell
 }
 
@@ -44,6 +56,7 @@ override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
 }
     func chagedImage(newIcon: UIImage){
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! FunStopCell
-        cell.iconImage = newIcon
+        
+       // cell.iconImage = newIcon
     }
 }

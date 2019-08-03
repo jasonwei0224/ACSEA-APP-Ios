@@ -37,7 +37,7 @@ import FirebaseDatabase
     let programTenKey = "programTenComplete"
     let programElevenKey = "porgramElevenComplete"
    
-    var programOneText = "Program One"
+    var programOneText = "Taiwan Stage \n Boulevard Pavillion"
     let programTwoText = "Program Two"
     let programThreeText = "Program Three"
     let programFourText = "Program Four"
@@ -62,17 +62,17 @@ import FirebaseDatabase
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         var funStopProgramList = [
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programOneText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programTwoText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programThreeText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programFourText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programFiveText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programSixText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programSevenText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programEightText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programNineText),
-            VanFunStopCellData.init(icon: UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programTenText),
-            VanFunStopCellData.init(icon:UIImage(named:"gobackbtn.png"), image: UIImage(named:"gobackbtn.png"), message: programEleventText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"taiwanhandpuppet.jpg"), message: programOneText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"letssavourtaiwan.jpg"), message: programTwoText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"taiwanstage.jpg"), message: programThreeText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"kidszonevancouver.jpg"), message: programFourText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"taiwanbookstorephoto.png"), message: programFiveText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"frienshipkitchenphoto.png"), message: programSixText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"torontohopetalk.png"), message: programSevenText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"torontohomewinds.png"), message: programEightText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"sorryyouthexhibition.png"), message: programNineText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"torontotaiwanewdna.png"), message: programTenText),
+            VanFunStopCellData.init(mainImage: UIImage(named:"funstopstation.png"), message: programEleventText),
             ];
         
         
@@ -94,7 +94,7 @@ import FirebaseDatabase
     
         
         if (programOneComplete || programCode == "1"){
-            funStopProgramList[0] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p1")
+            funStopProgramList[0] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanhandpuppet.jpg"), message: "Taiwan Stage \nBoulevard Pavillion")
             
             programOneComplete = true;
             self.defaults.set(self.programOneComplete, forKey: programOneKey)
@@ -104,7 +104,7 @@ import FirebaseDatabase
             }
         }
         if(programTwoComplete || programCode == "2"){
-            funStopProgramList[1] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p2")
+            funStopProgramList[1] = VanFunStopCellData.init(mainImage: UIImage(named:"letssavourtaiwan.jpg"), message: "p2")
             programTwoComplete = true
             self.defaults.set(self.programTwoComplete, forKey: programTwoKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -113,7 +113,7 @@ import FirebaseDatabase
             }
         }
         if(programThreeComplete || programCode == "3"){
-            funStopProgramList[2] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p3")
+            funStopProgramList[2] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanstage.png"), message: "p3")
             programThreeComplete = true
             self.defaults.set(self.programThreeComplete, forKey: programThreeKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -122,7 +122,7 @@ import FirebaseDatabase
             }
         }
         if(programFourComplete || programCode == "4"){
-            funStopProgramList[3] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p4")
+            funStopProgramList[3] = VanFunStopCellData.init( mainImage: UIImage(named:"kidszonevancouver.jpg"), message: "p4")
             programFourComplete = true
             self.defaults.set(self.programFourComplete, forKey: programFourKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -131,7 +131,7 @@ import FirebaseDatabase
             }
         }
         if(programFiveComplete || programCode == "5"){
-            funStopProgramList[4] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p5")
+            funStopProgramList[4] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanbookstorephoto.png"), message: "p5")
             programFiveComplete = true
             self.defaults.set(self.programFiveComplete, forKey: programFiveKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -140,7 +140,7 @@ import FirebaseDatabase
             }
         }
         if(programSixComplete || programCode == "6"){
-            funStopProgramList[5] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p6")
+            funStopProgramList[5] = VanFunStopCellData.init(mainImage: UIImage(named:"friendshipkitchenphoto.png"), message: "p6")
             programSixComplete = true
             self.defaults.set(self.programSixComplete, forKey: programSixKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -149,7 +149,7 @@ import FirebaseDatabase
             }
         }
         if(programSevenComplete || programCode == "7"){
-            funStopProgramList[6] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p7")
+            funStopProgramList[6] = VanFunStopCellData.init(mainImage: UIImage(named:"torontohopetalk.png"), message: "p7")
             programSevenComplete = true
             self.defaults.set(self.programSevenComplete, forKey: programSevenKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -158,7 +158,7 @@ import FirebaseDatabase
             }
         }
         if(programEightComplete || programCode == "8"){
-            funStopProgramList[7] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p8")
+            funStopProgramList[7] = VanFunStopCellData.init(mainImage: UIImage(named:"torontohomewinds.png"), message: "p8")
             programEightComplete = true
             self.defaults.set(self.programEightComplete, forKey: programEightKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -167,7 +167,7 @@ import FirebaseDatabase
             }
         }
         if(programNineComplete || programCode == "9"){
-            funStopProgramList[8] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p9")
+            funStopProgramList[8] = VanFunStopCellData.init(mainImage: UIImage(named:"sorryyouthexhibition.png"), message: "p9")
             programNineComplete = true
             self.defaults.set(self.programNineComplete, forKey: programNineKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -176,7 +176,7 @@ import FirebaseDatabase
             }
         }
         if(programTenComplete || programCode == "10"){
-            funStopProgramList[9] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"), image: UIImage(named:"gobackbtn.png"), message: "p10")
+            funStopProgramList[9] = VanFunStopCellData.init(mainImage: UIImage(named:"torontotaiwanewdna.png"), message: "p10")
             programTenComplete = true
             self.defaults.set(self.programTenComplete, forKey: programTenKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -186,8 +186,7 @@ import FirebaseDatabase
         }
         if(programElevenComplete || programCode == "11"){
             if(programOneComplete && programTwoComplete && programThreeComplete && programFourComplete && programFiveComplete && programSixComplete && programSevenComplete && programEightComplete && programNineComplete && programTenComplete){
-                funStopProgramList[10] = VanFunStopCellData.init(icon: UIImage(named:"infobtn.png"),
-                                                                 image: UIImage(named:"gobackbtn.png"), message: "p11")
+                funStopProgramList[10] = VanFunStopCellData.init(mainImage: UIImage(named:"funstopstation.png"), message: "p11")
                 programElevenComplete = true
                 self.defaults.set(self.programElevenComplete, forKey: programElevenKey)
                 if(segue.identifier == "VanFunStopSegue"){
@@ -205,7 +204,6 @@ import FirebaseDatabase
                 self.present(alert,animated: true, completion: nil)
             }
         }
-        
     }
     
 

@@ -10,7 +10,7 @@
 import UIKit
 
 struct TorFunStopCellData{
-    var icon : UIImage?
+    //var icon : UIImage?
     let image  : UIImage?
     let message: String?
 }
@@ -32,7 +32,7 @@ class TorFunStopTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom4") as! FunStopCell
-        cell.iconImage = data1[indexPath.row].image
+        //cell.iconImage = data1[indexPath.row].image
         cell.mainImage = data1[indexPath.row].image
         cell.message = data1[indexPath.row].message
         cell.layoutSubviews()
@@ -44,6 +44,6 @@ class TorFunStopTableViewController: UITableViewController {
     }
     func chagedImage(newIcon: UIImage){
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom4") as! FunStopCell
-        cell.iconImage = newIcon
+       // cell.iconImage = newIcon
     }
 }
