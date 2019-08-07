@@ -8,12 +8,16 @@
 
 import UIKit
 struct TorScheduleCellData{
-    let image  : UIImage?
+    let mainImage  : UIImage?
+    let iconImage: UIImage?
     let message: String?
+}
+struct TorSceduleTime{
+    let time: String?
 }
 class TorScheduleTableViewController: UITableViewController {
     
-    var data = [VanScheduleCellData]()
+    var data = [TorScheduleCellData]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,28 +30,38 @@ class TorScheduleTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! CustomCell
-        cell.mainImage = data[indexPath.row].mainImage
+        if(indexPath.row == 0){
+            cell.time = data[indexPath.row].time
+            cell.layoutSubviews()
+            return cell
+        }else{
+        
+            
         cell.iconImage = data[indexPath.row].iconImage
+        cell.mainImage = data[indexPath.row].mainImage
         cell.programName = data[indexPath.row].programName
         //cell.artistName = data[indexPath.row].artist
         cell.layoutSubviews()
         return cell
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
     func dayOne(){
-        data = []
+        data = [TorScheduleTime.init(time:"5:00 PM")
+                TorScheduleCellData.init(mainImage: UIImage(named:"torworldcafe.png"),iconImage: UIImage(named:"foodicon.png"), message:"TAIWANfest Food Vendor\n(World Cafe)"),
+                TorScheduleTime.init(time:"8:00 PM")
+                TorScheduleCellData.init(mainImage: UIImage(named:"torconcertstage.png"),iconImage: UIImage(named:"performanceicon.png"), message:"Opening Ceremony\n(Concert Stage)"),
+                TorScheduleTime.init(time:"8:30 PM")
+                TorScheduleCellData.init(mainImage: UIImage(named:"torconcertstage.png"),iconImage: UIImage(named:"performanceicon.png"), message:"Celebrate Women Concert\n(Concert by Maestro Ken Hsieh)"),
+               ]
+                
+
+                
+                              
         //self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom")
     }
     
