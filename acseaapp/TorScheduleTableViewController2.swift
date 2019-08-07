@@ -10,12 +10,12 @@ import UIKit
 
 class TorScheduleTableViewController2: UITableViewController {
     
-    var data = [VanScheduleCellData]()
+    var data = [TorScheduleCellData]()
     override func viewDidLoad() {
         super.viewDidLoad()
         //tableView.dataSource = self
         //tableView.delegate = self
-        dayOne();
+        dayTwo();
         
         self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom2")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
@@ -46,8 +46,35 @@ class TorScheduleTableViewController2: UITableViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    func dayOne(){
-        data = []
+    func dayTwo(){
+        data = [
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "12:00 PM"),
+            
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Island Scream Exhibition\n(Sorry Youth)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Home Winds\n(Bao Khanh Vu)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Taiwan New DNA\n(Shih Chien University)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "The Courage\n()"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Taiwan Bookstore\n(TAIWANfest)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Let's Savour Taiwan\n(TAIWANfest)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Let's Savour Taiwan\n(TAIWANfest)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Pig Hero Ring Toss\n(TAIWANfest)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Taiwanese Glove Puppet\n(TAIWANfest)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Vietnamese Water Puppet\n(TAIWANfest)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "TAIWANfest Food Vendors\n(TAIWANfest)"),
+            
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "12:30 PM"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Taiwan Stage\n(The Story House(Taiwan))"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Robot Prince\n(The Story House (Taiwan))"),
+            
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "1:00PM"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Huong Viet Group\n(Huong Viet)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Manfei\n(Huai-En Chen)"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Kids Zone\n(TAIWANfest)"),
+            
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "1:15 PM"),
+            TorScheduleCellData.init(mainImage: UIImage(named:""), iconImage: UIImage(named:""), programName: "Food - Petit ete\n(Josie Change)"),
+            
+        ]
       
     }
     

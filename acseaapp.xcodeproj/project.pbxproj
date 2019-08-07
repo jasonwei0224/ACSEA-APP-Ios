@@ -58,6 +58,7 @@
 		FB42D76322F0F71C00D446E9 /* SponsorTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42D76222F0F71C00D446E9 /* SponsorTableCell.swift */; };
 		FB42D76522F0F76B00D446E9 /* VanScheduleTableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42D76422F0F76B00D446E9 /* VanScheduleTableViewController2.swift */; };
 		FB42D76922F0FE2400D446E9 /* VanScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42D76822F0FE2400D446E9 /* VanScheduleTableViewController.swift */; };
+		FBEB204122FB424800678C0A /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEB204022FB424800678C0A /* TimeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		FB42D76222F0F71C00D446E9 /* SponsorTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorTableCell.swift; sourceTree = "<group>"; };
 		FB42D76422F0F76B00D446E9 /* VanScheduleTableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanScheduleTableViewController2.swift; sourceTree = "<group>"; };
 		FB42D76822F0FE2400D446E9 /* VanScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VanScheduleTableViewController.swift; path = ../VanScheduleTableViewController.swift; sourceTree = "<group>"; };
+		FBEB204022FB424800678C0A /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				96B9340D22D6BEA10078FE19 /* VanFunStopData.swift */,
 				FB42D76222F0F71C00D446E9 /* SponsorTableCell.swift */,
 				968C096722CD40F400B05A0E /* CustomCell.swift */,
+				FBEB204022FB424800678C0A /* TimeCell.swift */,
 				96DC7D4122D3F06300323E72 /* FunStopCell.swift */,
 				968C096922CD4FE700B05A0E /* TorSponsorTableController.swift */,
 				968C096B22CD56F200B05A0E /* TorScheduleTableViewController.swift */,
@@ -550,6 +553,7 @@
 				969D8AB722C16390009CEC53 /* VanPrivacyPolicy.swift in Sources */,
 				96DC7D4222D3F06300323E72 /* FunStopCell.swift in Sources */,
 				969D8AAB22C16241009CEC53 /* TorFunStopProgram.swift in Sources */,
+				FBEB204122FB424800678C0A /* TimeCell.swift in Sources */,
 				968C096822CD40F400B05A0E /* CustomCell.swift in Sources */,
 				969D8A9D22C15F34009CEC53 /* Register.swift in Sources */,
 				968C096C22CD56F200B05A0E /* TorScheduleTableViewController.swift in Sources */,

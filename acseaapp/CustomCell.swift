@@ -47,6 +47,7 @@ class CustomCell: UITableViewCell{
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style:style, reuseIdentifier: reuseIdentifier)
         self.addSubview(mainImageView)
+
         self.addSubview(iconImageView)
         self.addSubview(programNameView)
        // self.addSubview(artistNameView)
@@ -54,23 +55,31 @@ class CustomCell: UITableViewCell{
         mainImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         mainImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         mainImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        mainImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true // width of image
-        mainImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true //height of image
+       // mainImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true // width of image
+       // mainImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true //height of image
         
         mainImageView.rightAnchor.constraint(equalTo: self.iconImageView.leftAnchor).isActive = true
-    
+        mainImageView.layoutMargins.right = 100
+        mainImageView.layoutMargins.left = 100
+        mainImageView.layoutMargins.top = 100
+        mainImageView.layoutMargins.bottom = 100
         
         iconImageView.leftAnchor.constraint(equalTo: self.mainImageView.rightAnchor).isActive=true
         iconImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         iconImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        iconImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true // width of image
-        iconImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true //height of image
+       iconImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true // width of image
+       // iconImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true //height of image
         
         iconImageView.rightAnchor.constraint(equalTo: self.programNameView.leftAnchor).isActive = true
+        iconImageView.layoutMargins.right = 100
+        iconImageView.layoutMargins.left = 100
+        
         programNameView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true;
         programNameView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true;
-        programNameView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
+        //programNameView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
         programNameView.leftAnchor.constraint(equalTo: self.iconImageView.rightAnchor).isActive = true;
+        programNameView.font = UIFont(name: "Arial", size:18)
+        
        // programNameView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
        
         

@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Y-je-Bsd">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
@@ -111,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_template" translatesAutoresizingMaskIntoConstraints="NO" id="gug-Qn-1qm">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeG-pS-ghH">
                                 <rect key="frame" x="10" y="382" width="240" height="128"/>
@@ -207,7 +207,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="EOk-BL-1MB">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="EOk-BL-1MB" customClass="CustomCell" customModule="acseaapp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="275" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EOk-BL-1MB" id="EUm-ni-bOM">
@@ -238,13 +238,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HaY-aM-Mo6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HaY-aM-Mo6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bZ-Kd-lbb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bZ-Kd-lbb">
                                 <rect key="frame" x="10" y="35" width="38" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="8bt-bb-sh3"/>
+                                    <constraint firstAttribute="width" constant="38" id="gpR-xt-8US"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="gobackbtn"/>
                                 <connections>
                                     <action selector="startTorMainMenu:" destination="QJQ-oE-4wj" eventType="touchUpInside" id="Z6D-Mh-pHH"/>
@@ -256,29 +258,42 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMz-7q-iLT">
                                         <rect key="frame" x="0.0" y="0.0" width="275" height="349"/>
                                         <subviews>
-                                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIc-wy-DcS">
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIc-wy-DcS">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="349"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <segue destination="I6z-Vc-acz" kind="embed" id="iwx-O0-wpi"/>
                                                 </connections>
                                             </containerView>
-                                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AHt-TI-O7b">
+                                            <containerView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AHt-TI-O7b">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="349"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <segue destination="0Ah-ZO-aA9" kind="embed" id="HMR-Gd-BT5"/>
                                                 </connections>
                                             </containerView>
-                                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HQl-0v-fdt">
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HQl-0v-fdt">
                                                 <rect key="frame" x="0.0" y="0.0" width="275" height="349"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <segue destination="dQo-Ir-0E1" kind="embed" id="wFR-sJ-Ddh"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="aIc-wy-DcS" firstAttribute="height" secondItem="qMz-7q-iLT" secondAttribute="height" id="1CC-P2-x6W"/>
+                                            <constraint firstItem="aIc-wy-DcS" firstAttribute="centerY" secondItem="qMz-7q-iLT" secondAttribute="centerY" id="4ol-RD-pw7"/>
+                                            <constraint firstItem="AHt-TI-O7b" firstAttribute="centerX" secondItem="qMz-7q-iLT" secondAttribute="centerX" id="7kA-zH-rOc"/>
+                                            <constraint firstItem="AHt-TI-O7b" firstAttribute="centerY" secondItem="qMz-7q-iLT" secondAttribute="centerY" id="C60-dy-uwB"/>
+                                            <constraint firstItem="aIc-wy-DcS" firstAttribute="width" secondItem="qMz-7q-iLT" secondAttribute="width" id="Dbe-63-2xA"/>
+                                            <constraint firstItem="aIc-wy-DcS" firstAttribute="centerX" secondItem="qMz-7q-iLT" secondAttribute="centerX" id="FU8-bB-Ihd"/>
+                                            <constraint firstItem="AHt-TI-O7b" firstAttribute="leading" secondItem="qMz-7q-iLT" secondAttribute="leading" id="I8y-N9-vKW"/>
+                                            <constraint firstItem="HQl-0v-fdt" firstAttribute="height" secondItem="qMz-7q-iLT" secondAttribute="height" id="KWN-WJ-yUO"/>
+                                            <constraint firstItem="HQl-0v-fdt" firstAttribute="centerY" secondItem="qMz-7q-iLT" secondAttribute="centerY" id="MZB-dk-bVB"/>
+                                            <constraint firstItem="HQl-0v-fdt" firstAttribute="width" secondItem="qMz-7q-iLT" secondAttribute="width" id="MdJ-Kv-OI6"/>
+                                            <constraint firstItem="AHt-TI-O7b" firstAttribute="width" secondItem="qMz-7q-iLT" secondAttribute="width" id="Qgf-Xa-W60"/>
+                                            <constraint firstItem="AHt-TI-O7b" firstAttribute="height" secondItem="qMz-7q-iLT" secondAttribute="height" id="Vdq-ik-10v"/>
+                                            <constraint firstItem="AHt-TI-O7b" firstAttribute="leading" secondItem="qMz-7q-iLT" secondAttribute="leading" id="YNM-xd-dtI"/>
+                                            <constraint firstItem="HQl-0v-fdt" firstAttribute="centerX" secondItem="qMz-7q-iLT" secondAttribute="centerX" id="aov-FM-c23"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -294,25 +309,34 @@
                                     <constraint firstItem="qMz-7q-iLT" firstAttribute="leading" secondItem="aoR-ov-Gfr" secondAttribute="leading" id="hre-wb-a9E"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpy-N3-de8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpy-N3-de8">
                                 <rect key="frame" x="25" y="132" width="82" height="59"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="jsO-g1-DlV"/>
+                                    <constraint firstAttribute="width" constant="82" id="s9J-OE-KOi"/>
+                                </constraints>
                                 <state key="normal" image="aug31btn"/>
                                 <connections>
                                     <action selector="showDayOne:forEvent:" destination="QJQ-oE-4wj" eventType="touchUpInside" id="czv-7D-3v6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYm-Un-gIb">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYm-Un-gIb">
                                 <rect key="frame" x="214" y="132" width="86" height="59"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="G3G-76-fYh"/>
+                                    <constraint firstAttribute="width" constant="86" id="ODw-Xb-JYK"/>
+                                </constraints>
                                 <state key="normal" image="sept2btn"/>
                                 <connections>
                                     <action selector="showDayThree:forEvent:" destination="QJQ-oE-4wj" eventType="touchUpInside" id="DhM-AR-Wa8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afd-cm-qLR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afd-cm-qLR">
                                 <rect key="frame" x="115" y="132" width="91" height="59"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="aYd-15-JQm"/>
+                                    <constraint firstAttribute="height" constant="59" id="doP-L1-A7b"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="sept1btn"/>
                                 <connections>
                                     <action selector="showDayTwo:forEvent:" destination="QJQ-oE-4wj" eventType="touchUpInside" id="YCM-3G-8sA"/>
@@ -322,14 +346,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="trailing" secondItem="HYm-Un-gIb" secondAttribute="trailing" id="2Tv-bm-mH0"/>
+                            <constraint firstItem="aoR-ov-Gfr" firstAttribute="top" secondItem="HYm-Un-gIb" secondAttribute="bottom" constant="8" id="2ht-Qe-yHN"/>
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="leading" secondItem="Hml-z8-rSv" secondAttribute="leading" constant="25" id="5lX-6C-Eht"/>
+                            <constraint firstItem="Hml-z8-rSv" firstAttribute="trailing" secondItem="HaY-aM-Mo6" secondAttribute="trailing" id="66L-M6-6gF"/>
+                            <constraint firstItem="aoR-ov-Gfr" firstAttribute="top" secondItem="afd-cm-qLR" secondAttribute="bottom" constant="8" id="8CG-rq-5vq"/>
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="top" secondItem="dpy-N3-de8" secondAttribute="bottom" constant="8" symbolic="YES" id="Ckv-uD-kZw"/>
+                            <constraint firstItem="HYm-Un-gIb" firstAttribute="top" secondItem="h0h-ju-Zfc" secondAttribute="bottom" constant="112" id="GaN-jc-utI"/>
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="top" secondItem="Hf6-d5-mHb" secondAttribute="top" constant="199" id="Iti-1g-huM"/>
+                            <constraint firstItem="Hml-z8-rSv" firstAttribute="trailing" secondItem="HYm-Un-gIb" secondAttribute="trailing" constant="20" id="KTP-t0-Q3K"/>
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="top" secondItem="afd-cm-qLR" secondAttribute="bottom" constant="8" symbolic="YES" id="LCP-UX-kRq"/>
+                            <constraint firstItem="dpy-N3-de8" firstAttribute="top" secondItem="5bZ-Kd-lbb" secondAttribute="bottom" constant="59" id="Ouv-rz-Hcf"/>
                             <constraint firstItem="Hml-z8-rSv" firstAttribute="trailing" secondItem="aoR-ov-Gfr" secondAttribute="trailing" constant="20" id="RMV-Yy-cYU"/>
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="leading" secondItem="dpy-N3-de8" secondAttribute="leading" id="VGU-bI-izm"/>
+                            <constraint firstItem="HaY-aM-Mo6" firstAttribute="top" secondItem="Hf6-d5-mHb" secondAttribute="top" id="WFZ-eF-DII"/>
+                            <constraint firstAttribute="bottom" secondItem="HaY-aM-Mo6" secondAttribute="bottom" id="Y8G-VQ-DZe"/>
+                            <constraint firstItem="afd-cm-qLR" firstAttribute="top" secondItem="h0h-ju-Zfc" secondAttribute="bottom" constant="112" id="YF5-fg-igJ"/>
+                            <constraint firstItem="HYm-Un-gIb" firstAttribute="leading" secondItem="afd-cm-qLR" secondAttribute="trailing" constant="8" id="eQ8-HW-MQd"/>
+                            <constraint firstItem="5bZ-Kd-lbb" firstAttribute="leading" secondItem="Hml-z8-rSv" secondAttribute="leading" constant="10" id="ess-mX-fx2"/>
+                            <constraint firstItem="HaY-aM-Mo6" firstAttribute="leading" secondItem="Hml-z8-rSv" secondAttribute="leading" id="nr7-vL-Lx8"/>
+                            <constraint firstItem="afd-cm-qLR" firstAttribute="leading" secondItem="dpy-N3-de8" secondAttribute="trailing" constant="8" id="q2r-D1-5SI"/>
+                            <constraint firstItem="Hml-z8-rSv" firstAttribute="trailing" secondItem="5bZ-Kd-lbb" secondAttribute="trailing" constant="272" id="rJ9-oa-hM3"/>
                             <constraint firstItem="aoR-ov-Gfr" firstAttribute="top" secondItem="HYm-Un-gIb" secondAttribute="bottom" constant="8" symbolic="YES" id="u8f-ZM-4QQ"/>
+                            <constraint firstItem="HYm-Un-gIb" firstAttribute="leading" secondItem="afd-cm-qLR" secondAttribute="trailing" constant="8" id="upX-zq-A1d"/>
+                            <constraint firstItem="dpy-N3-de8" firstAttribute="leading" secondItem="Hml-z8-rSv" secondAttribute="leading" constant="25" id="v3u-rF-AEU"/>
                             <constraint firstAttribute="bottom" secondItem="aoR-ov-Gfr" secondAttribute="bottom" constant="20" symbolic="YES" id="vMw-bN-Hkh"/>
+                            <constraint firstItem="afd-cm-qLR" firstAttribute="leading" secondItem="dpy-N3-de8" secondAttribute="trailing" constant="8" id="vPE-0V-9td"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hml-z8-rSv"/>
                     </view>
@@ -404,7 +445,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="IdR-dp-bKr">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oao-nf-ZQI">
                                 <rect key="frame" x="11" y="96" width="293" height="452"/>
@@ -483,7 +524,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="acC-AR-63A">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-Pe-rJo">
                                 <rect key="frame" x="13" y="140" width="291" height="408"/>
@@ -687,7 +728,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithwaves" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUx-rI-4jN">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3om-sn-Gab">
                                 <rect key="frame" x="35" y="137" width="250" height="38"/>
@@ -743,7 +784,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithorange" translatesAutoresizingMaskIntoConstraints="NO" id="IyC-1E-PDI">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dz-H2-Gid">
                                 <rect key="frame" x="265" y="27" width="39" height="40"/>
@@ -913,7 +954,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="s5n-7s-pim">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GP6-Rw-KCQ">
                                 <rect key="frame" x="135" y="714" width="124" height="69"/>
@@ -960,7 +1001,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-Il-bxz">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-Iu-b5b">
                                 <rect key="frame" x="11" y="38" width="40" height="39"/>
@@ -1043,7 +1084,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XpK-1t-gEX">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ity-0F-WAH">
                                 <rect key="frame" x="16" y="95" width="288" height="453"/>
@@ -1195,7 +1236,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="mgy-Xv-YyH">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFF-Ce-X8A">
                                 <rect key="frame" x="26" y="32" width="46" height="44"/>
@@ -1317,7 +1358,7 @@ These linked sites are only for your convenience and therefore you access them a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HMi-xa-pW9">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWj-ct-YfN">
                                 <rect key="frame" x="121" y="455" width="78" height="30"/>
@@ -1402,7 +1443,7 @@ These linked sites are only for your convenience and therefore you access them a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BfA-h4-RWM">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QvM-ZP-xXv">
                                 <rect key="frame" x="16" y="124" width="288" height="424"/>
@@ -1480,7 +1521,7 @@ These linked sites are only for your convenience and therefore you access them a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithorange" translatesAutoresizingMaskIntoConstraints="NO" id="c13-sO-Ccx">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCd-Ey-NLk">
                                 <rect key="frame" x="0.0" y="269" width="320" height="299"/>
@@ -1635,7 +1676,7 @@ These linked sites are only for your convenience and therefore you access them a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hIl-jq-zoP">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYt-ZO-6LC">
                                 <rect key="frame" x="16" y="188" width="288" height="360"/>
@@ -1801,7 +1842,7 @@ These linked sites are only for your convenience and therefore you access them a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dE3-Af-47b">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZs-SH-NiX">
                                 <rect key="frame" x="16" y="35" width="40" height="39"/>
@@ -1859,7 +1900,7 @@ These linked sites are only for your convenience and therefore you access them a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="usZ-1z-lS9">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyg-dB-Ilb">
                                 <rect key="frame" x="25" y="37" width="40" height="40"/>
@@ -1980,7 +2021,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="jfR-ke-f7q">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr6-e4-Vg6">
                                 <rect key="frame" x="44" y="185" width="234" height="278"/>
@@ -2042,7 +2083,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithorange" translatesAutoresizingMaskIntoConstraints="NO" id="SVs-dR-CbQ">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHH-Tt-W1r">
                                 <rect key="frame" x="0.0" y="232" width="320" height="336"/>
@@ -2273,7 +2314,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-Cs-Tsw">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-tk-Jro">
                                 <rect key="frame" x="163" y="143" width="141" height="46"/>
@@ -2412,7 +2453,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="OA1-qs-2V9">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQo-o0-RpP">
                                 <rect key="frame" x="54" y="180" width="212" height="267"/>
@@ -2499,7 +2540,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="hGl-k1-t8n">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcq-E6-F20">
                                 <rect key="frame" x="54" y="180" width="212" height="267"/>
@@ -2586,7 +2627,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="8Vz-cm-qz6">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhi-Yr-Whg">
                                 <rect key="frame" x="26" y="32" width="46" height="44"/>
