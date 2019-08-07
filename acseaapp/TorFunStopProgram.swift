@@ -39,17 +39,30 @@ class TorFunStopProgram: UIViewController {
     let torProgramTenKey = "torprogramTenComplete"
     let torProgramElevenKey = "torprogramElevenComplete"
     
-    var torProgramOneText = "Program One"
-    let torProgramTwoText = "Program Two"
-    let torProgramThreeText = "Program Three"
-    let torProgramFourText = "Program Four"
-    let torProgramFiveText = "Program Five"
-    let torProgramSixText = "Program Six"
-    let torProgramSevenText = "Program Seven"
-    let torProgramEightText = "Program Eight"
-    let torProgramNineText = "Program Nine"
-    let torProgramTenText = "Program Ten"
-    let torProgramElevenText = "Program Eleven"
+    var torProgramOneText = "Glove Puppet\n(North Orchard)"
+    let torProgramTwoText = "Let's Savour Taiwan\n(South Lawn)"
+    let torProgramThreeText = "Taiwan Stage\n(Boulevard Pavillion)"
+    let torProgramFourText = "Kids Zone\n(Harbour Kids)"
+    let torProgramFiveText = "Taiwan Bookstore\n(West Corridor Bays)"
+    let torProgramSixText = "Friendship Kitchen\n(Lakeside Terrace)"
+    let torProgramSevenText = "Hope Talk\n(Studio Theatre)"
+    let torProgramEightText = "Home Winds\n(MBCS)"
+    let torProgramNineText = "Sorry Youth Exhibition\n(Brigantine Room)"
+    let torProgramTenText = "Taiwan New DNA\n(Brigantine Patio)"
+    let torProgramElevenText = "Fun Stop Station\n(West Corridor Bays)"
+    
+    let torProgramOneImgae = "glovepuppet.jpg"
+    let torProgramTwoImage = "letssavourtaiwan.jpg"
+    let torProgramThreeImage = "taiwanstage.jpg"
+    let torProgramFourImage = "kidszonevancouver.jpg"
+    let torProgramFiveImage = "taiwanbookstore.jpg"
+    let torProgramSixImage = "friendshipkitchenphoto.jpg"
+    let torProgramSevenImage = "torontohopetalk.png"
+    let torProgramEightImage = "torontohomewinds.png"
+    let torProgramNineImage = "sorryyouthexhibition.png"
+    let torProgramTenImage = "torontotaiwannewdna.png"
+    let torProgramElevenImage = "funstopstation.png"
+    
     
     let torontoDefaults = UserDefaults.standard
     
@@ -64,17 +77,17 @@ class TorFunStopProgram: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         var torFunStopProgramList = [
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramOneText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramTwoText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramThreeText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramFourText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramFiveText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramSixText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramSevenText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramEightText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramNineText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramTenText),
-            TorFunStopCellData.init(image: UIImage(named:"gobackbtn.png"), message: torProgramElevenText)
+            TorFunStopCellData.init(image: UIImage(named:torProgramOneImgae), message: torProgramOneText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramTwoImage), message: torProgramTwoText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramThreeImage), message: torProgramThreeText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramFourImage), message: torProgramFourText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramFiveImage), message: torProgramFiveText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramSixImage), message: torProgramSixText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramSevenImage), message: torProgramSevenText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramEightImage), message: torProgramEightText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramNineImage), message: torProgramNineText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramTenImage), message: torProgramTenText),
+            TorFunStopCellData.init(image: UIImage(named:torProgramElevenImage), message: torProgramElevenText)
             
             ];
         

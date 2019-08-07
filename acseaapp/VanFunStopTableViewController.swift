@@ -39,8 +39,8 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     //cell.iconImage = data1[indexPath.row].iconImage
     cell.mainImage = data1[indexPath.row].mainImage
     cell.message = data1[indexPath.row].message
-    cell.layoutMargins.top = 5
-    cell.layoutMargins.bottom = 10
+    //cell.layoutMargins.top = 5
+    //cell.layoutMargins.bottom = 10
     cell.layoutSubviews()
     //cell.mainImageView.frame = CGRect.offsetBy(10)
     

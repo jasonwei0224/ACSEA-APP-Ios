@@ -22,9 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Y-je-Bsd">
+                            <imageView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Y-je-Bsd">
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
@@ -34,21 +33,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ico-Px-Cc8">
-                                <rect key="frame" x="36" y="218" width="51" height="31"/>
+                                <rect key="frame" x="36" y="235" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAU-M1-I52">
-                                <rect key="frame" x="103" y="505" width="115" height="43"/>
+                                <rect key="frame" x="37" y="505" width="302" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="submitbtn"/>
                                 <connections>
                                     <action selector="sendVerificationEmail:" destination="wx8-Go-r0Z" eventType="touchUpInside" id="F8q-4w-6B0"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-yi-uYi">
-                                <rect key="frame" x="36" y="287" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                             <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sHQ-3t-G79">
                                 <rect key="frame" x="0.0" y="404" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,7 +57,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" background="btnbgpurple" translatesAutoresizingMaskIntoConstraints="NO" id="tNn-ek-m1h" colorLabel="IBBuiltInLabel-Blue">
-                                <rect key="frame" x="32" y="123" width="256" height="34"/>
+                                <rect key="frame" x="37" y="123" width="256" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,14 +65,24 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" background="btnbgpurple" translatesAutoresizingMaskIntoConstraints="NO" id="SzB-LQ-2YB" userLabel="Password">
-                                <rect key="frame" x="32" y="165" width="256" height="36"/>
+                                <rect key="frame" x="36" y="185" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-yi-uYi">
+                                <rect key="frame" x="36" y="298" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y6Y-je-Bsd" firstAttribute="trailing" secondItem="JKi-e8-AgX" secondAttribute="trailing" id="LPq-eN-QMu"/>
+                            <constraint firstItem="Y6Y-je-Bsd" firstAttribute="leading" secondItem="JKi-e8-AgX" secondAttribute="leading" id="fK9-Qb-AAO"/>
+                            <constraint firstAttribute="bottom" secondItem="Y6Y-je-Bsd" secondAttribute="bottom" id="olB-tk-oCW"/>
+                            <constraint firstItem="Y6Y-je-Bsd" firstAttribute="top" secondItem="yw5-Me-RGE" secondAttribute="top" id="pDP-Ab-0tI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JKi-e8-AgX"/>
                     </view>
                     <connections>
@@ -105,9 +110,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_template" translatesAutoresizingMaskIntoConstraints="NO" id="gug-Qn-1qm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_template" translatesAutoresizingMaskIntoConstraints="NO" id="gug-Qn-1qm">
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeG-pS-ghH">
                                 <rect key="frame" x="10" y="382" width="240" height="128"/>
@@ -167,6 +171,12 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gug-Qn-1qm" secondAttribute="bottom" id="4YU-Q3-gtt"/>
+                            <constraint firstItem="gug-Qn-1qm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HFz-tj-lCV"/>
+                            <constraint firstItem="gug-Qn-1qm" firstAttribute="trailing" secondItem="bfe-mh-Lcj" secondAttribute="trailing" id="eQm-Vj-DWQ"/>
+                            <constraint firstItem="gug-Qn-1qm" firstAttribute="leading" secondItem="bfe-mh-Lcj" secondAttribute="leading" id="ufX-FM-Ce7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bfe-mh-Lcj"/>
                         <variation key="default">
                             <mask key="subviews">
@@ -272,12 +282,16 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="qMz-7q-iLT" firstAttribute="top" secondItem="aoR-ov-Gfr" secondAttribute="top" id="0ya-NZ-0bF"/>
                                     <constraint firstAttribute="bottom" secondItem="qMz-7q-iLT" secondAttribute="bottom" id="4wr-w4-azP"/>
                                     <constraint firstItem="qMz-7q-iLT" firstAttribute="centerY" secondItem="aoR-ov-Gfr" secondAttribute="centerY" id="CMO-qf-PMZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="qMz-7q-iLT" secondAttribute="bottom" id="Cuf-bQ-C2M"/>
                                     <constraint firstAttribute="trailing" secondItem="qMz-7q-iLT" secondAttribute="trailing" id="PBl-e5-yHK"/>
                                     <constraint firstItem="qMz-7q-iLT" firstAttribute="leading" secondItem="aoR-ov-Gfr" secondAttribute="leading" id="XMf-KH-6ig"/>
                                     <constraint firstItem="qMz-7q-iLT" firstAttribute="centerX" secondItem="aoR-ov-Gfr" secondAttribute="centerX" id="YJZ-4o-wes"/>
                                     <constraint firstItem="qMz-7q-iLT" firstAttribute="top" secondItem="aoR-ov-Gfr" secondAttribute="top" id="ZcG-5s-lX4"/>
+                                    <constraint firstAttribute="trailing" secondItem="qMz-7q-iLT" secondAttribute="trailing" id="agS-FF-iAn"/>
+                                    <constraint firstItem="qMz-7q-iLT" firstAttribute="leading" secondItem="aoR-ov-Gfr" secondAttribute="leading" id="hre-wb-a9E"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpy-N3-de8">
@@ -556,27 +570,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="S9x-Gh-tm5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="S9x-Gh-tm5">
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ9-no-U4a">
-                                <rect key="frame" x="25" y="35" width="40" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="wAb-1a-aUA"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ9-no-U4a">
+                                <rect key="frame" x="9" y="35" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="gobackbtn"/>
                                 <connections>
                                     <action selector="startVanMenuActivity:forEvent:" destination="aGl-Pc-l91" eventType="touchUpInside" id="su5-YY-69D"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kms-4g-48j">
-                                <rect key="frame" x="41" y="144" width="244" height="302"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kms-4g-48j">
+                                <rect key="frame" x="41" y="152" width="230" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiZ-EV-4ho">
-                                        <rect key="frame" x="-4" y="0.0" width="248" height="302"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FiZ-EV-4ho">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="303"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxK-sL-LaH">
-                                                <rect key="frame" x="0.0" y="0.0" width="248" height="310"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxK-sL-LaH">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="303"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">PRIVACY POLICY
  
 Asian-Canadian Special Events Association (ACSEA) is committed to protecting the privacy and security of personal information held about its patrons. Our purpose is to assure anyone who does business with us that ACSEA complies with the Privacy Act, the Personal Information Protection and Electronic Documents Act, and Canada’s Anti-Spam Legislation.
@@ -646,39 +662,11 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="wxK-sL-LaH" firstAttribute="leading" secondItem="FiZ-EV-4ho" secondAttribute="leading" id="4FU-ko-L3s"/>
-                                            <constraint firstAttribute="trailing" secondItem="wxK-sL-LaH" secondAttribute="trailing" id="O8z-qT-cHw"/>
-                                            <constraint firstAttribute="width" constant="248" id="PMM-W7-RJX"/>
-                                            <constraint firstItem="wxK-sL-LaH" firstAttribute="top" secondItem="FiZ-EV-4ho" secondAttribute="top" id="WqA-Dp-Vft"/>
-                                            <constraint firstAttribute="bottom" secondItem="wxK-sL-LaH" secondAttribute="bottom" constant="-8" id="oI1-2W-Fa2"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="FiZ-EV-4ho" secondAttribute="trailing" id="5mF-mR-or6"/>
-                                    <constraint firstItem="FiZ-EV-4ho" firstAttribute="top" secondItem="Kms-4g-48j" secondAttribute="top" id="gBH-G3-TfF"/>
-                                    <constraint firstAttribute="bottom" secondItem="FiZ-EV-4ho" secondAttribute="bottom" id="iTR-p2-GeL"/>
-                                    <constraint firstItem="FiZ-EV-4ho" firstAttribute="leading" secondItem="Kms-4g-48j" secondAttribute="leading" constant="-4" id="kJr-jb-Sgh"/>
-                                    <constraint firstItem="FiZ-EV-4ho" firstAttribute="centerY" secondItem="Kms-4g-48j" secondAttribute="centerY" id="xDa-fD-Gk6"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="S9x-Gh-tm5" firstAttribute="top" secondItem="i5G-QG-par" secondAttribute="top" id="0ke-aa-OOe"/>
-                            <constraint firstAttribute="bottom" secondItem="S9x-Gh-tm5" secondAttribute="bottom" id="48N-mM-RDi"/>
-                            <constraint firstItem="RRz-hO-aHW" firstAttribute="trailing" secondItem="Kms-4g-48j" secondAttribute="trailing" constant="35" id="A0g-t5-TrT"/>
-                            <constraint firstItem="Wq2-50-W3u" firstAttribute="top" secondItem="Kms-4g-48j" secondAttribute="bottom" constant="122" id="AJU-iR-Gcl"/>
-                            <constraint firstItem="Kms-4g-48j" firstAttribute="leading" secondItem="RRz-hO-aHW" secondAttribute="leading" constant="41" id="BNI-GD-j3y"/>
-                            <constraint firstItem="VJ9-no-U4a" firstAttribute="leading" secondItem="RRz-hO-aHW" secondAttribute="leading" constant="25" id="FkT-fq-E0u"/>
-                            <constraint firstItem="S9x-Gh-tm5" firstAttribute="leading" secondItem="i5G-QG-par" secondAttribute="leading" id="HUR-G4-Gw0"/>
-                            <constraint firstItem="Kms-4g-48j" firstAttribute="top" secondItem="VJ9-no-U4a" secondAttribute="bottom" constant="70" id="Kdg-cl-jZe"/>
-                            <constraint firstItem="RRz-hO-aHW" firstAttribute="trailing" secondItem="VJ9-no-U4a" secondAttribute="trailing" constant="255" id="SBa-zc-nGt"/>
-                            <constraint firstItem="S9x-Gh-tm5" firstAttribute="trailing" secondItem="i5G-QG-par" secondAttribute="trailing" id="TlS-Bd-bJM"/>
-                            <constraint firstItem="VJ9-no-U4a" firstAttribute="top" secondItem="ceK-QF-RUV" secondAttribute="bottom" constant="15" id="haM-pG-aHO"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VJ9-no-U4a" secondAttribute="trailing" constant="20" symbolic="YES" id="lLb-y8-SDB"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RRz-hO-aHW"/>
                     </view>
                 </viewController>
@@ -698,7 +686,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_menu_templatepng" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUx-rI-4jN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithwaves" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DUx-rI-4jN">
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3om-sn-Gab">
@@ -758,7 +746,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dz-H2-Gid">
-                                <rect key="frame" x="265" y="20" width="39" height="40"/>
+                                <rect key="frame" x="265" y="27" width="39" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="wH2-Yv-maZ"/>
                                 </constraints>
@@ -768,7 +756,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZK-O7-Q46">
-                                <rect key="frame" x="25" y="20" width="39" height="40"/>
+                                <rect key="frame" x="25" y="27" width="39" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="hbb-7D-noj"/>
                                     <constraint firstAttribute="height" constant="40" id="ivi-zf-yK8"/>
@@ -778,21 +766,24 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                     <action selector="startVanMainMenu:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="sLD-m1-cwd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvG-Ai-R26">
-                                <rect key="frame" x="188" y="232" width="110" height="46"/>
-                                <state key="normal" image="camerabtn"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUj-Y4-bHZ">
+                                <rect key="frame" x="16" y="187" width="134" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="Y37-fp-b1k"/>
+                                </constraints>
+                                <state key="normal" image="mapbtn"/>
                                 <connections>
-                                    <action selector="startVanFunStopCamera:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="wG8-FG-7iT"/>
+                                    <action selector="startVanFunStopMap:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="mzo-Zf-iDQ"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ft5-f8-ofn">
-                                <rect key="frame" x="42" y="327" width="234" height="184"/>
+                                <rect key="frame" x="43" y="286" width="234" height="240"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEI-sO-Z7G">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="311"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="262"/>
                                         <subviews>
-                                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kFY-SS-hnz">
-                                                <rect key="frame" x="0.0" y="0.0" width="234" height="311"/>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFY-SS-hnz">
+                                                <rect key="frame" x="0.0" y="0.0" width="234" height="262"/>
                                                 <connections>
                                                     <segue destination="5mg-B4-E2l" kind="embed" identifier="VanFunStopSegue" id="NAv-OA-Sgg"/>
                                                 </connections>
@@ -800,54 +791,59 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="kFY-SS-hnz" firstAttribute="width" secondItem="iEI-sO-Z7G" secondAttribute="width" id="2EN-aN-4eK"/>
-                                            <constraint firstItem="kFY-SS-hnz" firstAttribute="height" secondItem="iEI-sO-Z7G" secondAttribute="height" id="YfG-vi-952"/>
+                                            <constraint firstItem="kFY-SS-hnz" firstAttribute="height" secondItem="iEI-sO-Z7G" secondAttribute="height" id="14B-Gz-4EJ"/>
+                                            <constraint firstItem="kFY-SS-hnz" firstAttribute="width" secondItem="iEI-sO-Z7G" secondAttribute="width" id="9LI-hx-3lO"/>
+                                            <constraint firstItem="kFY-SS-hnz" firstAttribute="centerX" secondItem="iEI-sO-Z7G" secondAttribute="centerX" id="BBn-vo-Y1S"/>
+                                            <constraint firstItem="kFY-SS-hnz" firstAttribute="centerY" secondItem="iEI-sO-Z7G" secondAttribute="centerY" id="lXH-3S-Y8Q"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="iEI-sO-Z7G" firstAttribute="leading" secondItem="Ft5-f8-ofn" secondAttribute="leading" id="HQZ-OE-uCc"/>
                                     <constraint firstItem="iEI-sO-Z7G" firstAttribute="top" secondItem="Ft5-f8-ofn" secondAttribute="top" id="M7W-kw-Me9"/>
-                                    <constraint firstItem="iEI-sO-Z7G" firstAttribute="centerX" secondItem="Ft5-f8-ofn" secondAttribute="centerX" constant="27" id="Se3-zj-X25"/>
-                                    <constraint firstAttribute="bottom" secondItem="iEI-sO-Z7G" secondAttribute="bottom" constant="-127" id="a7L-JE-ua7"/>
-                                    <constraint firstAttribute="trailing" secondItem="iEI-sO-Z7G" secondAttribute="trailing" constant="-54" id="h8Y-GF-OE1"/>
-                                    <constraint firstItem="iEI-sO-Z7G" firstAttribute="height" secondItem="Ft5-f8-ofn" secondAttribute="height" constant="127" id="oKw-GR-oQh"/>
-                                    <constraint firstItem="iEI-sO-Z7G" firstAttribute="width" secondItem="Ft5-f8-ofn" secondAttribute="width" constant="54" id="qeQ-xA-OWh"/>
+                                    <constraint firstItem="iEI-sO-Z7G" firstAttribute="centerX" secondItem="Ft5-f8-ofn" secondAttribute="centerX" id="Se3-zj-X25"/>
+                                    <constraint firstAttribute="bottom" secondItem="iEI-sO-Z7G" secondAttribute="bottom" constant="-22" id="a7L-JE-ua7"/>
+                                    <constraint firstAttribute="trailing" secondItem="iEI-sO-Z7G" secondAttribute="trailing" id="h8Y-GF-OE1"/>
+                                    <constraint firstItem="iEI-sO-Z7G" firstAttribute="height" secondItem="Ft5-f8-ofn" secondAttribute="height" constant="22" id="oKw-GR-oQh"/>
+                                    <constraint firstItem="iEI-sO-Z7G" firstAttribute="width" secondItem="Ft5-f8-ofn" secondAttribute="width" id="qeQ-xA-OWh"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUj-Y4-bHZ">
-                                <rect key="frame" x="25" y="232" width="139" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvG-Ai-R26">
+                                <rect key="frame" x="170" y="187" width="134" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="Fiw-C0-tNl"/>
-                                    <constraint firstAttribute="width" constant="139" id="Y37-fp-b1k"/>
+                                    <constraint firstAttribute="height" constant="60" id="3zl-hE-Yxt"/>
                                 </constraints>
-                                <state key="normal" image="mapbtn"/>
+                                <state key="normal" image="camerabtn"/>
                                 <connections>
-                                    <action selector="startVanFunStopMap:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="mzo-Zf-iDQ"/>
+                                    <action selector="startVanFunStopCamera:forEvent:" destination="aGQ-za-VgZ" eventType="touchUpInside" id="wG8-FG-7iT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IZK-O7-Q46" firstAttribute="top" secondItem="0dz-H2-Gid" secondAttribute="top" id="0Vr-9Q-kUn"/>
-                            <constraint firstItem="0dz-H2-Gid" firstAttribute="trailing" secondItem="Ft5-f8-ofn" secondAttribute="trailing" constant="28" id="58w-6E-o1v"/>
-                            <constraint firstItem="jUj-Y4-bHZ" firstAttribute="top" secondItem="B3K-YZ-cjT" secondAttribute="top" constant="232" id="8yV-6F-Dsh"/>
-                            <constraint firstItem="fvG-Ai-R26" firstAttribute="leading" secondItem="jUj-Y4-bHZ" secondAttribute="trailing" constant="24" id="BfN-i1-KJX"/>
-                            <constraint firstItem="hsq-xj-4N2" firstAttribute="trailing" secondItem="fvG-Ai-R26" secondAttribute="trailing" constant="22" id="FWD-zA-bah"/>
+                            <constraint firstItem="0dz-H2-Gid" firstAttribute="trailing" secondItem="Ft5-f8-ofn" secondAttribute="trailing" constant="27" id="58w-6E-o1v"/>
+                            <constraint firstItem="IyC-1E-PDI" firstAttribute="leading" secondItem="hsq-xj-4N2" secondAttribute="leading" id="FSB-Qm-uke"/>
+                            <constraint firstItem="IyC-1E-PDI" firstAttribute="trailing" secondItem="hsq-xj-4N2" secondAttribute="trailing" id="GFD-uH-hEp"/>
                             <constraint firstItem="IyC-1E-PDI" firstAttribute="leading" secondItem="B3K-YZ-cjT" secondAttribute="leading" id="HZN-C4-rh0"/>
-                            <constraint firstItem="IZK-O7-Q46" firstAttribute="top" secondItem="ozV-4r-qYn" secondAttribute="bottom" id="IN7-hi-Zk7"/>
+                            <constraint firstItem="IZK-O7-Q46" firstAttribute="top" secondItem="ozV-4r-qYn" secondAttribute="bottom" constant="7" id="IN7-hi-Zk7"/>
                             <constraint firstItem="IZK-O7-Q46" firstAttribute="bottom" secondItem="0dz-H2-Gid" secondAttribute="bottom" id="Ifg-yb-HtW"/>
                             <constraint firstItem="IyC-1E-PDI" firstAttribute="top" secondItem="B3K-YZ-cjT" secondAttribute="top" id="J6c-T4-tMh"/>
-                            <constraint firstItem="jUj-Y4-bHZ" firstAttribute="top" secondItem="fvG-Ai-R26" secondAttribute="top" id="L8D-DU-CRV"/>
+                            <constraint firstItem="jUj-Y4-bHZ" firstAttribute="leading" secondItem="hsq-xj-4N2" secondAttribute="leading" constant="16" id="Kc4-pW-Fp1"/>
                             <constraint firstItem="0dz-H2-Gid" firstAttribute="trailing" secondItem="B3K-YZ-cjT" secondAttribute="trailingMargin" id="Lnz-EU-nK7"/>
-                            <constraint firstItem="IyC-1E-PDI" firstAttribute="bottom" secondItem="28M-Ap-K6z" secondAttribute="top" id="W7g-dA-6Rl"/>
+                            <constraint firstItem="28M-Ap-K6z" firstAttribute="top" secondItem="Ft5-f8-ofn" secondAttribute="bottom" constant="42" id="RaX-Bz-wJU"/>
+                            <constraint firstItem="fvG-Ai-R26" firstAttribute="leading" secondItem="jUj-Y4-bHZ" secondAttribute="trailing" constant="20" id="Tm9-wh-F4p"/>
+                            <constraint firstItem="fvG-Ai-R26" firstAttribute="top" secondItem="jUj-Y4-bHZ" secondAttribute="top" id="Uyh-ad-zfc"/>
                             <constraint firstItem="IZK-O7-Q46" firstAttribute="leading" secondItem="B3K-YZ-cjT" secondAttribute="leadingMargin" constant="9" id="WCX-M1-Anw"/>
-                            <constraint firstItem="IZK-O7-Q46" firstAttribute="leading" secondItem="Ft5-f8-ofn" secondAttribute="leading" constant="-17" id="Xf8-gt-Mei"/>
-                            <constraint firstAttribute="bottom" secondItem="Ft5-f8-ofn" secondAttribute="bottom" constant="57" id="q7i-WS-t8w"/>
-                            <constraint firstItem="jUj-Y4-bHZ" firstAttribute="leading" secondItem="hsq-xj-4N2" secondAttribute="leading" constant="25" id="qdm-T0-iCy"/>
-                            <constraint firstItem="Ft5-f8-ofn" firstAttribute="top" secondItem="jUj-Y4-bHZ" secondAttribute="bottom" constant="49" id="rVZ-OY-wMm"/>
-                            <constraint firstItem="jUj-Y4-bHZ" firstAttribute="bottom" secondItem="fvG-Ai-R26" secondAttribute="bottom" id="tIK-h8-CDB"/>
-                            <constraint firstItem="IyC-1E-PDI" firstAttribute="centerX" secondItem="Ft5-f8-ofn" secondAttribute="centerX" constant="1" id="xu2-B1-Vcw"/>
+                            <constraint firstAttribute="bottom" secondItem="IyC-1E-PDI" secondAttribute="bottom" id="XLP-GC-Lf5"/>
+                            <constraint firstItem="IZK-O7-Q46" firstAttribute="leading" secondItem="Ft5-f8-ofn" secondAttribute="leading" constant="-18" id="Xf8-gt-Mei"/>
+                            <constraint firstItem="fvG-Ai-R26" firstAttribute="bottom" secondItem="jUj-Y4-bHZ" secondAttribute="bottom" id="fJJ-cR-bGE"/>
+                            <constraint firstItem="Ft5-f8-ofn" firstAttribute="top" secondItem="B3K-YZ-cjT" secondAttribute="topMargin" constant="266" id="j3t-NG-EyZ"/>
+                            <constraint firstItem="fvG-Ai-R26" firstAttribute="trailing" secondItem="0dz-H2-Gid" secondAttribute="trailing" id="jUx-cx-hr6"/>
+                            <constraint firstItem="jUj-Y4-bHZ" firstAttribute="leading" secondItem="hsq-xj-4N2" secondAttribute="leading" constant="16" id="qdm-T0-iCy"/>
+                            <constraint firstItem="Ft5-f8-ofn" firstAttribute="top" secondItem="jUj-Y4-bHZ" secondAttribute="bottom" constant="39" id="rVZ-OY-wMm"/>
+                            <constraint firstItem="IyC-1E-PDI" firstAttribute="top" secondItem="B3K-YZ-cjT" secondAttribute="top" id="sZu-lQ-twt"/>
+                            <constraint firstItem="IyC-1E-PDI" firstAttribute="centerX" secondItem="Ft5-f8-ofn" secondAttribute="centerX" id="xu2-B1-Vcw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hsq-xj-4N2"/>
                     </view>
@@ -937,8 +933,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="s5n-7s-pim" secondAttribute="trailing" id="8dy-vg-2He"/>
                             <constraint firstAttribute="bottom" secondItem="s5n-7s-pim" secondAttribute="bottom" id="G8f-KR-gv9"/>
+                            <constraint firstItem="s5n-7s-pim" firstAttribute="leading" secondItem="OjL-AR-PNh" secondAttribute="leading" id="GmG-07-9wG"/>
                             <constraint firstItem="s5n-7s-pim" firstAttribute="leading" secondItem="LLq-E4-Zft" secondAttribute="leading" id="IaK-MK-CAd"/>
                             <constraint firstItem="s5n-7s-pim" firstAttribute="top" secondItem="LLq-E4-Zft" secondAttribute="top" id="eOU-VW-Gb1"/>
+                            <constraint firstAttribute="bottom" secondItem="s5n-7s-pim" secondAttribute="bottom" id="fIl-Xu-teW"/>
+                            <constraint firstItem="s5n-7s-pim" firstAttribute="trailing" secondItem="OjL-AR-PNh" secondAttribute="trailing" id="hSO-Y3-QUp"/>
+                            <constraint firstItem="s5n-7s-pim" firstAttribute="top" secondItem="LLq-E4-Zft" secondAttribute="top" id="ySa-NB-Aei"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OjL-AR-PNh"/>
                     </view>
@@ -946,84 +946,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geJ-0G-4Sa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6817.5" y="194.36619718309859"/>
-        </scene>
-        <!--VanAbout-->
-        <scene sceneID="fQt-X6-WDl">
-            <objects>
-                <viewController storyboardIdentifier="VanAbout" id="bkW-Eb-ovp" userLabel="VanAbout" customClass="VanAbout" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CEZ-Lo-Yll"/>
-                        <viewControllerLayoutGuide type="bottom" id="23s-ls-KYD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ErI-ru-WIJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="AmB-gu-EbG">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l20-ez-zVR">
-                                <rect key="frame" x="54" y="159" width="212" height="285"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGW-mO-lU5">
-                                        <rect key="frame" x="0.0" y="0.0" width="212" height="285"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aO3-de-Lt2">
-                                                <rect key="frame" x="0.0" y="0.0" width="212" height="256"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="aO3-de-Lt2" secondAttribute="trailing" id="Oqb-v5-SnK"/>
-                                            <constraint firstItem="aO3-de-Lt2" firstAttribute="height" secondItem="iGW-mO-lU5" secondAttribute="height" constant="-29" id="blh-o9-N8n"/>
-                                            <constraint firstAttribute="bottom" secondItem="aO3-de-Lt2" secondAttribute="bottom" constant="29" id="dp0-Ss-pQV"/>
-                                            <constraint firstItem="aO3-de-Lt2" firstAttribute="leading" secondItem="iGW-mO-lU5" secondAttribute="leading" id="gGk-Z7-0oV"/>
-                                            <constraint firstItem="aO3-de-Lt2" firstAttribute="width" secondItem="iGW-mO-lU5" secondAttribute="width" id="yHn-6y-Kpg"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="iGW-mO-lU5" secondAttribute="trailing" id="C7h-2B-xo5"/>
-                                    <constraint firstItem="iGW-mO-lU5" firstAttribute="width" secondItem="l20-ez-zVR" secondAttribute="width" id="NyY-1G-cq7"/>
-                                    <constraint firstItem="iGW-mO-lU5" firstAttribute="leading" secondItem="l20-ez-zVR" secondAttribute="leading" id="Vld-u5-EIt"/>
-                                    <constraint firstItem="iGW-mO-lU5" firstAttribute="top" secondItem="l20-ez-zVR" secondAttribute="top" id="ZbE-Ie-v5p"/>
-                                    <constraint firstAttribute="bottom" secondItem="iGW-mO-lU5" secondAttribute="bottom" id="dEa-8g-7iA"/>
-                                    <constraint firstItem="iGW-mO-lU5" firstAttribute="height" secondItem="l20-ez-zVR" secondAttribute="height" id="wHz-hR-fEv"/>
-                                </constraints>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6F-3k-hBA">
-                                <rect key="frame" x="36" y="54" width="40" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="gobackbtn"/>
-                                <connections>
-                                    <action selector="startVanMenuActivity:forEvent:" destination="bkW-Eb-ovp" eventType="touchUpInside" id="Ne9-JM-0P6"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="l20-ez-zVR" firstAttribute="top" secondItem="CEZ-Lo-Yll" secondAttribute="bottom" constant="139" id="133-Qq-rEd"/>
-                            <constraint firstItem="l20-ez-zVR" firstAttribute="leading" secondItem="ErI-ru-WIJ" secondAttribute="leading" constant="54" id="24r-na-rNp"/>
-                            <constraint firstItem="AmB-gu-EbG" firstAttribute="leading" secondItem="ErI-ru-WIJ" secondAttribute="leading" id="4dN-U0-rLJ"/>
-                            <constraint firstItem="AmB-gu-EbG" firstAttribute="top" secondItem="ErI-ru-WIJ" secondAttribute="top" id="6cm-ky-ZoG"/>
-                            <constraint firstItem="AmB-gu-EbG" firstAttribute="trailing" secondItem="ErI-ru-WIJ" secondAttribute="trailing" id="7ZZ-sv-Zgg"/>
-                            <constraint firstAttribute="bottom" secondItem="AmB-gu-EbG" secondAttribute="bottom" id="EdA-hD-0eq"/>
-                            <constraint firstAttribute="bottom" secondItem="AmB-gu-EbG" secondAttribute="bottom" id="FNC-rc-fKC"/>
-                            <constraint firstAttribute="trailing" secondItem="l20-ez-zVR" secondAttribute="trailing" constant="54" id="Lfh-dU-W8O"/>
-                            <constraint firstItem="23s-ls-KYD" firstAttribute="top" secondItem="l20-ez-zVR" secondAttribute="bottom" constant="124" id="dHf-vV-liE"/>
-                            <constraint firstItem="AmB-gu-EbG" firstAttribute="top" secondItem="ErI-ru-WIJ" secondAttribute="top" id="jZF-ks-j2i"/>
-                            <constraint firstItem="AmB-gu-EbG" firstAttribute="trailing" secondItem="ErI-ru-WIJ" secondAttribute="trailing" id="uUe-Ju-aMo"/>
-                            <constraint firstItem="AmB-gu-EbG" firstAttribute="leading" secondItem="ErI-ru-WIJ" secondAttribute="leading" id="whL-v5-TYm"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="zLU-UJ-KIa"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CSc-Pf-P1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1640.5797101449277" y="-717.1875"/>
         </scene>
         <!--VanVenueMap-->
         <scene sceneID="YWI-Mb-Kz1">
@@ -1037,12 +959,11 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-Il-bxz">
-                                <rect key="frame" x="0.0" y="-2" width="320" height="570"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-Il-bxz">
+                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-Iu-b5b">
-                                <rect key="frame" x="11" y="49" width="40" height="39"/>
+                                <rect key="frame" x="11" y="38" width="40" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="gobackbtn"/>
                                 <connections>
@@ -1082,9 +1003,17 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5Hl-Il-bxz" secondAttribute="bottom" id="A43-QI-yVE"/>
+                            <constraint firstAttribute="bottom" secondItem="5Hl-Il-bxz" secondAttribute="bottom" id="FJd-G4-WZ8"/>
+                            <constraint firstItem="5Hl-Il-bxz" firstAttribute="leading" secondItem="kQZ-CL-k0s" secondAttribute="leading" id="LWH-TB-6uM"/>
+                            <constraint firstItem="kQZ-CL-k0s" firstAttribute="trailing" secondItem="5Hl-Il-bxz" secondAttribute="trailing" id="PzL-MT-Wrm"/>
                             <constraint firstAttribute="trailing" secondItem="Zoo-cf-cdL" secondAttribute="trailing" constant="16" id="V1j-mF-4Di"/>
                             <constraint firstItem="Zoo-cf-cdL" firstAttribute="top" secondItem="5iV-9D-uxk" secondAttribute="bottom" constant="90" id="aPC-qy-KsP"/>
                             <constraint firstItem="Zoo-cf-cdL" firstAttribute="leading" secondItem="vPN-En-30y" secondAttribute="leading" constant="16" id="fXA-6s-Itf"/>
+                            <constraint firstItem="5Hl-Il-bxz" firstAttribute="leading" secondItem="kQZ-CL-k0s" secondAttribute="leading" id="jZZ-vj-KDF"/>
+                            <constraint firstItem="5Hl-Il-bxz" firstAttribute="trailing" secondItem="kQZ-CL-k0s" secondAttribute="trailing" id="skz-Wv-x6h"/>
+                            <constraint firstItem="5Hl-Il-bxz" firstAttribute="top" secondItem="vPN-En-30y" secondAttribute="top" id="upX-D2-WAi"/>
+                            <constraint firstItem="5Hl-Il-bxz" firstAttribute="top" secondItem="vPN-En-30y" secondAttribute="top" id="vzK-Fm-LKq"/>
                             <constraint firstItem="oTk-6m-QbN" firstAttribute="top" secondItem="Zoo-cf-cdL" secondAttribute="bottom" constant="20" id="zZa-gc-jEV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kQZ-CL-k0s"/>
@@ -1148,13 +1077,17 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="svg-pA-P63" firstAttribute="leading" secondItem="mf7-AK-K8z" secondAttribute="leading" constant="11" id="3hX-9Q-bJ2"/>
                             <constraint firstItem="svg-pA-P63" firstAttribute="top" secondItem="owN-bs-Bce" secondAttribute="bottom" constant="29" id="86g-E1-T6m"/>
                             <constraint firstItem="XpK-1t-gEX" firstAttribute="leading" secondItem="qSJ-HB-eLK" secondAttribute="leading" id="8t1-bh-VVB"/>
+                            <constraint firstAttribute="bottom" secondItem="XpK-1t-gEX" secondAttribute="bottom" id="G46-Ez-IKt"/>
                             <constraint firstItem="ity-0F-WAH" firstAttribute="leading" secondItem="qSJ-HB-eLK" secondAttribute="leading" constant="16" id="G7k-cl-Cse"/>
                             <constraint firstAttribute="trailing" secondItem="ity-0F-WAH" secondAttribute="trailing" constant="16" id="GrC-6m-o5o"/>
+                            <constraint firstItem="XpK-1t-gEX" firstAttribute="top" secondItem="qSJ-HB-eLK" secondAttribute="top" id="Pia-jJ-84S"/>
                             <constraint firstAttribute="bottom" secondItem="XpK-1t-gEX" secondAttribute="bottom" id="VNb-ld-UXB"/>
                             <constraint firstItem="5Gh-V0-te2" firstAttribute="top" secondItem="ity-0F-WAH" secondAttribute="bottom" constant="20" id="Y1Y-D3-TeJ"/>
+                            <constraint firstItem="XpK-1t-gEX" firstAttribute="leading" secondItem="mf7-AK-K8z" secondAttribute="leading" id="auW-rS-9LV"/>
                             <constraint firstItem="mf7-AK-K8z" firstAttribute="trailing" secondItem="svg-pA-P63" secondAttribute="trailing" constant="269" id="caN-He-zKX"/>
                             <constraint firstItem="3gH-qK-tOT" firstAttribute="leading" secondItem="qSJ-HB-eLK" secondAttribute="leading" constant="21" id="g03-1d-w78"/>
                             <constraint firstItem="ity-0F-WAH" firstAttribute="top" secondItem="svg-pA-P63" secondAttribute="bottom" constant="7" id="gEy-Sl-paC"/>
+                            <constraint firstItem="XpK-1t-gEX" firstAttribute="trailing" secondItem="mf7-AK-K8z" secondAttribute="trailing" id="px4-y8-2dK"/>
                             <constraint firstAttribute="trailing" secondItem="XpK-1t-gEX" secondAttribute="trailing" id="wxp-d6-Foq"/>
                             <constraint firstItem="XpK-1t-gEX" firstAttribute="top" secondItem="qSJ-HB-eLK" secondAttribute="top" id="yUu-wP-Tch"/>
                         </constraints>
@@ -1164,113 +1097,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZ7-kM-OfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1511.25" y="658.09859154929575"/>
-        </scene>
-        <!--VanTermOfUse-->
-        <scene sceneID="OgF-f7-8u7">
-            <objects>
-                <viewController storyboardIdentifier="VanTermOfUse" id="qzR-50-Rfd" userLabel="VanTermOfUse" customClass="VanTermOfUse" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pCT-1e-SYJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="Y4a-T1-y0c"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AKW-qy-AyU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="H7p-yh-EOx">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poC-ry-Zqo">
-                                <rect key="frame" x="11" y="49" width="40" height="39"/>
-                                <state key="normal" backgroundImage="gobackbtn"/>
-                                <connections>
-                                    <action selector="startVanMenuActivity:forEvent:" destination="qzR-50-Rfd" eventType="touchUpInside" id="PXc-eb-3RI"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-qN-EZ7">
-                                <rect key="frame" x="50" y="137" width="229" height="320"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0b-dy-NDr">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="320"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVA-eT-W8c">
-                                                <rect key="frame" x="-3" y="0.0" width="231" height="320"/>
-                                                <string key="text">General Terms and Conditions of Use
- 
-Thank you for using https://www.acsea.ca/ (our “Site”). By visiting our site or using any associated app and user interfaces, you indicate your acknowledgment and acceptance of the Terms and Conditions and Privacy Policy. If you do not agree or cannot comply with these terms and conditions, then you may not use this site or any associated app and user interfaces.
-
-TERM TERMINATION
-These terms and conditions are applicable to you upon your accessing the site and/or completing the registration process through the site and/or the ACSEA app. These terms and conditions, or any part of them, may be terminated by Asian-Canadian Special Events Association without notice at any time, for any reason. The provisions relating to Copyrights, Trademarks, Participation Disclaimer, and Indemnification shall survive any termination.
-
-COPYRIGHTS
-The content included in any ACSEA site and/or associated app, including but not limited to text, graphics or code is copyrighted as a collective work under the Canadian copyright laws, and is the property of the Asian-Canadian Special Events Association, identified by the name or logo on materials posted, is identified as being the copyright owner. If another party is noted as a copyright holder, please contact that party for permission to use the materials in question.
-
-THE ASIAN-CANADIAN SPECIAL EVENTS ASSOCIATION (ACSEA) EVENT TERMS AND CONDITIONS
-Events may consist of festivals, concerts or other forms of advertised events whether attendance is free or if an admission fee is charged to attend.
-Your name and contact information collected during the registration process may be shared with event participants and the speakers in the form of a delegate list. By registering for the event you are consenting to the use and disclosure of the information for this purpose. Registration information will not be shared with event exhibitors, sponsors and other conference delegates.
-ACSEA reserves the right to cancel events at any time prior to the scheduled date; in this case, our liability is limited to a full refund of the session fee. Confirmation of registration to any specific event will be sent by email before the event or workshop. Payment is due upon registration.
-Registrants who do not show up for the event in question are not eligible for a refund.
-Cancellations received by our offices by mail/email within the specified cancellation date are refundable and may be subject to an administration fee. Refunds will not be given after that date, however, delegate substitution is permitted.
-For the duration of ACSEA events, all volunteers and community groups that are on festival grounds must consent to the use and possible distribution of their own photo. ACSEA will not sell, trade or provide any information from the ACSEA database, including personal information to companies, solicitors or other third parties for any reason. These photos will be used solely for promotional purposes for the festival.
-
-USE OF SITE
-Harassment in any manner or form on the site, including via e-mail, chat, or by use of obscene or abusive language, is strictly forbidden. Impersonation of others, including Asian-Canadian Special Events Association employees, host, or representative, as well as other members or visitors on the site is prohibited.
-You may not upload to, distribute, or otherwise publish through the site any content which is libellous, defamatory, obscene, threatening, invasive of privacy or publicity rights, abusive, illegal, or otherwise objectionable which may constitute or encourage a criminal offense, violate the rights of any party or which may otherwise give rise to liability or violate any law.
-You may not upload commercial content on the site or use the site to solicit others to join or become members of any other commercial online service or other organization.
-The Asian-Canadian Special Events Association reserves the right to block or remove communications or materials that it determines to be (a) abusive, defamatory, or obscene, (b) fraudulent, deceptive, or misleading, (c) in violation of a copyright, trademark or; other intellectual property right of another or (d) offensive or otherwise unacceptable to the Asian-Canadian Special Events Association at its sole discretion.
-
-INDEMNIFICATION
-You agree to indemnify, defend, and hold harmless Asian-Canadian Special Events Association, its officers, directors, employees, and suppliers (collectively the “Service Providers”) from and against all losses, expenses, damages and costs, including reasonable attorneys’ fees, resulting from any violation of these terms and conditions or any activity related to your account (including negligent or wrongful conduct) by you or any other person accessing our site using your internet account.
-
-THIRD PARTY LINKS
-In an attempt to provide increased value to our visitors, Asian-Canadian Special Events Association may link to sites operated by third parties. However, even if the third party is an affiliate, the Asian-Canadian Special Events Association has no control over these linked sites, all of which have separate privacy and data collection practices, independent of the Asian-Canadian Special Events Association.
-These linked sites are only for your convenience and therefore you access them at your own risk. Nonetheless, the Asian-Canadian Special Events Association seeks to protect the integrity of its web site, app and the links placed upon it and therefore requests any feedback on not only its own site and app but for sites it links to as well (including if a specific link does not work).
-
-</string>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="yVA-eT-W8c" secondAttribute="trailing" constant="42" id="FyY-e2-tqg"/>
-                                            <constraint firstAttribute="bottom" secondItem="yVA-eT-W8c" secondAttribute="bottom" id="Tcr-yt-gzI"/>
-                                            <constraint firstItem="yVA-eT-W8c" firstAttribute="top" secondItem="s0b-dy-NDr" secondAttribute="top" id="fzR-uT-zGE"/>
-                                            <constraint firstItem="yVA-eT-W8c" firstAttribute="leading" secondItem="s0b-dy-NDr" secondAttribute="leading" constant="-3" id="iEo-Mm-Ole"/>
-                                            <constraint firstAttribute="width" constant="270" id="qyj-q8-IlD"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="s0b-dy-NDr" firstAttribute="leading" secondItem="fU1-qN-EZ7" secondAttribute="leading" id="Lgd-mf-hgb"/>
-                                    <constraint firstAttribute="bottom" secondItem="s0b-dy-NDr" secondAttribute="bottom" id="Prq-4K-Yso"/>
-                                    <constraint firstAttribute="trailing" secondItem="s0b-dy-NDr" secondAttribute="trailing" constant="-41" id="WEp-aP-tSf"/>
-                                    <constraint firstItem="s0b-dy-NDr" firstAttribute="top" secondItem="fU1-qN-EZ7" secondAttribute="top" id="cg9-lD-sdz"/>
-                                    <constraint firstItem="s0b-dy-NDr" firstAttribute="centerY" secondItem="fU1-qN-EZ7" secondAttribute="centerY" id="kvB-CF-EUO"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="vL4-Uy-csM" firstAttribute="trailing" secondItem="fU1-qN-EZ7" secondAttribute="trailing" constant="41" id="1t0-UE-spO"/>
-                            <constraint firstItem="fU1-qN-EZ7" firstAttribute="leading" secondItem="vL4-Uy-csM" secondAttribute="leading" constant="50" id="2zL-KY-XmU"/>
-                            <constraint firstItem="H7p-yh-EOx" firstAttribute="top" secondItem="AKW-qy-AyU" secondAttribute="top" id="C3N-ee-K3w"/>
-                            <constraint firstItem="H7p-yh-EOx" firstAttribute="leading" secondItem="AKW-qy-AyU" secondAttribute="leading" id="Cb7-Nw-Ki8"/>
-                            <constraint firstItem="fU1-qN-EZ7" firstAttribute="top" secondItem="pCT-1e-SYJ" secondAttribute="bottom" constant="117" id="Eop-s2-rlN"/>
-                            <constraint firstItem="Y4a-T1-y0c" firstAttribute="top" secondItem="fU1-qN-EZ7" secondAttribute="bottom" constant="111" id="Hpn-jb-PU3"/>
-                            <constraint firstItem="poC-ry-Zqo" firstAttribute="top" secondItem="pCT-1e-SYJ" secondAttribute="bottom" constant="29" id="I7G-5R-hgV"/>
-                            <constraint firstItem="vL4-Uy-csM" firstAttribute="trailing" secondItem="poC-ry-Zqo" secondAttribute="trailing" constant="269" id="Y1o-9e-CAB"/>
-                            <constraint firstItem="poC-ry-Zqo" firstAttribute="leading" secondItem="vL4-Uy-csM" secondAttribute="leading" constant="11" id="b6E-8c-Qex"/>
-                            <constraint firstItem="Y4a-T1-y0c" firstAttribute="top" secondItem="poC-ry-Zqo" secondAttribute="bottom" constant="480" id="hpX-gY-iV5"/>
-                            <constraint firstItem="H7p-yh-EOx" firstAttribute="bottom" secondItem="Y4a-T1-y0c" secondAttribute="top" id="nfA-AT-wuL"/>
-                            <constraint firstItem="H7p-yh-EOx" firstAttribute="centerX" secondItem="AKW-qy-AyU" secondAttribute="centerX" id="w4r-0Q-bHH"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="vL4-Uy-csM"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jHE-cd-atg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2458.125" y="-2014.4366197183099"/>
         </scene>
         <!--Van Schedule Table View Controller-->
         <scene sceneID="pKf-mM-Ogl">
@@ -1490,9 +1316,8 @@ These linked sites are only for your convenience and therefore you access them a
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HMi-xa-pW9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HMi-xa-pW9">
+                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWj-ct-YfN">
                                 <rect key="frame" x="121" y="455" width="78" height="30"/>
@@ -1547,11 +1372,15 @@ These linked sites are only for your convenience and therefore you access them a
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="mWj-ct-YfN" secondAttribute="trailing" constant="121" id="1wU-yc-qOU"/>
                             <constraint firstItem="mWj-ct-YfN" firstAttribute="top" secondItem="Ite-NZ-Uqq" secondAttribute="bottom" constant="51" id="6O3-gk-HCP"/>
+                            <constraint firstItem="HMi-xa-pW9" firstAttribute="leading" secondItem="lhg-Bb-YEI" secondAttribute="leading" id="7Ie-PM-hzN"/>
                             <constraint firstItem="jqw-sN-ul6" firstAttribute="top" secondItem="mWj-ct-YfN" secondAttribute="bottom" constant="83" id="9v2-lr-Eq3"/>
                             <constraint firstItem="mWj-ct-YfN" firstAttribute="leading" secondItem="T4a-tF-p0W" secondAttribute="leading" constant="121" id="BQr-pt-aEu"/>
                             <constraint firstItem="Ite-NZ-Uqq" firstAttribute="top" secondItem="1Pk-PO-CEg" secondAttribute="bottom" constant="59" id="b1k-Z4-Ulx"/>
+                            <constraint firstAttribute="bottom" secondItem="HMi-xa-pW9" secondAttribute="bottom" id="ePN-2N-htB"/>
+                            <constraint firstItem="HMi-xa-pW9" firstAttribute="top" secondItem="T4a-tF-p0W" secondAttribute="top" id="jzf-Ky-fDF"/>
                             <constraint firstAttribute="trailing" secondItem="Ite-NZ-Uqq" secondAttribute="trailing" constant="16" id="rBe-lv-TGr"/>
                             <constraint firstItem="Ite-NZ-Uqq" firstAttribute="leading" secondItem="T4a-tF-p0W" secondAttribute="leading" constant="20" id="rQd-9r-Dtr"/>
+                            <constraint firstItem="lhg-Bb-YEI" firstAttribute="trailing" secondItem="HMi-xa-pW9" secondAttribute="trailing" id="x1z-Xo-24m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lhg-Bb-YEI"/>
                     </view>
@@ -1650,20 +1479,19 @@ These linked sites are only for your convenience and therefore you access them a
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundwithorange" translatesAutoresizingMaskIntoConstraints="NO" id="c13-sO-Ccx">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithorange" translatesAutoresizingMaskIntoConstraints="NO" id="c13-sO-Ccx">
+                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
                             </imageView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vCd-Ey-NLk">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCd-Ey-NLk">
                                 <rect key="frame" x="0.0" y="269" width="320" height="299"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cia-gw-ONW">
-                                        <rect key="frame" x="50" y="8" width="220" height="195"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cia-gw-ONW">
+                                        <rect key="frame" x="38" y="0.0" width="242" height="203"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG4-p2-fhQ">
-                                                <rect key="frame" x="8" y="0.0" width="90" height="90"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YG4-p2-fhQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="Xtm-wE-Hfj"/>
+                                                    <constraint firstAttribute="width" constant="100" id="Xtm-wE-Hfj"/>
                                                 </constraints>
                                                 <state key="normal" image="mapicon">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1672,29 +1500,29 @@ These linked sites are only for your convenience and therefore you access them a
                                                     <action selector="startVanMap:forEvent:" destination="m2J-4k-pix" eventType="touchUpInside" id="kKO-Y0-csh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPm-6J-aQx">
-                                                <rect key="frame" x="122" y="0.0" width="90" height="90"/>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b48-Mo-s92">
+                                                <rect key="frame" x="0.0" y="103" width="100" height="100"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pez-Uz-4ya"/>
-                                                    <constraint firstAttribute="height" constant="120" id="q15-xk-8mr"/>
-                                                </constraints>
-                                                <state key="normal" image="funstopicon"/>
-                                                <connections>
-                                                    <action selector="startVanFunStop:forEvent:" destination="m2J-4k-pix" eventType="touchUpInside" id="0VN-iD-bUR"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b48-Mo-s92">
-                                                <rect key="frame" x="8" y="98" width="90" height="90"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="kXD-1F-DNv"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="kXD-1F-DNv"/>
                                                 </constraints>
                                                 <state key="normal" image="scheduleicon"/>
                                                 <connections>
                                                     <action selector="startVanSchedule:forEvent:" destination="m2J-4k-pix" eventType="touchUpInside" id="vDs-jf-q27"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-25-u9f">
-                                                <rect key="frame" x="122" y="98" width="90" height="90"/>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPm-6J-aQx">
+                                                <rect key="frame" x="142" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="pez-Uz-4ya"/>
+                                                    <constraint firstAttribute="height" constant="100" id="q15-xk-8mr"/>
+                                                </constraints>
+                                                <state key="normal" image="funstopicon"/>
+                                                <connections>
+                                                    <action selector="startVanFunStop:forEvent:" destination="m2J-4k-pix" eventType="touchUpInside" id="0VN-iD-bUR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKB-25-u9f">
+                                                <rect key="frame" x="142" y="103" width="100" height="100"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="sponsoricon"/>
                                                 <connections>
@@ -1702,50 +1530,35 @@ These linked sites are only for your convenience and therefore you access them a
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.49672651289999997" green="0.34247004990000002" blue="0.90727013349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="TPm-6J-aQx" firstAttribute="top" secondItem="Cia-gw-ONW" secondAttribute="top" id="1PN-OZ-MTT"/>
                                             <constraint firstItem="YG4-p2-fhQ" firstAttribute="trailing" secondItem="b48-Mo-s92" secondAttribute="trailing" id="2H7-Gg-HG7"/>
-                                            <constraint firstItem="kKB-25-u9f" firstAttribute="top" secondItem="TPm-6J-aQx" secondAttribute="bottom" constant="41" id="4BQ-eE-e57"/>
+                                            <constraint firstItem="kKB-25-u9f" firstAttribute="top" secondItem="TPm-6J-aQx" secondAttribute="bottom" constant="3" id="4BQ-eE-e57"/>
                                             <constraint firstAttribute="bottom" secondItem="kKB-25-u9f" secondAttribute="bottom" id="7Gj-4w-ERU"/>
                                             <constraint firstItem="TPm-6J-aQx" firstAttribute="leading" secondItem="kKB-25-u9f" secondAttribute="leading" id="AjZ-hD-pu4"/>
                                             <constraint firstItem="YG4-p2-fhQ" firstAttribute="leading" secondItem="b48-Mo-s92" secondAttribute="leading" id="BxZ-rw-4o8"/>
                                             <constraint firstItem="b48-Mo-s92" firstAttribute="top" secondItem="kKB-25-u9f" secondAttribute="top" id="Du5-cb-TrY"/>
                                             <constraint firstAttribute="bottom" secondItem="b48-Mo-s92" secondAttribute="bottom" id="GoA-L3-Uql"/>
-                                            <constraint firstItem="kKB-25-u9f" firstAttribute="top" secondItem="TPm-6J-aQx" secondAttribute="bottom" constant="41" id="J2E-hi-Rit"/>
+                                            <constraint firstItem="kKB-25-u9f" firstAttribute="top" secondItem="TPm-6J-aQx" secondAttribute="bottom" constant="3" id="J2E-hi-Rit"/>
                                             <constraint firstItem="b48-Mo-s92" firstAttribute="leading" secondItem="Cia-gw-ONW" secondAttribute="leading" id="KZ7-Gp-lIc"/>
-                                            <constraint firstItem="kKB-25-u9f" firstAttribute="leading" secondItem="b48-Mo-s92" secondAttribute="trailing" constant="35" id="Lt1-um-hFV"/>
-                                            <constraint firstItem="kKB-25-u9f" firstAttribute="leading" secondItem="b48-Mo-s92" secondAttribute="trailing" constant="35" id="NL6-bN-OLh"/>
-                                            <constraint firstAttribute="trailing" secondItem="kKB-25-u9f" secondAttribute="trailing" id="Pkb-7R-GQ6"/>
-                                            <constraint firstItem="b48-Mo-s92" firstAttribute="baseline" secondItem="kKB-25-u9f" secondAttribute="firstBaseline" constant="120" id="VZZ-tU-pmH"/>
-                                            <constraint firstAttribute="trailing" secondItem="kKB-25-u9f" secondAttribute="trailing" id="Xf4-Ul-xgI"/>
+                                            <constraint firstItem="kKB-25-u9f" firstAttribute="leading" secondItem="b48-Mo-s92" secondAttribute="trailing" constant="42" id="Lt1-um-hFV"/>
+                                            <constraint firstItem="kKB-25-u9f" firstAttribute="leading" secondItem="b48-Mo-s92" secondAttribute="trailing" constant="42" id="NL6-bN-OLh"/>
+                                            <constraint firstItem="b48-Mo-s92" firstAttribute="baseline" secondItem="kKB-25-u9f" secondAttribute="firstBaseline" constant="100" id="VZZ-tU-pmH"/>
                                             <constraint firstAttribute="bottom" secondItem="kKB-25-u9f" secondAttribute="bottom" id="bgy-Bm-vyI"/>
                                             <constraint firstItem="YG4-p2-fhQ" firstAttribute="top" secondItem="TPm-6J-aQx" secondAttribute="top" id="cHL-In-GVF"/>
-                                            <constraint firstAttribute="width" constant="275" id="fc6-Q4-waQ"/>
+                                            <constraint firstAttribute="width" constant="242" id="fc6-Q4-waQ"/>
                                             <constraint firstAttribute="trailing" secondItem="TPm-6J-aQx" secondAttribute="trailing" id="gN9-9j-7fp"/>
                                             <constraint firstAttribute="bottom" secondItem="kKB-25-u9f" secondAttribute="bottom" id="iPm-MD-4Xr"/>
-                                            <constraint firstItem="kKB-25-u9f" firstAttribute="top" secondItem="TPm-6J-aQx" secondAttribute="bottom" constant="41" id="jCy-9W-tqa"/>
+                                            <constraint firstItem="kKB-25-u9f" firstAttribute="top" secondItem="TPm-6J-aQx" secondAttribute="bottom" constant="3" id="jCy-9W-tqa"/>
                                             <constraint firstItem="YG4-p2-fhQ" firstAttribute="bottom" secondItem="TPm-6J-aQx" secondAttribute="bottom" id="l0c-NM-R85"/>
-                                            <constraint firstAttribute="height" constant="281" id="o4a-N8-WNE"/>
-                                            <constraint firstAttribute="trailing" secondItem="kKB-25-u9f" secondAttribute="trailing" id="oGH-fc-QXx"/>
+                                            <constraint firstAttribute="height" constant="203" id="o4a-N8-WNE"/>
                                             <constraint firstAttribute="bottom" secondItem="b48-Mo-s92" secondAttribute="bottom" id="t1c-Yb-BvP"/>
                                             <constraint firstItem="TPm-6J-aQx" firstAttribute="trailing" secondItem="kKB-25-u9f" secondAttribute="trailing" id="vMf-dJ-cMk"/>
-                                            <constraint firstItem="kKB-25-u9f" firstAttribute="leading" secondItem="b48-Mo-s92" secondAttribute="trailing" constant="35" id="xrm-j5-zp3"/>
+                                            <constraint firstItem="kKB-25-u9f" firstAttribute="leading" secondItem="b48-Mo-s92" secondAttribute="trailing" constant="42" id="xrm-j5-zp3"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-Y5-kGk">
-                                        <rect key="frame" x="101" y="211" width="118" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="PRIVACY POLICY">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startVanPrivacyPolicy:" destination="m2J-4k-pix" eventType="touchUpInside" id="2hL-OD-rbo"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hru-Tu-cLl">
-                                        <rect key="frame" x="112" y="249" width="97" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hru-Tu-cLl">
+                                        <rect key="frame" x="110" y="249" width="97" height="30"/>
                                         <state key="normal" title="TERM OF USE">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -1753,20 +1566,31 @@ These linked sites are only for your convenience and therefore you access them a
                                             <action selector="startVanTermOfUse:" destination="m2J-4k-pix" eventType="touchUpInside" id="l8q-Mt-d8i"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-Y5-kGk">
+                                        <rect key="frame" x="99.5" y="226" width="118" height="30"/>
+                                        <state key="normal" title="PRIVACY POLICY">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startVanPrivacyPolicy:" destination="m2J-4k-pix" eventType="touchUpInside" id="2hL-OD-rbo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Cia-gw-ONW" firstAttribute="centerX" secondItem="vCd-Ey-NLk" secondAttribute="centerX" constant="-1.5" id="3JJ-4N-Kld"/>
-                                    <constraint firstItem="Cia-gw-ONW" firstAttribute="centerX" secondItem="vCd-Ey-NLk" secondAttribute="centerX" constant="-1.5" id="TMs-9d-41d"/>
-                                    <constraint firstItem="Cia-gw-ONW" firstAttribute="centerY" secondItem="vCd-Ey-NLk" secondAttribute="centerY" constant="-30" id="qfg-LG-Wqg"/>
+                                    <constraint firstItem="Cia-gw-ONW" firstAttribute="centerX" secondItem="vCd-Ey-NLk" secondAttribute="centerX" constant="-1" id="3JJ-4N-Kld"/>
+                                    <constraint firstAttribute="bottom" secondItem="hru-Tu-cLl" secondAttribute="bottom" constant="20" id="DpZ-gZ-Lhi"/>
+                                    <constraint firstItem="Cia-gw-ONW" firstAttribute="centerX" secondItem="vCd-Ey-NLk" secondAttribute="centerX" constant="-1" id="TMs-9d-41d"/>
+                                    <constraint firstItem="hru-Tu-cLl" firstAttribute="centerX" secondItem="Oiz-Y5-kGk" secondAttribute="centerX" id="UpP-BP-TfC"/>
+                                    <constraint firstItem="hru-Tu-cLl" firstAttribute="top" secondItem="Oiz-Y5-kGk" secondAttribute="bottom" constant="-7" id="d04-mn-H4w"/>
+                                    <constraint firstItem="hru-Tu-cLl" firstAttribute="centerX" secondItem="Cia-gw-ONW" secondAttribute="centerX" constant="-0.5" id="i7c-kC-S60"/>
+                                    <constraint firstItem="Cia-gw-ONW" firstAttribute="centerY" secondItem="vCd-Ey-NLk" secondAttribute="centerY" constant="-48" id="qfg-LG-Wqg"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOc-um-CMP">
-                                <rect key="frame" x="39" y="203" width="242" height="46"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="76" y="170" width="263" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="VPe-a4-N9w"/>
-                                    <constraint firstAttribute="width" constant="242" id="VmL-kq-rOQ"/>
+                                    <constraint firstAttribute="width" constant="263" id="Iad-T0-jhd"/>
+                                    <constraint firstAttribute="height" constant="50" id="ORt-nj-hyz"/>
                                 </constraints>
                                 <state key="normal" image="aboutbtn"/>
                                 <connections>
@@ -1778,12 +1602,18 @@ These linked sites are only for your convenience and therefore you access them a
                         <constraints>
                             <constraint firstItem="vCd-Ey-NLk" firstAttribute="bottom" secondItem="MXr-D2-Jwa" secondAttribute="top" id="1PC-28-eMn"/>
                             <constraint firstItem="vCd-Ey-NLk" firstAttribute="bottom" secondItem="MXr-D2-Jwa" secondAttribute="top" id="2PW-aJ-Bkn"/>
-                            <constraint firstItem="vCd-Ey-NLk" firstAttribute="top" secondItem="fOc-um-CMP" secondAttribute="bottom" constant="8" id="7Wk-nO-FMi"/>
+                            <constraint firstItem="vCd-Ey-NLk" firstAttribute="top" secondItem="lMT-gk-WrO" secondAttribute="top" constant="269" id="2gf-f3-UPS"/>
                             <constraint firstItem="vCd-Ey-NLk" firstAttribute="trailing" secondItem="lMT-gk-WrO" secondAttribute="trailing" id="8cM-4Y-k66"/>
+                            <constraint firstItem="c13-sO-Ccx" firstAttribute="top" secondItem="lMT-gk-WrO" secondAttribute="top" id="Ctu-F1-vUe"/>
+                            <constraint firstItem="vCd-Ey-NLk" firstAttribute="trailing" secondItem="6Lb-qQ-HNW" secondAttribute="trailing" id="E17-eb-WhG"/>
+                            <constraint firstItem="MXr-D2-Jwa" firstAttribute="top" secondItem="vCd-Ey-NLk" secondAttribute="bottom" id="Ehl-6j-Z8i"/>
+                            <constraint firstItem="fOc-um-CMP" firstAttribute="top" secondItem="lMT-gk-WrO" secondAttribute="top" constant="203" id="Paz-NN-loM"/>
                             <constraint firstItem="vCd-Ey-NLk" firstAttribute="leading" secondItem="lMT-gk-WrO" secondAttribute="leading" id="RQC-Mr-kjo"/>
-                            <constraint firstItem="Cia-gw-ONW" firstAttribute="top" secondItem="fOc-um-CMP" secondAttribute="bottom" constant="37" id="TzU-SI-fQP"/>
-                            <constraint firstItem="vCd-Ey-NLk" firstAttribute="top" secondItem="fOc-um-CMP" secondAttribute="bottom" constant="8" id="ai8-ok-Fxg"/>
-                            <constraint firstItem="fOc-um-CMP" firstAttribute="centerX" secondItem="lMT-gk-WrO" secondAttribute="centerX" id="e1c-z2-GaN"/>
+                            <constraint firstItem="c13-sO-Ccx" firstAttribute="leading" secondItem="6Lb-qQ-HNW" secondAttribute="leading" id="ah0-jE-BuK"/>
+                            <constraint firstItem="fOc-um-CMP" firstAttribute="centerX" secondItem="vCd-Ey-NLk" secondAttribute="centerX" id="g1X-YQ-CmJ"/>
+                            <constraint firstItem="vCd-Ey-NLk" firstAttribute="leading" secondItem="6Lb-qQ-HNW" secondAttribute="leading" id="nj9-1o-G9H"/>
+                            <constraint firstAttribute="bottom" secondItem="c13-sO-Ccx" secondAttribute="bottom" id="qMu-gH-ssJ"/>
+                            <constraint firstItem="6Lb-qQ-HNW" firstAttribute="trailing" secondItem="c13-sO-Ccx" secondAttribute="trailing" id="qTs-FT-Vvh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Lb-qQ-HNW"/>
                     </view>
@@ -1893,9 +1723,12 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstItem="iYt-ZO-6LC" firstAttribute="top" secondItem="TnW-Rm-eg5" secondAttribute="topMargin" constant="168" id="08C-hJ-qV5"/>
                             <constraint firstItem="lLQ-Iq-HeC" firstAttribute="top" secondItem="ONP-SO-fBr" secondAttribute="bottom" constant="111" id="7Aa-Jp-6Ja"/>
                             <constraint firstAttribute="trailing" secondItem="lLQ-Iq-HeC" secondAttribute="trailing" constant="63" id="7Bs-3h-WTQ"/>
+                            <constraint firstItem="hIl-jq-zoP" firstAttribute="leading" secondItem="Wx9-I9-qbA" secondAttribute="leading" id="7FQ-8t-Spr"/>
                             <constraint firstItem="hIl-jq-zoP" firstAttribute="top" secondItem="TnW-Rm-eg5" secondAttribute="top" id="8iE-j0-vA5"/>
                             <constraint firstItem="iYt-ZO-6LC" firstAttribute="leading" secondItem="TnW-Rm-eg5" secondAttribute="leadingMargin" id="93T-8w-joC"/>
                             <constraint firstAttribute="trailing" secondItem="hIl-jq-zoP" secondAttribute="trailing" id="9qd-ya-FAM"/>
+                            <constraint firstAttribute="bottom" secondItem="hIl-jq-zoP" secondAttribute="bottom" id="D10-3p-KSD"/>
+                            <constraint firstItem="hIl-jq-zoP" firstAttribute="trailing" secondItem="Wx9-I9-qbA" secondAttribute="trailing" id="D8M-Ix-UqN"/>
                             <constraint firstItem="Wx9-I9-qbA" firstAttribute="trailing" secondItem="UAw-90-0qa" secondAttribute="trailing" constant="264" id="Dta-v1-D7c"/>
                             <constraint firstItem="D3b-rQ-W3C" firstAttribute="top" secondItem="ONP-SO-fBr" secondAttribute="bottom" constant="112" id="FcY-CB-b4v"/>
                             <constraint firstItem="hIl-jq-zoP" firstAttribute="leading" secondItem="TnW-Rm-eg5" secondAttribute="leading" id="Hd8-1o-cSL"/>
@@ -1909,6 +1742,7 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstAttribute="bottomMargin" secondItem="iYt-ZO-6LC" secondAttribute="bottom" constant="20" id="QTI-gs-D70"/>
                             <constraint firstItem="iYt-ZO-6LC" firstAttribute="trailing" secondItem="TnW-Rm-eg5" secondAttribute="trailingMargin" id="U37-2K-Bhe"/>
                             <constraint firstItem="fOQ-a8-qMd" firstAttribute="leading" secondItem="TnW-Rm-eg5" secondAttribute="leading" constant="61" id="YSS-VP-Fp2"/>
+                            <constraint firstItem="hIl-jq-zoP" firstAttribute="top" secondItem="TnW-Rm-eg5" secondAttribute="top" id="c03-Jj-uj8"/>
                             <constraint firstItem="hIl-jq-zoP" firstAttribute="leading" secondItem="Wx9-I9-qbA" secondAttribute="leading" id="dlN-9d-yE1"/>
                             <constraint firstItem="fOQ-a8-qMd" firstAttribute="top" secondItem="ONP-SO-fBr" secondAttribute="bottom" constant="112" id="jHs-Pq-D2W"/>
                             <constraint firstItem="hIl-jq-zoP" firstAttribute="trailing" secondItem="Wx9-I9-qbA" secondAttribute="trailing" id="nbs-JU-1vf"/>
@@ -1931,7 +1765,7 @@ These linked sites are only for your convenience and therefore you access them a
             <objects>
                 <tableViewController storyboardIdentifier="VanFunStopTableViewController" id="5mg-B4-E2l" customClass="VanFunStopTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SKo-tj-wxT">
-                        <rect key="frame" x="0.0" y="0.0" width="234" height="311"/>
+                        <rect key="frame" x="0.0" y="0.0" width="234" height="262"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -1953,88 +1787,6 @@ These linked sites are only for your convenience and therefore you access them a
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lw8-Yz-mSh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4387.5" y="-300"/>
-        </scene>
-        <!--TorAbout-->
-        <scene sceneID="Lpe-HG-GZi">
-            <objects>
-                <viewController storyboardIdentifier="TorAbout" id="rGE-o8-odr" userLabel="TorAbout" customClass="TorAbout" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="db9-lQ-gB6"/>
-                        <viewControllerLayoutGuide type="bottom" id="cfT-c1-gyB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kWq-Ro-2zD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="1ft-Fk-iGW">
-                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBF-ox-o9A">
-                                <rect key="frame" x="46" y="184" width="228" height="233"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2C-eL-lpG">
-                                        <rect key="frame" x="0.0" y="0.0" width="228" height="292"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dig-si-Odi">
-                                                <rect key="frame" x="0.0" y="0.0" width="228" height="229"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Dig-si-Odi" firstAttribute="top" secondItem="w2C-eL-lpG" secondAttribute="top" id="2TZ-dX-rdp"/>
-                                            <constraint firstItem="Dig-si-Odi" firstAttribute="leading" secondItem="w2C-eL-lpG" secondAttribute="leading" id="327-cV-Nc6"/>
-                                            <constraint firstItem="Dig-si-Odi" firstAttribute="centerY" secondItem="w2C-eL-lpG" secondAttribute="centerY" constant="-31.5" id="GSC-JJ-2Re"/>
-                                            <constraint firstItem="Dig-si-Odi" firstAttribute="centerX" secondItem="w2C-eL-lpG" secondAttribute="centerX" id="NWZ-G2-xHA"/>
-                                            <constraint firstItem="Dig-si-Odi" firstAttribute="width" secondItem="w2C-eL-lpG" secondAttribute="width" id="Tbs-Zl-3C8"/>
-                                            <constraint firstItem="Dig-si-Odi" firstAttribute="height" secondItem="w2C-eL-lpG" secondAttribute="height" constant="-63" id="uNH-dS-cau"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="w2C-eL-lpG" secondAttribute="trailing" id="Jda-UT-IKt"/>
-                                    <constraint firstItem="w2C-eL-lpG" firstAttribute="centerY" secondItem="NBF-ox-o9A" secondAttribute="centerY" constant="29.5" id="L0d-BN-hDV"/>
-                                    <constraint firstItem="w2C-eL-lpG" firstAttribute="width" secondItem="NBF-ox-o9A" secondAttribute="width" id="dJj-av-ka4"/>
-                                    <constraint firstAttribute="bottom" secondItem="w2C-eL-lpG" secondAttribute="bottom" constant="-59" id="f2v-g6-TAC"/>
-                                    <constraint firstItem="w2C-eL-lpG" firstAttribute="top" secondItem="NBF-ox-o9A" secondAttribute="top" id="fOU-wq-Orm"/>
-                                    <constraint firstItem="w2C-eL-lpG" firstAttribute="centerX" secondItem="NBF-ox-o9A" secondAttribute="centerX" id="fzn-1x-3jM"/>
-                                    <constraint firstItem="w2C-eL-lpG" firstAttribute="height" secondItem="NBF-ox-o9A" secondAttribute="height" constant="59" id="lv2-oS-71E"/>
-                                    <constraint firstItem="w2C-eL-lpG" firstAttribute="leading" secondItem="NBF-ox-o9A" secondAttribute="leading" id="tIU-Lv-Wpk"/>
-                                </constraints>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcS-bn-xvU">
-                                <rect key="frame" x="16" y="20" width="38" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="8SI-qQ-XxU"/>
-                                    <constraint firstAttribute="width" constant="38" id="fyW-Om-fcx"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="gobackbtn"/>
-                                <connections>
-                                    <action selector="startTorMainMenu:forEvent:" destination="rGE-o8-odr" eventType="touchUpInside" id="ZR9-Io-9ds"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="RcS-bn-xvU" firstAttribute="leading" secondItem="kWq-Ro-2zD" secondAttribute="leadingMargin" id="DO5-Lp-ecl"/>
-                            <constraint firstItem="1ft-Fk-iGW" firstAttribute="leading" secondItem="kWq-Ro-2zD" secondAttribute="leading" id="JEg-Yt-BAu"/>
-                            <constraint firstAttribute="bottom" secondItem="1ft-Fk-iGW" secondAttribute="bottom" id="RJy-xc-T8c"/>
-                            <constraint firstItem="NBF-ox-o9A" firstAttribute="centerX" secondItem="1ft-Fk-iGW" secondAttribute="centerX" id="Vbb-Lx-Zx3"/>
-                            <constraint firstItem="RcS-bn-xvU" firstAttribute="top" secondItem="aAe-N2-2bY" secondAttribute="top" id="WJa-i6-8HK"/>
-                            <constraint firstAttribute="trailing" secondItem="1ft-Fk-iGW" secondAttribute="trailing" id="Yv4-t7-S0P"/>
-                            <constraint firstItem="NBF-ox-o9A" firstAttribute="top" secondItem="kWq-Ro-2zD" secondAttribute="top" constant="184" id="bvO-X9-7E7"/>
-                            <constraint firstItem="1ft-Fk-iGW" firstAttribute="top" secondItem="kWq-Ro-2zD" secondAttribute="top" id="fl1-WU-Rbp"/>
-                            <constraint firstItem="NBF-ox-o9A" firstAttribute="leading" secondItem="kWq-Ro-2zD" secondAttribute="leading" constant="46" id="fld-mO-qeZ"/>
-                            <constraint firstItem="cfT-c1-gyB" firstAttribute="top" secondItem="NBF-ox-o9A" secondAttribute="bottom" constant="151" id="htQ-hh-wlV"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="aAe-N2-2bY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ufA-Uh-Dyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2453.6231884057975" y="600"/>
         </scene>
         <!--VanFunStopMap-->
         <scene sceneID="csZ-Ss-c2O">
@@ -2071,16 +1823,20 @@ These linked sites are only for your convenience and therefore you access them a
                             <constraint firstAttribute="trailing" secondItem="dE3-Af-47b" secondAttribute="trailing" id="8hN-Dx-VHB"/>
                             <constraint firstItem="yoq-Yg-7mQ" firstAttribute="leading" secondItem="HaU-iY-mJ6" secondAttribute="leading" constant="16" id="A7k-93-fVC"/>
                             <constraint firstItem="MZs-SH-NiX" firstAttribute="leading" secondItem="HaU-iY-mJ6" secondAttribute="leading" constant="16" id="EPX-sc-aOK"/>
+                            <constraint firstItem="dE3-Af-47b" firstAttribute="leading" secondItem="mXd-Ib-46O" secondAttribute="leading" id="Gra-eP-O5B"/>
                             <constraint firstAttribute="bottom" secondItem="dE3-Af-47b" secondAttribute="bottom" id="Lg9-RA-VjU"/>
                             <constraint firstItem="dE3-Af-47b" firstAttribute="top" secondItem="HaU-iY-mJ6" secondAttribute="top" id="ONo-IE-Ivb"/>
                             <constraint firstAttribute="bottom" secondItem="dE3-Af-47b" secondAttribute="bottom" id="QmX-yM-eML"/>
                             <constraint firstItem="dE3-Af-47b" firstAttribute="top" secondItem="HaU-iY-mJ6" secondAttribute="top" id="WyX-ps-ztc"/>
+                            <constraint firstAttribute="bottom" secondItem="dE3-Af-47b" secondAttribute="bottom" id="XHc-Jb-NNZ"/>
+                            <constraint firstItem="dE3-Af-47b" firstAttribute="trailing" secondItem="mXd-Ib-46O" secondAttribute="trailing" id="XpK-gI-kN6"/>
                             <constraint firstAttribute="trailing" secondItem="yoq-Yg-7mQ" secondAttribute="trailing" constant="16" id="bf8-Rg-Lq8"/>
                             <constraint firstAttribute="bottom" secondItem="yoq-Yg-7mQ" secondAttribute="bottom" constant="36" id="ckv-op-Jx9"/>
                             <constraint firstItem="dE3-Af-47b" firstAttribute="leading" secondItem="mXd-Ib-46O" secondAttribute="leading" id="frM-XI-NEa"/>
                             <constraint firstItem="dE3-Af-47b" firstAttribute="trailing" secondItem="mXd-Ib-46O" secondAttribute="trailing" id="tm2-ng-2PS"/>
                             <constraint firstItem="MZs-SH-NiX" firstAttribute="top" secondItem="BWl-Cm-JY7" secondAttribute="bottom" constant="15" id="v78-bm-NRO"/>
                             <constraint firstItem="yoq-Yg-7mQ" firstAttribute="top" secondItem="HaU-iY-mJ6" secondAttribute="top" constant="113" id="ve9-4a-88P"/>
+                            <constraint firstItem="dE3-Af-47b" firstAttribute="top" secondItem="HaU-iY-mJ6" secondAttribute="top" id="wHb-Tt-xLB"/>
                             <constraint firstItem="dE3-Af-47b" firstAttribute="leading" secondItem="HaU-iY-mJ6" secondAttribute="leading" id="zdg-e8-ywa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mXd-Ib-46O"/>
@@ -2102,9 +1858,8 @@ These linked sites are only for your convenience and therefore you access them a
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="usZ-1z-lS9">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="usZ-1z-lS9">
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyg-dB-Ilb">
                                 <rect key="frame" x="25" y="37" width="40" height="40"/>
@@ -2199,6 +1954,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="usZ-1z-lS9" secondAttribute="bottom" id="0ur-aO-Lfp"/>
+                            <constraint firstItem="usZ-1z-lS9" firstAttribute="trailing" secondItem="qRt-UK-WWp" secondAttribute="trailing" id="bJk-Cp-fqf"/>
+                            <constraint firstItem="usZ-1z-lS9" firstAttribute="top" secondItem="Twp-51-25v" secondAttribute="top" id="fNS-Dh-YVY"/>
+                            <constraint firstItem="usZ-1z-lS9" firstAttribute="leading" secondItem="qRt-UK-WWp" secondAttribute="leading" id="kK7-0e-mM7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qRt-UK-WWp"/>
                     </view>
                 </viewController>
@@ -2221,49 +1982,26 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="jfR-ke-f7q">
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UhW-DI-O1L">
-                                <rect key="frame" x="44" y="141" width="231" height="267"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="4. Once all QR Codes are scan visit Fun Stop Booth for a chance to win a prize!" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk2-ZG-jCr">
-                                        <rect key="frame" x="0.0" y="193" width="231" height="74"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="74" id="Gnv-bx-t3U"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1. Visit all location show on the map" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVI-D4-vmC">
-                                        <rect key="frame" x="0.0" y="0.0" width="231" height="51"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="51" id="Or3-2o-NkR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2. At each location ask a volunteer for Fun Stop QR Code" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1d-su-7e3">
-                                        <rect key="frame" x="0.0" y="59" width="231" height="73"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3. Scan the QR code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7b-aw-Geg">
-                                        <rect key="frame" x="0.0" y="157" width="231" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr6-e4-Vg6">
+                                <rect key="frame" x="44" y="185" width="234" height="278"/>
+                                <string key="text">1. Visit all location show on the map 
+
+2. At each station, ask a volunteer for the Fun Stop QR Code
+
+3. Tap camera and scan the QR Code
+
+4. Once all QR Codes are scanned, visit the Fun Stop Booth for a chance to win a prize! 
+
+5. All who complete the game are entered into a draw to win a round-trip flight to Taipei!</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWV-5m-RnF">
+                                <rect key="frame" x="52" y="482" width="218" height="33"/>
                                 <constraints>
-                                    <constraint firstItem="Tk2-ZG-jCr" firstAttribute="top" secondItem="L7b-aw-Geg" secondAttribute="bottom" constant="20" id="Qgr-BB-C1Y"/>
-                                    <constraint firstItem="j1d-su-7e3" firstAttribute="top" secondItem="cVI-D4-vmC" secondAttribute="bottom" constant="8" id="dDE-wD-xiC"/>
+                                    <constraint firstAttribute="height" constant="33" id="Fjz-NH-xrk"/>
                                 </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWV-5m-RnF">
-                                <rect key="frame" x="58" y="473" width="217" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="startplayingbtn"/>
                                 <connections>
                                     <action selector="startVanFunStopProgram:forEvent:" destination="X50-RX-k9f" eventType="touchUpInside" id="4qy-YR-VZp"/>
@@ -2272,17 +2010,24 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jfR-ke-f7q" firstAttribute="leading" secondItem="LSM-ip-sT1" secondAttribute="leading" id="0Su-aK-Toc"/>
-                            <constraint firstAttribute="trailing" secondItem="jfR-ke-f7q" secondAttribute="trailing" id="WC7-BU-SAD"/>
-                            <constraint firstItem="jfR-ke-f7q" firstAttribute="top" secondItem="LSM-ip-sT1" secondAttribute="top" id="YeY-yg-2B5"/>
-                            <constraint firstAttribute="bottom" secondItem="jfR-ke-f7q" secondAttribute="bottom" id="bPn-m6-Vq7"/>
+                            <constraint firstAttribute="bottom" secondItem="jfR-ke-f7q" secondAttribute="bottom" id="3Q0-7k-7Sf"/>
+                            <constraint firstItem="GWV-5m-RnF" firstAttribute="centerX" secondItem="Rr6-e4-Vg6" secondAttribute="centerX" id="AWu-aQ-OC6"/>
+                            <constraint firstItem="GWV-5m-RnF" firstAttribute="leading" secondItem="klM-jr-hvH" secondAttribute="leading" constant="52" id="IfO-5N-hI1"/>
+                            <constraint firstItem="klM-jr-hvH" firstAttribute="trailing" secondItem="Rr6-e4-Vg6" secondAttribute="trailing" constant="42" id="JEA-mM-sxk"/>
+                            <constraint firstItem="jfR-ke-f7q" firstAttribute="top" secondItem="LSM-ip-sT1" secondAttribute="top" id="RYn-Xp-Qc2"/>
+                            <constraint firstItem="Rr6-e4-Vg6" firstAttribute="top" secondItem="0jZ-Wq-BvJ" secondAttribute="bottom" constant="165" id="TrC-MX-JsG"/>
+                            <constraint firstItem="jfR-ke-f7q" firstAttribute="leading" secondItem="klM-jr-hvH" secondAttribute="leading" id="hCN-p0-GrM"/>
+                            <constraint firstItem="GWV-5m-RnF" firstAttribute="top" secondItem="Rr6-e4-Vg6" secondAttribute="bottom" constant="19" id="jBV-nQ-RT6"/>
+                            <constraint firstItem="jfR-ke-f7q" firstAttribute="trailing" secondItem="klM-jr-hvH" secondAttribute="trailing" id="moj-MQ-eAA"/>
+                            <constraint firstItem="Rr6-e4-Vg6" firstAttribute="leading" secondItem="klM-jr-hvH" secondAttribute="leading" constant="44" id="r3g-vf-p2F"/>
+                            <constraint firstItem="jGZ-Nr-vT6" firstAttribute="top" secondItem="GWV-5m-RnF" secondAttribute="bottom" constant="53" id="y0M-Eg-Jdo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="klM-jr-hvH"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJ8-hT-xKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3395.625" y="-717.25352112676057"/>
+            <point key="canvasLocation" x="3391.875" y="-719.36619718309862"/>
         </scene>
         <!--TorMainMenu-->
         <scene sceneID="w9j-sS-EQu">
@@ -2296,11 +2041,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithorange" translatesAutoresizingMaskIntoConstraints="NO" id="SVs-dR-CbQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithorange" translatesAutoresizingMaskIntoConstraints="NO" id="SVs-dR-CbQ">
                                 <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
                             </imageView>
-                            <view contentMode="scaleAspectFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHH-Tt-W1r">
+                            <view contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHH-Tt-W1r">
                                 <rect key="frame" x="0.0" y="232" width="320" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcK-nI-XON">
                                         <rect key="frame" x="103" y="340" width="127" height="65"/>
@@ -2322,7 +2068,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                             <action selector="startTorPrivacyPolicy:forEvent:" destination="E3I-bp-yZ0" eventType="touchUpInside" id="elj-0Z-g83"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPa-RD-mjX">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPa-RD-mjX">
                                         <rect key="frame" x="63" y="26" width="194" height="188"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hco-tR-miu">
@@ -2398,11 +2144,6 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="bPa-RD-mjX" firstAttribute="centerY" secondItem="nHH-Tt-W1r" secondAttribute="centerY" constant="-30" id="30W-Qi-1cL"/>
-                                    <constraint firstItem="bPa-RD-mjX" firstAttribute="centerX" secondItem="nHH-Tt-W1r" secondAttribute="centerX" constant="-1.5" id="Yur-ZV-Bfe"/>
-                                    <constraint firstItem="bPa-RD-mjX" firstAttribute="centerX" secondItem="nHH-Tt-W1r" secondAttribute="centerX" constant="-1.5" id="i9w-x3-x5h"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GID-NW-VSY">
                                 <rect key="frame" x="39" y="201" width="242" height="46"/>
@@ -2419,17 +2160,13 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SVs-dR-CbQ" firstAttribute="centerX" secondItem="AGZ-5d-IlI" secondAttribute="centerX" id="8NX-Iw-eln"/>
-                            <constraint firstItem="nHH-Tt-W1r" firstAttribute="leading" secondItem="AGZ-5d-IlI" secondAttribute="leading" id="DLC-JX-rZh"/>
-                            <constraint firstItem="nHH-Tt-W1r" firstAttribute="bottom" secondItem="7dm-Qt-XGt" secondAttribute="top" id="GMp-uB-hhH"/>
-                            <constraint firstItem="nHH-Tt-W1r" firstAttribute="bottom" secondItem="7dm-Qt-XGt" secondAttribute="top" id="S5d-Xq-dBS"/>
-                            <constraint firstItem="SVs-dR-CbQ" firstAttribute="width" secondItem="AGZ-5d-IlI" secondAttribute="width" id="WEo-lh-6UC"/>
+                            <constraint firstItem="SVs-dR-CbQ" firstAttribute="trailing" secondItem="EcE-6a-ycc" secondAttribute="trailing" id="HCr-By-Fkn"/>
+                            <constraint firstItem="SVs-dR-CbQ" firstAttribute="leading" secondItem="EcE-6a-ycc" secondAttribute="leading" id="XxM-Y2-o3O"/>
                             <constraint firstItem="GID-NW-VSY" firstAttribute="centerX" secondItem="AGZ-5d-IlI" secondAttribute="centerX" constant="-23" id="ZHc-xr-XcE"/>
                             <constraint firstAttribute="top" secondItem="GID-NW-VSY" secondAttribute="bottom" constant="-138" id="fj6-QD-4nL"/>
                             <constraint firstAttribute="top" secondItem="GID-NW-VSY" secondAttribute="bottom" constant="-138" id="jXV-8V-vJI"/>
-                            <constraint firstItem="nHH-Tt-W1r" firstAttribute="trailing" secondItem="AGZ-5d-IlI" secondAttribute="trailing" id="p2G-FA-ZRd"/>
-                            <constraint firstItem="SVs-dR-CbQ" firstAttribute="height" secondItem="AGZ-5d-IlI" secondAttribute="height" id="qB8-dM-KIc"/>
-                            <constraint firstItem="SVs-dR-CbQ" firstAttribute="centerY" secondItem="AGZ-5d-IlI" secondAttribute="centerY" id="yOB-Jz-wvb"/>
+                            <constraint firstAttribute="bottom" secondItem="SVs-dR-CbQ" secondAttribute="bottom" id="m8i-w0-Hsi"/>
+                            <constraint firstItem="SVs-dR-CbQ" firstAttribute="top" secondItem="AGZ-5d-IlI" secondAttribute="top" id="p9d-Ud-nZu"/>
                             <constraint firstItem="bPa-RD-mjX" firstAttribute="top" secondItem="GID-NW-VSY" secondAttribute="bottom" constant="37" id="zWC-Tp-Wad"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EcE-6a-ycc"/>
@@ -2535,9 +2272,8 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-Cs-Tsw">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-Cs-Tsw">
+                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwA-tk-Jro">
                                 <rect key="frame" x="163" y="143" width="141" height="46"/>
@@ -2611,16 +2347,20 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                             <constraint firstItem="KCd-PF-5kK" firstAttribute="top" secondItem="KDe-Sy-hHi" secondAttribute="bottom" constant="54" id="6Gt-ed-nxt"/>
                             <constraint firstItem="KDe-Sy-hHi" firstAttribute="top" secondItem="Lvl-Ff-qnI" secondAttribute="bottom" constant="29" id="EJA-h0-eeu"/>
                             <constraint firstAttribute="trailing" secondItem="fwA-tk-Jro" secondAttribute="trailing" constant="16" id="NJl-df-99N"/>
+                            <constraint firstAttribute="bottom" secondItem="WGb-Cs-Tsw" secondAttribute="bottom" id="RQQ-yN-PBE"/>
                             <constraint firstItem="fwA-tk-Jro" firstAttribute="leading" secondItem="KCd-PF-5kK" secondAttribute="trailing" constant="8" id="Tac-XQ-S0S"/>
                             <constraint firstItem="KCd-PF-5kK" firstAttribute="leading" secondItem="kUO-0T-LtK" secondAttribute="leading" constant="16" id="VE9-Di-nmn"/>
                             <constraint firstItem="KDe-Sy-hHi" firstAttribute="leading" secondItem="kUO-0T-LtK" secondAttribute="leading" constant="16" id="Ypc-Ro-y7U"/>
+                            <constraint firstItem="fCF-fq-5ab" firstAttribute="trailing" secondItem="WGb-Cs-Tsw" secondAttribute="trailing" id="ZT2-yg-B67"/>
                             <constraint firstAttribute="trailing" secondItem="NNU-it-muu" secondAttribute="trailing" constant="17" id="btZ-ik-5eb"/>
                             <constraint firstItem="KCd-PF-5kK" firstAttribute="top" secondItem="Lvl-Ff-qnI" secondAttribute="bottom" constant="123" id="e4J-57-nMn"/>
                             <constraint firstAttribute="trailing" secondItem="eRo-Qn-a60" secondAttribute="trailing" constant="17" id="hU8-je-0l6"/>
                             <constraint firstItem="eRo-Qn-a60" firstAttribute="leading" secondItem="KDe-Sy-hHi" secondAttribute="trailing" constant="209" id="jSn-xP-tgV"/>
+                            <constraint firstItem="WGb-Cs-Tsw" firstAttribute="top" secondItem="kUO-0T-LtK" secondAttribute="top" id="mGT-JT-QVw"/>
                             <constraint firstItem="y26-nR-U1d" firstAttribute="top" secondItem="NNU-it-muu" secondAttribute="bottom" constant="20" id="qHd-6R-ORt"/>
                             <constraint firstItem="NNU-it-muu" firstAttribute="leading" secondItem="kUO-0T-LtK" secondAttribute="leading" constant="15" id="tyu-1W-gIh"/>
                             <constraint firstItem="eRo-Qn-a60" firstAttribute="leading" secondItem="KDe-Sy-hHi" secondAttribute="trailing" constant="209" id="uep-gP-hc1"/>
+                            <constraint firstItem="WGb-Cs-Tsw" firstAttribute="leading" secondItem="fCF-fq-5ab" secondAttribute="leading" id="vdS-wU-oiz"/>
                             <constraint firstItem="NNU-it-muu" firstAttribute="top" secondItem="Lvl-Ff-qnI" secondAttribute="bottom" constant="196" id="x7j-Jc-Ks8"/>
                             <constraint firstItem="fwA-tk-Jro" firstAttribute="top" secondItem="Lvl-Ff-qnI" secondAttribute="bottom" constant="123" id="zm1-qK-b6U"/>
                         </constraints>
@@ -2659,6 +2399,302 @@ Should an error be made by ACSEA or its financial institution, full refunds will
             </objects>
             <point key="canvasLocation" x="4613" y="2038"/>
         </scene>
+        <!--VanAbout-->
+        <scene sceneID="TfK-9t-soN">
+            <objects>
+                <viewController storyboardIdentifier="VanAbout" id="2NX-81-v5F" userLabel="VanAbout" customClass="VanAbout" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BZV-bF-Mrr"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Lq-PP-2Xf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1wU-eQ-073">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="OA1-qs-2V9">
+                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQo-o0-RpP">
+                                <rect key="frame" x="54" y="180" width="212" height="267"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oES-HJ-dfs">
+                                        <rect key="frame" x="0.0" y="0.0" width="212" height="285"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbM-8I-bgD">
+                                                <rect key="frame" x="0.0" y="0.0" width="212" height="256"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="DbM-8I-bgD" secondAttribute="bottom" constant="29" id="N8n-a8-dut"/>
+                                            <constraint firstItem="DbM-8I-bgD" firstAttribute="width" secondItem="oES-HJ-dfs" secondAttribute="width" id="PGh-7I-W2b"/>
+                                            <constraint firstAttribute="trailing" secondItem="DbM-8I-bgD" secondAttribute="trailing" id="cu0-uO-V5f"/>
+                                            <constraint firstItem="DbM-8I-bgD" firstAttribute="leading" secondItem="oES-HJ-dfs" secondAttribute="leading" id="eD9-ED-UEj"/>
+                                            <constraint firstItem="DbM-8I-bgD" firstAttribute="height" secondItem="oES-HJ-dfs" secondAttribute="height" constant="-29" id="o3o-dP-1Kj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oES-HJ-dfs" firstAttribute="width" secondItem="IQo-o0-RpP" secondAttribute="width" id="Kqf-Ea-sCb"/>
+                                    <constraint firstItem="oES-HJ-dfs" firstAttribute="height" secondItem="IQo-o0-RpP" secondAttribute="height" constant="18" id="esW-Fd-SoQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="oES-HJ-dfs" secondAttribute="bottom" constant="-18" id="h3h-mm-Axd"/>
+                                    <constraint firstAttribute="trailing" secondItem="oES-HJ-dfs" secondAttribute="trailing" id="hmx-9x-JUX"/>
+                                    <constraint firstItem="oES-HJ-dfs" firstAttribute="top" secondItem="IQo-o0-RpP" secondAttribute="top" id="qgi-cl-zl3"/>
+                                    <constraint firstItem="oES-HJ-dfs" firstAttribute="leading" secondItem="IQo-o0-RpP" secondAttribute="leading" id="ywd-aI-JBa"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcU-gH-7Xr">
+                                <rect key="frame" x="20" y="30" width="40" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="93h-62-3La"/>
+                                    <constraint firstAttribute="height" constant="39" id="UGx-aR-wod"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="gobackbtn"/>
+                                <connections>
+                                    <action selector="startVanMenuActivity:forEvent:" destination="2NX-81-v5F" eventType="touchUpInside" id="bg0-Ks-FLs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IQo-o0-RpP" secondAttribute="trailing" constant="54" id="1Nb-c1-pE8"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="top" secondItem="1wU-eQ-073" secondAttribute="top" id="1Ye-AP-1T3"/>
+                            <constraint firstItem="GcU-gH-7Xr" firstAttribute="leading" secondItem="l9c-FT-2XG" secondAttribute="leading" constant="20" id="93q-HK-njy"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="leading" secondItem="1wU-eQ-073" secondAttribute="leading" id="FAf-mp-ceC"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="top" secondItem="1wU-eQ-073" secondAttribute="top" id="Hpx-lM-G3t"/>
+                            <constraint firstItem="IQo-o0-RpP" firstAttribute="top" secondItem="BZV-bF-Mrr" secondAttribute="bottom" constant="160" id="Ijr-hA-GxT"/>
+                            <constraint firstItem="5Lq-PP-2Xf" firstAttribute="top" secondItem="IQo-o0-RpP" secondAttribute="bottom" constant="121" id="NPR-4z-jzu"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="trailing" secondItem="1wU-eQ-073" secondAttribute="trailing" id="RZt-Zl-fgt"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="trailing" secondItem="1wU-eQ-073" secondAttribute="trailing" id="Uuc-qU-jxZ"/>
+                            <constraint firstItem="GcU-gH-7Xr" firstAttribute="top" secondItem="BZV-bF-Mrr" secondAttribute="bottom" constant="10" id="Zbc-Ql-7bi"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="trailing" secondItem="l9c-FT-2XG" secondAttribute="trailing" id="fkz-C7-VIh"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="leading" secondItem="1wU-eQ-073" secondAttribute="leading" id="hLy-7h-N7F"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="top" secondItem="1wU-eQ-073" secondAttribute="top" id="ips-Bk-nel"/>
+                            <constraint firstItem="OA1-qs-2V9" firstAttribute="leading" secondItem="l9c-FT-2XG" secondAttribute="leading" id="n1B-96-Sq5"/>
+                            <constraint firstItem="IQo-o0-RpP" firstAttribute="leading" secondItem="1wU-eQ-073" secondAttribute="leading" constant="54" id="nHb-Y1-LBq"/>
+                            <constraint firstAttribute="bottom" secondItem="OA1-qs-2V9" secondAttribute="bottom" id="npa-wQ-QzJ"/>
+                            <constraint firstAttribute="bottom" secondItem="OA1-qs-2V9" secondAttribute="bottom" id="qi8-Hx-jNO"/>
+                            <constraint firstAttribute="bottom" secondItem="OA1-qs-2V9" secondAttribute="bottom" id="zwS-WS-fPM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l9c-FT-2XG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAf-NK-L0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638.75" y="-717.25352112676057"/>
+        </scene>
+        <!--TorAbout-->
+        <scene sceneID="iQ9-h6-Uj5">
+            <objects>
+                <viewController storyboardIdentifier="TorAbout" id="OBP-Y6-AUB" userLabel="TorAbout" customClass="TorAbout" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gIU-HD-as2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xzh-mc-DLD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cW6-4n-YNM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="hGl-k1-t8n">
+                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcq-E6-F20">
+                                <rect key="frame" x="54" y="180" width="212" height="267"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe3-Yi-Qdz">
+                                        <rect key="frame" x="0.0" y="0.0" width="212" height="285"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-Dg-U9Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="212" height="256"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9vV-Dg-U9Q" firstAttribute="leading" secondItem="Qe3-Yi-Qdz" secondAttribute="leading" id="7Pm-rA-Jj1"/>
+                                            <constraint firstItem="9vV-Dg-U9Q" firstAttribute="height" secondItem="Qe3-Yi-Qdz" secondAttribute="height" constant="-29" id="P72-80-Xl7"/>
+                                            <constraint firstAttribute="bottom" secondItem="9vV-Dg-U9Q" secondAttribute="bottom" constant="29" id="eu3-Mz-LWH"/>
+                                            <constraint firstAttribute="trailing" secondItem="9vV-Dg-U9Q" secondAttribute="trailing" id="fcm-2O-3DX"/>
+                                            <constraint firstItem="9vV-Dg-U9Q" firstAttribute="width" secondItem="Qe3-Yi-Qdz" secondAttribute="width" id="lOU-BW-Vi4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qe3-Yi-Qdz" firstAttribute="width" secondItem="vcq-E6-F20" secondAttribute="width" id="3Pc-VF-tgE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qe3-Yi-Qdz" secondAttribute="trailing" id="Cwb-nx-XEl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qe3-Yi-Qdz" secondAttribute="bottom" constant="-18" id="MyY-HP-eUX"/>
+                                    <constraint firstItem="Qe3-Yi-Qdz" firstAttribute="height" secondItem="vcq-E6-F20" secondAttribute="height" constant="18" id="NzI-0J-C8e"/>
+                                    <constraint firstItem="Qe3-Yi-Qdz" firstAttribute="top" secondItem="vcq-E6-F20" secondAttribute="top" id="YDy-J9-nXl"/>
+                                    <constraint firstItem="Qe3-Yi-Qdz" firstAttribute="leading" secondItem="vcq-E6-F20" secondAttribute="leading" id="oZH-tx-ZZS"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-1j-XCS">
+                                <rect key="frame" x="20" y="30" width="40" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="C1d-SJ-oNK"/>
+                                    <constraint firstAttribute="height" constant="39" id="pIc-Ke-6Pb"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="gobackbtn"/>
+                                <connections>
+                                    <action selector="startTorMainMenu:forEvent:" destination="OBP-Y6-AUB" eventType="touchUpInside" id="M2b-a2-E4i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Sh8-1j-XCS" firstAttribute="leading" secondItem="kl0-bm-ITk" secondAttribute="leading" constant="20" id="0o5-pa-eFa"/>
+                            <constraint firstItem="vcq-E6-F20" firstAttribute="top" secondItem="gIU-HD-as2" secondAttribute="bottom" constant="160" id="1Z4-9Q-AS6"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="leading" secondItem="cW6-4n-YNM" secondAttribute="leading" id="3wf-aS-XCQ"/>
+                            <constraint firstItem="Sh8-1j-XCS" firstAttribute="top" secondItem="gIU-HD-as2" secondAttribute="bottom" constant="10" id="7yK-HD-XB5"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="trailing" secondItem="kl0-bm-ITk" secondAttribute="trailing" id="Cmm-ys-yyL"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="top" secondItem="cW6-4n-YNM" secondAttribute="top" id="EOi-KM-qtc"/>
+                            <constraint firstAttribute="bottom" secondItem="hGl-k1-t8n" secondAttribute="bottom" id="IQC-7B-qt9"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="top" secondItem="cW6-4n-YNM" secondAttribute="top" id="M8n-8j-JG2"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="leading" secondItem="cW6-4n-YNM" secondAttribute="leading" id="Tsx-4B-Va6"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="trailing" secondItem="cW6-4n-YNM" secondAttribute="trailing" id="YVQ-KJ-H8P"/>
+                            <constraint firstItem="Xzh-mc-DLD" firstAttribute="top" secondItem="vcq-E6-F20" secondAttribute="bottom" constant="121" id="bUo-YQ-EQ6"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="top" secondItem="cW6-4n-YNM" secondAttribute="top" id="dfF-vk-JiB"/>
+                            <constraint firstAttribute="trailing" secondItem="vcq-E6-F20" secondAttribute="trailing" constant="54" id="ho1-hq-5sh"/>
+                            <constraint firstAttribute="bottom" secondItem="hGl-k1-t8n" secondAttribute="bottom" id="hyi-SD-7yQ"/>
+                            <constraint firstAttribute="bottom" secondItem="hGl-k1-t8n" secondAttribute="bottom" id="mGO-TN-CPc"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="trailing" secondItem="cW6-4n-YNM" secondAttribute="trailing" id="n5o-lD-Wvz"/>
+                            <constraint firstItem="vcq-E6-F20" firstAttribute="leading" secondItem="cW6-4n-YNM" secondAttribute="leading" constant="54" id="nd9-oD-8jM"/>
+                            <constraint firstItem="hGl-k1-t8n" firstAttribute="leading" secondItem="kl0-bm-ITk" secondAttribute="leading" id="ydf-OY-bJ1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kl0-bm-ITk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryG-A9-NO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456" y="277"/>
+        </scene>
+        <!--TorTermOfUse-->
+        <scene sceneID="eeR-dR-102">
+            <objects>
+                <viewController storyboardIdentifier="VanTermOfUse" id="E9w-AF-5QE" userLabel="TorTermOfUse" customClass="VanTermOfUse" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kaT-p6-76H"/>
+                        <viewControllerLayoutGuide type="bottom" id="beU-hq-W2Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bk6-l1-NM5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundwithblue" translatesAutoresizingMaskIntoConstraints="NO" id="8Vz-cm-qz6">
+                                <rect key="frame" x="0.0" y="0.0" width="320.00000000000011" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhi-Yr-Whg">
+                                <rect key="frame" x="26" y="32" width="46" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="bxY-0J-82h"/>
+                                    <constraint firstAttribute="height" constant="44" id="ekS-Fr-Coo"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="gobackbtn"/>
+                                <connections>
+                                    <action selector="startVanMenuActivity:forEvent:" destination="E9w-AF-5QE" eventType="touchUpInside" id="Ccu-l6-TDg"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogH-Is-lBE">
+                                <rect key="frame" x="49" y="184" width="223" height="243"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWm-pF-FaN">
+                                        <rect key="frame" x="0.0" y="0.0" width="223" height="296"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC9-94-EwU">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="242"/>
+                                                <string key="text">General Terms and Conditions of Use
+ 
+Thank you for using https://www.acsea.ca/ (our “Site”). By visiting our site or using any associated app and user interfaces, you indicate your acknowledgment and acceptance of the Terms and Conditions and Privacy Policy. If you do not agree or cannot comply with these terms and conditions, then you may not use this site or any associated app and user interfaces.
+
+TERM TERMINATION
+
+These terms and conditions are applicable to you upon your accessing the site and/or completing the registration process through the site and/or the ACSEA app. These terms and conditions, or any part of them, may be terminated by Asian-Canadian Special Events Association without notice at any time, for any reason. The provisions relating to Copyrights, Trademarks, Participation Disclaimer, and Indemnification shall survive any termination.
+
+COPYRIGHTS
+
+The content included in any ACSEA site and/or associated app, including but not limited to text, graphics or code is copyrighted as a collective work under the Canadian copyright laws, and is the property of the Asian-Canadian Special Events Association, identified by the name or logo on materials posted, is identified as being the copyright owner. If another party is noted as a copyright holder, please contact that party for permission to use the materials in question.
+
+THE ASIAN-CANADIAN SPECIAL EVENTS ASSOCIATION (ACSEA) EVENT TERMS AND CONDITIONS
+
+Events may consist of festivals, concerts or other forms of advertised events whether attendance is free or if an admission fee is charged to attend.
+
+Your name and contact information collected during the registration process may be shared with event participants and the speakers in the form of a delegate list. By registering for the event you are consenting to the use and disclosure of the information for this purpose. Registration information will not be shared with event exhibitors, sponsors and other conference delegates.
+
+ACSEA reserves the right to cancel events at any time prior to the scheduled date; in this case, our liability is limited to a full refund of the session fee. Confirmation of registration to any specific event will be sent by email before the event or workshop. Payment is due upon registration.
+
+Registrants who do not show up for the event in question are not eligible for a refund.
+Cancellations received by our offices by mail/email within the specified cancellation date are refundable and may be subject to an administration fee. Refunds will not be given after that date, however, delegate substitution is permitted.
+For the duration of ACSEA events, all volunteers and community groups that are on festival grounds must consent to the use and possible distribution of their own photo. ACSEA will not sell, trade or provide any information from the ACSEA database, including personal information to companies, solicitors or other third parties for any reason. These photos will be used solely for promotional purposes for the festival.
+
+USE OF SITE
+
+Harassment in any manner or form on the site, including via e-mail, chat, or by use of obscene or abusive language, is strictly forbidden. Impersonation of others, including Asian-Canadian Special Events Association employees, host, or representative, as well as other members or visitors on the site is prohibited.
+
+You may not upload to, distribute, or otherwise publish through the site any content which is libellous, defamatory, obscene, threatening, invasive of privacy or publicity rights, abusive, illegal, or otherwise objectionable which may constitute or encourage a criminal offense, violate the rights of any party or which may otherwise give rise to liability or violate any law.
+
+You may not upload commercial content on the site or use the site to solicit others to join or become members of any other commercial online service or other organization.
+
+The Asian-Canadian Special Events Association reserves the right to block or remove communications or materials that it determines to be (a) abusive, defamatory, or obscene, (b) fraudulent, deceptive, or misleading, (c) in violation of a copyright, trademark or; other intellectual property right of another or (d) offensive or otherwise unacceptable to the Asian-Canadian Special Events Association at its sole discretion.
+
+INDEMNIFICATION
+
+You agree to indemnify, defend, and hold harmless Asian-Canadian Special Events Association, its officers, directors, employees, and suppliers (collectively the “Service Providers”) from and against all losses, expenses, damages and costs, including reasonable attorneys’ fees, resulting from any violation of these terms and conditions or any activity related to your account (including negligent or wrongful conduct) by you or any other person accessing our site using your internet account.
+
+THIRD PARTY LINKS
+
+In an attempt to provide increased value to our visitors, Asian-Canadian Special Events Association may link to sites operated by third parties. However, even if the third party is an affiliate, the Asian-Canadian Special Events Association has no control over these linked sites, all of which have separate privacy and data collection practices, independent of the Asian-Canadian Special Events Association.
+
+These linked sites are only for your convenience and therefore you access them at your own risk. Nonetheless, the Asian-Canadian Special Events Association seeks to protect the integrity of its web site, app and the links placed upon it and therefore requests any feedback on not only its own site and app but for sites it links to as well (including if a specific link does not work).
+</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="JC9-94-EwU" firstAttribute="leading" secondItem="dWm-pF-FaN" secondAttribute="leading" id="9Tt-cc-u8Y"/>
+                                            <constraint firstAttribute="bottom" secondItem="JC9-94-EwU" secondAttribute="bottom" constant="54" id="NfE-f9-ZQQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="JC9-94-EwU" secondAttribute="trailing" constant="5" id="NmF-HZ-44U"/>
+                                            <constraint firstItem="JC9-94-EwU" firstAttribute="top" secondItem="dWm-pF-FaN" secondAttribute="top" id="fbJ-Ka-AkI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dWm-pF-FaN" firstAttribute="top" secondItem="ogH-Is-lBE" secondAttribute="top" id="Ld8-3v-fOS"/>
+                                    <constraint firstAttribute="trailing" secondItem="dWm-pF-FaN" secondAttribute="trailing" id="Rcg-Az-whJ"/>
+                                    <constraint firstItem="dWm-pF-FaN" firstAttribute="height" secondItem="ogH-Is-lBE" secondAttribute="height" constant="53" id="cSz-Jq-Bx6"/>
+                                    <constraint firstAttribute="bottom" secondItem="dWm-pF-FaN" secondAttribute="bottom" constant="-53" id="e2Q-fB-X8y"/>
+                                    <constraint firstItem="dWm-pF-FaN" firstAttribute="centerX" secondItem="ogH-Is-lBE" secondAttribute="centerX" id="iI5-S7-JsU"/>
+                                    <constraint firstItem="dWm-pF-FaN" firstAttribute="leading" secondItem="ogH-Is-lBE" secondAttribute="leading" id="jIE-x1-BLi"/>
+                                    <constraint firstItem="dWm-pF-FaN" firstAttribute="width" secondItem="ogH-Is-lBE" secondAttribute="width" id="yO4-WN-tzd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ogH-Is-lBE" firstAttribute="leading" secondItem="bk6-l1-NM5" secondAttribute="leading" constant="49" id="4rc-KS-1NY"/>
+                            <constraint firstItem="8Vz-cm-qz6" firstAttribute="leading" secondItem="bk6-l1-NM5" secondAttribute="leading" id="68f-Wy-07m"/>
+                            <constraint firstItem="ogH-Is-lBE" firstAttribute="top" secondItem="bk6-l1-NM5" secondAttribute="top" constant="184" id="6NU-9d-It0"/>
+                            <constraint firstItem="8Vz-cm-qz6" firstAttribute="top" secondItem="bk6-l1-NM5" secondAttribute="top" id="FaR-3l-9bf"/>
+                            <constraint firstItem="Qhi-Yr-Whg" firstAttribute="leading" secondItem="bk6-l1-NM5" secondAttribute="leading" constant="26" id="IfX-RN-2wR"/>
+                            <constraint firstAttribute="bottom" secondItem="8Vz-cm-qz6" secondAttribute="bottom" id="LjP-Fp-xGf"/>
+                            <constraint firstAttribute="trailing" secondItem="ogH-Is-lBE" secondAttribute="trailing" constant="48" id="a3I-HE-3xW"/>
+                            <constraint firstItem="8Vz-cm-qz6" firstAttribute="trailing" secondItem="bk6-l1-NM5" secondAttribute="trailing" id="j2Q-Vf-W85"/>
+                            <constraint firstItem="Qhi-Yr-Whg" firstAttribute="top" secondItem="kaT-p6-76H" secondAttribute="bottom" constant="12" id="vD5-FL-jZq"/>
+                            <constraint firstItem="beU-hq-W2Z" firstAttribute="top" secondItem="ogH-Is-lBE" secondAttribute="bottom" constant="141" id="xeB-Un-rIV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UOr-RE-vsi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SaL-3v-W7l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="-1962"/>
+        </scene>
     </scenes>
     <resources>
         <image name="aboutbtn" width="453" height="88.5"/>
@@ -2666,12 +2702,12 @@ Should an error be made by ACSEA or its financial institution, full refunds will
         <image name="background" width="621.5" height="1104.5"/>
         <image name="backgroundwithblue" width="621.5" height="1104.5"/>
         <image name="backgroundwithorange" width="621.5" height="1104.5"/>
+        <image name="backgroundwithwaves" width="621.5" height="1104.5"/>
         <image name="btnbgpurple" width="625.5" height="82.5"/>
         <image name="camerabtn" width="240" height="86.5"/>
         <image name="funstopicon" width="236" height="236"/>
         <image name="gobackbtn" width="57" height="57.5"/>
         <image name="infobtn" width="57.5" height="57.5"/>
-        <image name="location_menu_templatepng" width="621.5" height="1344.5"/>
         <image name="login_template" width="621.5" height="1344.5"/>
         <image name="mapbtn" width="239.5" height="86.5"/>
         <image name="mapicon" width="236" height="236"/>

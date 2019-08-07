@@ -55,12 +55,12 @@ class FunStopCell: UITableViewCell{
        // mainImageView.rightAnchor.constraint(equalTo: self.messageView.leftAnchor).isActive = true
         mainImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         mainImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        mainImageView.heightAnchor.constraint(equalToConstant: 135).isActive = true // width of image
-        mainImageView.widthAnchor.constraint(equalToConstant: 185).isActive = true //height of image
+        mainImageView.heightAnchor.constraint(equalToConstant: 67.5).isActive = true // width of image
+        mainImageView.widthAnchor.constraint(equalToConstant: 92.5).isActive = true //height of image
         mainImageView.layoutMargins.top = 100
         mainImageView.layoutMargins.bottom = 100
         
-        //messageView.leftAnchor.constraint(equalTo: self.mainImageView.rightAnchor).isActive = true
+        messageView.leftAnchor.constraint(equalTo: self.mainImageView.rightAnchor).isActive = true
         messageView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         messageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         messageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true

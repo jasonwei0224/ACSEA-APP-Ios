@@ -11,12 +11,12 @@ import UIKit
 class VanFunStopMap: UIViewController {
     var test1: String!
     
-    @IBOutlet weak var test:UITextView!
+   // @IBOutlet weak var test:UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        test.text = test1
+        //test.text = test1
         // Do any additional setup after loading the view.
     }
     

@@ -37,17 +37,29 @@ import FirebaseDatabase
     let programTenKey = "programTenComplete"
     let programElevenKey = "porgramElevenComplete"
    
-    var programOneText = "Taiwan Stage \n Boulevard Pavillion"
-    let programTwoText = "Program Two"
-    let programThreeText = "Program Three"
-    let programFourText = "Program Four"
-    let programFiveText = "Program Five"
-    let programSixText = "Program Six"
-    let programSevenText = "Program Seven"
-    let programEightText = "Program Eight"
-    let programNineText = "Program Nine"
-    let programTenText = "Program Ten"
-    let programEleventText = "Program Eleven"
+    var programOneText = "Taiwan Stage \n(Granville 800 Block)"
+    var programTwoText = "Taiwan Bookstore\n(Granville 800 Block)"
+    var programThreeText = "Soy Sauce Test\n(Granville 700 Block)"
+    var programFourText = "Let's Savour Tawian\n(Granville 700 Block)"
+    var programFiveText = "Friendship Kitchen\n(Granville 700 Block)"
+    var programSixText = "Taiwan New DNA\n(Granville 600 Block)"
+    var programSevenText = "Glove Puppet\n(Granville 600 Block)"
+    var programEightText = "VAG Stage \n(VAG Plaza)"
+    var programNineText = "Home Winds\n(Robson Plaza)"
+    var programTenText = "Hope Talk\n(Annex)"
+    var programEleventText = "Fun Stop\n(Granville 700 Block)"
+    
+    let programOnePhoto = "taiwanhandpuppet.jpg"
+    let programTwoPhoto = "letssavourtaiwan.jpg"
+    let programThreePhoto = "taiwanstage.jpg"
+    let programFourPhoto = "kidszonevanoucver.png"
+    let programFivePhoto = "taiwanbookstorephoto.png"
+    let programSixPhoto = "friendshipkitchenphoto.png"
+    let programSevenPhoto = "annexphoto.png"
+    let programEightPhoto = "torontohomewinds.png"
+    let programNinePhoto = "sorryyouthexhibition.png"
+    let programTenPhoto = "torontotaiwanewdna.png"
+    let porgramElevenPhoto = "funstopstation.png"
     
     let defaults = UserDefaults.standard
     
@@ -62,17 +74,17 @@ import FirebaseDatabase
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         var funStopProgramList = [
-            VanFunStopCellData.init(mainImage: UIImage(named:"taiwanhandpuppet.jpg"), message: programOneText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"letssavourtaiwan.jpg"), message: programTwoText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"taiwanstage.jpg"), message: programThreeText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"kidszonevancouver.jpg"), message: programFourText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"taiwanbookstorephoto.png"), message: programFiveText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"frienshipkitchenphoto.png"), message: programSixText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"torontohopetalk.png"), message: programSevenText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"torontohomewinds.png"), message: programEightText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"sorryyouthexhibition.png"), message: programNineText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"torontotaiwanewdna.png"), message: programTenText),
-            VanFunStopCellData.init(mainImage: UIImage(named:"funstopstation.png"), message: programEleventText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programOnePhoto), message: programOneText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programTwoPhoto), message: programTwoText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programThreePhoto), message: programThreeText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programFourPhoto), message: programFourText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programFivePhoto), message: programFiveText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programSixPhoto), message: programSixText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programSevenPhoto), message: programSevenText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programEightPhoto), message: programEightText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programNinePhoto), message: programNineText),
+            VanFunStopCellData.init(mainImage: UIImage(named:programTenPhoto), message: programTenText),
+            VanFunStopCellData.init(mainImage: UIImage(named:porgramElevenPhoto), message: programEleventText),
             ];
         
         
