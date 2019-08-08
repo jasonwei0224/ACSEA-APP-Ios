@@ -85,10 +85,11 @@ class CustomCell: UITableViewCell{
         spaceImageView2.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         spaceImageView2.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         spaceImageView2.widthAnchor.constraint(equalToConstant: 10).isActive = true
+        //spaceImageView2.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         programNameView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true;
         programNameView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true;
-        programNameView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
+       // programNameView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true;
         programNameView.leftAnchor.constraint(equalTo: self.spaceImageView2.rightAnchor).isActive = true;
         //programNameView.rightAnchor.constraint(equalTo:self.rightAnchor).isActive = true;
         programNameView.font = UIFont(name: "Arial", size:18)

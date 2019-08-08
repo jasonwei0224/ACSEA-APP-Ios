@@ -7,26 +7,29 @@
 //
 
 import UIKit
-struct TorCellData{
+struct TorSponsorCell{
     let image  : UIImage?
+    let sponsortype: String?
 }
 class TorSponsorTableViewController: UITableViewController {
     
-    var data = [TorCellData]()
+    var data = [TorSponsorCell]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        data = [TorCellData.init(image: UIImage(named:"gobackbtn.png")), TorCellData.init(image: UIImage(named:"gobackbtn.png")), TorCellData.init(image: UIImage(named:"gobackbtn.png")), TorCellData.init(image: UIImage(named:"gobackbtn.png")), TorCellData.init(image: UIImage(named:"gobackbtn.png")), TorCellData.init(image: UIImage(named:"gobackbtn.png")), ]
+        torSponsor();
         
         
-        self.tableView.register(SponsorTableCell.self, forCellReuseIdentifier: "custom")     // Do any additional setup after loading the view.
+        self.tableView.register(SponsorTableCell.self, forCellReuseIdentifier: "sponsor")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! SponsorTableCell
         cell.mainImage = data[indexPath.row].image
+        cell.type = data[indexPath.row].sponsortype
         cell.layoutSubviews()
         return cell
     }
@@ -34,14 +37,43 @@ class TorSponsorTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    func torSponsor(){
+        data = [TorSponsorCell.init(image: UIImage(named:"acsea.jpg"), sponsortype: "ORGANIZER"),
+                TorSponsorCell.init(image: UIImage(named:"hfc.jpg"), sponsortype: "CO-PRODUCER"),
+                TorSponsorCell.init(image: UIImage(named:"swact.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named:"tcat.jpg"), sponsortype: ""),
+                
+                TorSponsorCell.init(image: UIImage(named:"govcanada.jpg"),sponsortype: "GOVERNMENT"),
+                TorSponsorCell.init(image: UIImage(named:"govheritabe.jpg"),sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named:"govcouncilofart.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named:"govroc.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named:"govspolight.jpg"),sponsortype: ""),
+                
+                TorSponsorCell.init(image: UIImage(named:"celebrateontario.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named:"metrosquare.jpg"), sponsortype: "DIAMOND"),
+                TorSponsorCell.init(image: UIImage(named:"fairchildtv.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named:"talenttv.jpg"), sponsortype: ""),
+                
+                TorSponsorCell.init(image: UIImage(named: "thoimoi.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named: "am1430.jpg"), sponsortype: "GOLD"),
+                TorSponsorCell.init(image: UIImage(named: "fm889.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named: "yangming.jpg"), sponsortype: ""),
+                
+                TorSponsorCell.init(image: UIImage(named: "blogto.jpg"), sponsortype: "SILVER"),
+                //TorSponsorCell.init(image: UIImage(named: "singtao.jpg"), sponsortype: "BRONZE"),
+                TorSponsorCell.init(image: UIImage(named: "mingbao.jpg"), sponsortype: "BRONZE"),
+                TorSponsorCell.init(image: UIImage(named: "epochtime.jpg"), sponsortype:""),
+                TorSponsorCell.init(image: UIImage(named: "vat.jpg"),sponsortype: "MAJOR PARTNER"),
+                TorSponsorCell.init(image: UIImage(named: "testt.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named: "nxne.jpg"), sponsortype: "PARTNERS"),
+                TorSponsorCell.init(image: UIImage(named: "vccm.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named: "ytmat.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named: "shihchien.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named: "shenyi.jpg" ), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named: "storyhouse.jpg"), sponsortype: ""),
+                
+        ]
+    }
     
 }
