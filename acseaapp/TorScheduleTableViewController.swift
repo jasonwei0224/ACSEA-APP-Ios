@@ -9,8 +9,11 @@
 import UIKit
 struct TorScheduleCellData{
     let mainImage  : UIImage?
+    let space1: UIImage?
     let iconImage: UIImage?
+    let space2: UIImage?
     let programName: String?
+    
 }
 struct TorSceduleTime{
     let time: String?
@@ -28,18 +31,72 @@ class TorScheduleTableViewController: UITableViewController {
         // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
+        self.tableView.backgroundColor = UIColor.clear
+        self.tableView.separatorColor = UIColor.clear
+        
     }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! CustomCell
+        
+        if(indexPath.row == 0){
             
+            cell.backgroundColor = UIColor.clear
+            cell.backgroundView = UIImageView.init(image: UIImage(named:"titlebackground.png"))
+            cell.programNameView.backgroundColor = UIColor.clear
+            cell.programNameView.textColor = UIColor.black
             cell.iconImage = data[indexPath.row].iconImage
+            cell.space1 = data[indexPath.row].space1
             cell.mainImage = data[indexPath.row].mainImage
+            cell.space2 = data[indexPath.row].space2
+            cell.programName = data[indexPath.row].programName
+            cell.programNameView.textColor = UIColor.white
+            cell.programNameView.font = UIFont(name: "Arial", size: 20)
+            
+            cell.layoutSubviews()
+            return cell
+        }
+        else if(indexPath.row == 1){
+                //cell.backgroundColor = UIColor.blue
+                //cell.programNameView.backgroundColor = UIColor.blue
+                //cell.programNameView.textColor = UIColor.white
+                cell.backgroundColor = UIColor.clear
+                
+                cell.iconImage = data[indexPath.row].iconImage
+                cell.space1 = data[indexPath.row].space1
+                cell.spaceImageView.alpha = 0.0
+                cell.spaceImageView2.alpha = 0.0
+            
+            
+                cell.mainImage = data[indexPath.row].mainImage
+                cell.space2 = data[indexPath.row].space2
+                cell.programName = data[indexPath.row].programName
+                cell.programNameView.backgroundColor = UIColor.clear
+                cell.layoutSubviews()
+            
+                return cell
+            }
+        else{
+            cell.backgroundColor = UIColor.clear
+            cell.iconImageView.backgroundColor = UIColor.clear
+            cell.iconImage = data[indexPath.row].iconImage
+            cell.spaceImageView.backgroundColor = UIColor.clear
+            cell.space1 = data[indexPath.row].space1
+            cell.spaceImageView.alpha = 0.0
+            cell.mainImageView.backgroundColor = UIColor.clear
+            cell.mainImage = data[indexPath.row].mainImage
+            cell.spaceImageView2.backgroundColor = UIColor.clear
+            cell.spaceImageView2.alpha = 0.0
+            cell.space2 = data[indexPath.row].space2
+            cell.programNameView.backgroundColor = UIColor.clear
             cell.programName = data[indexPath.row].programName
             cell.layoutSubviews()
             return cell
+        }
+            //cell.space1 = data[indexPath.row].space1
+            //cell.layoutSubviews()
+            //return cell
         
     }
     
@@ -49,12 +106,18 @@ class TorScheduleTableViewController: UITableViewController {
     
     func dayOne(){
         data = [
-            TorScheduleCellData.init(mainImage:UIImage(named:""), iconImage:UIImage(named:"") , programName: "5:00 PM"),
-            TorScheduleCellData.init(mainImage: UIImage(named:"torontoworldcafe.jpg"),iconImage: UIImage(named:"foodicon.png"), programName:"TAIWANfest Food Vendor\n(World Cafe)"),
-            TorScheduleCellData.init(mainImage:UIImage(named:""), iconImage:UIImage(named:"") , programName: "8:00 PM"),
-            TorScheduleCellData.init(mainImage: UIImage(named:"torontoconertstage.png"),iconImage: UIImage(named:"performanceicon.png"), programName:"Opening Ceremony\n(Concert Stage)"),
-            TorScheduleCellData.init(mainImage:UIImage(named:""), iconImage:UIImage(named:"") , programName: "8:30 PM"),
-            TorScheduleCellData.init(mainImage: UIImage(named:"torontoconertstage.png"),iconImage: UIImage(named:"performanceicon.png"), programName:"Celebrate Women Concert\n(Concert by Maestro Ken Hsieh)"),
+            TorScheduleCellData.init(mainImage:UIImage(named:""),space1: UIImage(named:""), iconImage:UIImage(named:""), space2:UIImage(named:""), programName: "5:00 PM"),
+           
+            
+            TorScheduleCellData.init(mainImage: UIImage(named:"torontoworldcafe.jpg"),space1: UIImage(named:"whitespace.png"),iconImage: UIImage(named:"foodicon.png"),space2:UIImage(named:"whitespace.png"), programName:"TAIWANfest Food Vendor\n(TAIWANfest)"),
+            TorScheduleCellData.init(mainImage:UIImage(named:""),space1: UIImage(named:"whitespace.png"), iconImage:UIImage(named:"") ,space2:UIImage(named:"whitespace.png"), programName: "8:00 PM"),
+            
+            TorScheduleCellData.init(mainImage: UIImage(named:"torontoconertstage.png"),space1: UIImage(named:"whitespace.png"),iconImage: UIImage(named:"performanceicon.png"), space2:UIImage(named:"whitespace.png"),programName:"Opening Ceremony\n(TAIWANfest)"),
+            
+            
+            TorScheduleCellData.init(mainImage:UIImage(named:""), space1: UIImage(named:"whitespace.png"), iconImage:UIImage(named:""), space2: UIImage(named:"whitespace.png"), programName: "8:30 PM"),
+           TorScheduleCellData.init(mainImage:UIImage(named:""),space1: UIImage(named:""), iconImage:UIImage(named:""), space2:UIImage(named:""), programName: ""),
+            TorScheduleCellData.init(mainImage: UIImage(named:"torontoconertstage.png"), space1: UIImage(named:"whitespace.png"),iconImage: UIImage(named:"performanceicon.png"),space2:UIImage(named:"whitespace.png"), programName:"Celebrate Women Concert\n(Concert by Maestro Ken Hsieh)"),
             ]
                 
 

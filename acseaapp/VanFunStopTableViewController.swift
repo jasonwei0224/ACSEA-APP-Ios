@@ -30,6 +30,8 @@ override func viewDidLoad() {
     self.tableView.rowHeight = UITableView.automaticDimension
     self.tableView.estimatedRowHeight = 200
     self.tableView.bounces = true;
+    self.tableView.backgroundColor = UIColor.clear
+    
     
     
 }
