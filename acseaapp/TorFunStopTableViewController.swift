@@ -27,6 +27,8 @@ class TorFunStopTableViewController: UITableViewController {
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
         self.tableView.bounces = true;
+        self.tableView.backgroundColor = UIColor.clear
+        
         
     }
     
@@ -34,7 +36,9 @@ class TorFunStopTableViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom4") as! FunStopCell
         //cell.iconImage = data1[indexPath.row].image
         cell.mainImage = data1[indexPath.row].image
+        cell.mainImageView.backgroundColor = UIColor.clear
         cell.message = data1[indexPath.row].message
+        cell.messageView.backgroundColor = UIColor.clear
         cell.layoutSubviews()
         return cell
     }

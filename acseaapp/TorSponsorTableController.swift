@@ -23,13 +23,20 @@ class TorSponsorTableViewController: UITableViewController {
         self.tableView.register(SponsorTableCell.self, forCellReuseIdentifier: "sponsor")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
+        self.tableView.backgroundColor = UIColor.clear
+        self.tableView.separatorColor = UIColor.black
         
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! SponsorTableCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "sponsor") as! SponsorTableCell
+        cell.backgroundColor = UIColor.clear
+        cell.mainImageView.backgroundColor = UIColor.clear
+        cell.typeView.backgroundColor = UIColor.clear
         cell.mainImage = data[indexPath.row].image
         cell.type = data[indexPath.row].sponsortype
+        cell.typeView.font = UIFont(name: "Arial-BoldMT", size: 24)
+        cell.typeView.textAlignment = .center
         cell.layoutSubviews()
         return cell
     }

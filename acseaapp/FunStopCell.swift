@@ -21,6 +21,7 @@ class FunStopCell: UITableViewCell{
         
         textView.isScrollEnabled = false
         textView.isEditable = false
+        textView.backgroundColor = UIColor.clear
         return textView
         
     }()
@@ -28,6 +29,7 @@ class FunStopCell: UITableViewCell{
     var mainImageView: UIImageView = {
         var imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.backgroundColor = UIColor.clear
         return imageView
     }()
     
@@ -75,13 +77,13 @@ class FunStopCell: UITableViewCell{
         }*/
         if let message = message{
             messageView.text = message
-            
+            messageView.backgroundColor = UIColor.clear
             
             //messageView.layoutMargins.bottom = 100
         }
         if let mainImage = mainImage{
             mainImageView.image = mainImage
-            
+            mainImageView.backgroundColor = UIColor.clear
         }
     }
     required init?(coder aDecoder: NSCoder) {

@@ -40,7 +40,9 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! FunStopCell
     //cell.iconImage = data1[indexPath.row].iconImage
     cell.mainImage = data1[indexPath.row].mainImage
+    cell.mainImageView.backgroundColor = UIColor.clear
     cell.message = data1[indexPath.row].message
+    cell.messageView.backgroundColor = UIColor.clear
     //cell.layoutMargins.top = 5
     //cell.layoutMargins.bottom = 10
     cell.layoutSubviews()

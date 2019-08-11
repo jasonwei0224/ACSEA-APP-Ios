@@ -20,6 +20,7 @@ class TorScheduleTableViewController2: UITableViewController {
         self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom2")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
+        self.tableView.backgroundColor = UIColor.clear
         self.tableView.bounces = true;
         
     }
@@ -27,9 +28,14 @@ class TorScheduleTableViewController2: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom2") as! CustomCell
         cell.mainImage = data[indexPath.row].mainImage
-        cell.iconImage = data[indexPath.row].iconImage
-        cell.programName = data[indexPath.row].programName
+        cell.mainImageView.backgroundColor = UIColor.clear
         
+        cell.iconImage = data[indexPath.row].iconImage
+        cell.iconImageView.backgroundColor = UIColor.clear
+        
+      
+        cell.programName = data[indexPath.row].programName
+        cell.programNameView.backgroundColor = UIColor.clear
     
         
        // cell.artistName = data[indexPath.row].artist

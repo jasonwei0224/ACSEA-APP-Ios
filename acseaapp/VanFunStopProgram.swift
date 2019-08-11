@@ -106,7 +106,7 @@ import FirebaseDatabase
     
         
         if (programOneComplete || programCode == "1"){
-            funStopProgramList[0] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanhandpuppet.jpg"), message: "Taiwan Stage \nBoulevard Pavillion")
+            funStopProgramList[0] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanhandpuppet.jpg"), message: "COMPLETED")
             
             programOneComplete = true;
             self.defaults.set(self.programOneComplete, forKey: programOneKey)
@@ -116,7 +116,7 @@ import FirebaseDatabase
             }
         }
         if(programTwoComplete || programCode == "2"){
-            funStopProgramList[1] = VanFunStopCellData.init(mainImage: UIImage(named:"letssavourtaiwan.jpg"), message: "p2")
+            funStopProgramList[1] = VanFunStopCellData.init(mainImage: UIImage(named:"letssavourtaiwan.jpg"), message: "COMPLETED")
             programTwoComplete = true
             self.defaults.set(self.programTwoComplete, forKey: programTwoKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -125,7 +125,7 @@ import FirebaseDatabase
             }
         }
         if(programThreeComplete || programCode == "3"){
-            funStopProgramList[2] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanstage.png"), message: "p3")
+            funStopProgramList[2] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanstage.png"), message: "COMPLETED")
             programThreeComplete = true
             self.defaults.set(self.programThreeComplete, forKey: programThreeKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -134,7 +134,7 @@ import FirebaseDatabase
             }
         }
         if(programFourComplete || programCode == "4"){
-            funStopProgramList[3] = VanFunStopCellData.init( mainImage: UIImage(named:"kidszonevancouver.jpg"), message: "p4")
+            funStopProgramList[3] = VanFunStopCellData.init( mainImage: UIImage(named:"kidszonevancouver.jpg"), message: "COMPLETED")
             programFourComplete = true
             self.defaults.set(self.programFourComplete, forKey: programFourKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -143,7 +143,7 @@ import FirebaseDatabase
             }
         }
         if(programFiveComplete || programCode == "5"){
-            funStopProgramList[4] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanbookstorephoto.png"), message: "p5")
+            funStopProgramList[4] = VanFunStopCellData.init(mainImage: UIImage(named:"taiwanbookstorephoto.png"), message: "COMPLETED")
             programFiveComplete = true
             self.defaults.set(self.programFiveComplete, forKey: programFiveKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -152,7 +152,7 @@ import FirebaseDatabase
             }
         }
         if(programSixComplete || programCode == "6"){
-            funStopProgramList[5] = VanFunStopCellData.init(mainImage: UIImage(named:"friendshipkitchenphoto.png"), message: "p6")
+            funStopProgramList[5] = VanFunStopCellData.init(mainImage: UIImage(named:"friendshipkitchenphoto.png"), message: "COMPLETED")
             programSixComplete = true
             self.defaults.set(self.programSixComplete, forKey: programSixKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -161,7 +161,7 @@ import FirebaseDatabase
             }
         }
         if(programSevenComplete || programCode == "7"){
-            funStopProgramList[6] = VanFunStopCellData.init(mainImage: UIImage(named:"torontohopetalk.png"), message: "p7")
+            funStopProgramList[6] = VanFunStopCellData.init(mainImage: UIImage(named:"torontohopetalk.png"), message: "COMPLETED")
             programSevenComplete = true
             self.defaults.set(self.programSevenComplete, forKey: programSevenKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -170,7 +170,7 @@ import FirebaseDatabase
             }
         }
         if(programEightComplete || programCode == "8"){
-            funStopProgramList[7] = VanFunStopCellData.init(mainImage: UIImage(named:"torontohomewinds.png"), message: "p8")
+            funStopProgramList[7] = VanFunStopCellData.init(mainImage: UIImage(named:"torontohomewinds.png"), message: "COMPLETED")
             programEightComplete = true
             self.defaults.set(self.programEightComplete, forKey: programEightKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -179,7 +179,7 @@ import FirebaseDatabase
             }
         }
         if(programNineComplete || programCode == "9"){
-            funStopProgramList[8] = VanFunStopCellData.init(mainImage: UIImage(named:"sorryyouthexhibition.png"), message: "p9")
+            funStopProgramList[8] = VanFunStopCellData.init(mainImage: UIImage(named:"sorryyouthexhibition.png"), message: "COMPLETED")
             programNineComplete = true
             self.defaults.set(self.programNineComplete, forKey: programNineKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -188,7 +188,7 @@ import FirebaseDatabase
             }
         }
         if(programTenComplete || programCode == "10"){
-            funStopProgramList[9] = VanFunStopCellData.init(mainImage: UIImage(named:"torontotaiwanewdna.png"), message: "p10")
+            funStopProgramList[9] = VanFunStopCellData.init(mainImage: UIImage(named:"torontotaiwanewdna.png"), message: "COMPLETED")
             programTenComplete = true
             self.defaults.set(self.programTenComplete, forKey: programTenKey)
             if(segue.identifier == "VanFunStopSegue"){
@@ -198,7 +198,7 @@ import FirebaseDatabase
         }
         if(programElevenComplete || programCode == "11"){
             if(programOneComplete && programTwoComplete && programThreeComplete && programFourComplete && programFiveComplete && programSixComplete && programSevenComplete && programEightComplete && programNineComplete && programTenComplete){
-                funStopProgramList[10] = VanFunStopCellData.init(mainImage: UIImage(named:"funstopstation.png"), message: "p11")
+                funStopProgramList[10] = VanFunStopCellData.init(mainImage: UIImage(named:"funstopstation.png"), message: "COMPLETED")
                 programElevenComplete = true
                 self.defaults.set(self.programElevenComplete, forKey: programElevenKey)
                 if(segue.identifier == "VanFunStopSegue"){
