@@ -27,8 +27,6 @@ class TorScheduleTableViewController: UITableViewController {
         dayOne();
         
         self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom")
-        //self.tableView.register(CustomCell.self, forCellRuseIdentifier:"time")
-        // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
         self.tableView.backgroundColor = UIColor.clear
@@ -40,15 +38,17 @@ class TorScheduleTableViewController: UITableViewController {
         
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! CustomCell
         
-        if(indexPath.row == 0 || indexPath.row == 2 || indexPath.row == 4){
+        if((data[indexPath.row].programName?.contains("8:00 PM"))! ||
+            (data[indexPath.row].programName?.contains("8:30 PM"))! ||
+            (data[indexPath.row].programName?.contains("5:00 PM"))!){
             
             cell.backgroundColor = UIColor.clear
-           // cell.backgroundView = UIImageView.init(image: UIImage(named:"titlebackground.png"))
+            // cell.backgroundView = UIImageView.init(image: UIImage(named:"titlebackground.png"))
             cell.programNameView.backgroundColor = UIColor.clear
             cell.programNameView.textColor = UIColor.black
-            //cell.iconImage = data[indexPath.row].iconImage
-            //cell.space1 = data[indexPath.row].space1
-            //cell.mainImage = data[indexPath.row].mainImage
+            cell.iconImage = data[indexPath.row].iconImage
+            cell.space1 = data[indexPath.row].space1
+            cell.mainImage = data[indexPath.row].mainImage
             cell.space2 = data[indexPath.row].space2
             cell.spaceImageView2.heightAnchor.constraint(equalToConstant: 50)
             cell.programName = data[indexPath.row].programName
@@ -60,38 +60,14 @@ class TorScheduleTableViewController: UITableViewController {
             cell.iconImageView.isHidden = true
             cell.spaceImageView2.isHidden = true
             cell.spaceImageView.isHidden = true
-            //cell.spaceImageView2.
             
             cell.spaceImageView2.alpha = 0.0
             cell.spaceImageView.alpha = 0.0
             cell.programNameView.font = UIFont(name: "Arial-BoldMT", size: 24)
-            cell.programNameView.textAlignment = .center
-            
-            
-            
-            
+            cell.programNameView.textAlignment = .left
             cell.layoutSubviews()
             return cell
         }
-        else if(indexPath.row == 1){
-                //cell.backgroundColor = UIColor.blue
-                //cell.programNameView.backgroundColor = UIColor.blue
-                //cell.programNameView.textColor = UIColor.white
-                cell.backgroundColor = UIColor.clear
-                
-                cell.iconImage = data[indexPath.row].iconImage
-                cell.space1 = data[indexPath.row].space1
-                cell.spaceImageView.alpha = 0.0
-                cell.spaceImageView2.alpha = 0.0
-            
-                cell.mainImage = data[indexPath.row].mainImage
-                cell.space2 = data[indexPath.row].space2
-                cell.programName = data[indexPath.row].programName
-                cell.programNameView.backgroundColor = UIColor.clear
-                cell.layoutSubviews()
-            
-                return cell
-            }
         else{
             cell.backgroundColor = UIColor.clear
             cell.iconImageView.backgroundColor = UIColor.clear
@@ -106,12 +82,11 @@ class TorScheduleTableViewController: UITableViewController {
             cell.space2 = data[indexPath.row].space2
             cell.programNameView.backgroundColor = UIColor.clear
             cell.programName = data[indexPath.row].programName
+            cell.programNameView.font = UIFont(name: "Arial", size: 20)
+            cell.programNameView.textAlignment = .left
             cell.layoutSubviews()
             return cell
         }
-            //cell.space1 = data[indexPath.row].space1
-            //cell.layoutSubviews()
-            //return cell
         
     }
     

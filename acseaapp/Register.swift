@@ -26,6 +26,7 @@ class Register: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     var agreeToProgramNotification: Bool!
     var agreeToBigPrize: Bool!
     var agreeToReceiveEmail: Bool!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,11 +65,17 @@ class Register: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
         let myDatabse = Database.database().reference()
         mypickerView.dataSource = self
         mypickerView.delegate = self
-        agreeToBigPrize = agreeToBigPrizeSwitch.isOn;
+//        agreeToBigPrize = agreeToBigPrizeSwitch.isOn;
         agreeToReceiveEmail = agreeToReceiveEmailSwitch.isOn;
         agreeToProgramNotification = agreeToProgramNotificationSwitch.isOn;
         if(agreeToReceiveEmail == false ){
             let alert = UIAlertController(title: "ERROR", message: "Must agree to use the app" ,preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert,animated: true, completion: nil)
+            return
+        }
+        if(agreeToProgramNotification == false){
+            let alert = UIAlertController(title: "ERROR", message: "Must agree to receive program notificaiont to use the app" ,preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert,animated: true, completion: nil)
             return
@@ -101,7 +108,11 @@ class Register: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
                         }else if let result = result{
                             print("Remodte instance id toake: \(result.token)")
                             self.token = result.token
-                            myDatabse.child("user/\(user!.uid)").setValue(["email": self.emailField.text, "agreeToReceiveEmail": self.agreeToReceiveEmail, "agreeToProgramNotification": self.agreeToProgramNotification, "agreeToBigPrize": self.agreeToBigPrize, "token": self.token])
+                            myDatabse.child("users/\(user!.uid)").setValue(["email": self.emailField.text, "agreeToReceiveEmail": self.agreeToReceiveEmail, "agreeToProgramNotification": self.agreeToProgramNotification,"city": self.city, "token": self.token])
+                            self.defaults.set(self.emailField.text, forKey: "email")
+                            self.defaults.set(self.agreeToReceiveEmail, forKey:"agreeToReceiveEmail")
+                            self.defaults.set(self.agreeToProgramNotification, forKey: "agreeToProgramNotification")
+                            self.defaults.set(self.city, forKey: "city")
                             }
                         }
                     }

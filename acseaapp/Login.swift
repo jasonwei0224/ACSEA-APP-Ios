@@ -23,7 +23,7 @@ class Login: UIViewController {
     var token: String!
     var signedIn: Bool!
     var userid: String!
-    
+    var email: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +39,10 @@ class Login: UIViewController {
         if(signedIn){
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let locationMenu = storyBoard.instantiateViewController(withIdentifier: "LocationMenu") as! LocationMenu;
+            self.agreeToReceiveEmail = defaults.bool(forKey: "agreeToReceiveEmail")
+            self.agreeToProgramNotification = defaults.bool(forKey: "agreeToProgramNotification")
+            self.city = defaults.string(forKey: "city")
+            self.email = defaults.string(forKey: "email")
             self.signedIn = true;
             locationMenu.signedIn = true;
             self.present(locationMenu, animated: true, completion: nil)
@@ -70,6 +74,7 @@ class Login: UIViewController {
                         let uid = user!.uid
                         let myDatabse = Database.database().reference()
                         myDatabse.child("users").child(uid).child("token").setValue([self.token])
+                       /* myDatabse.child("users/\(user!.uid)").setValue(["email": self.emailTextField.text, "agreeToReceiveEmail": self.agreeToReceiveEmail, "agreeToProgramNotification": self.agreeToProgramNotification, "token": self.token, "city": self.city])*/
                         }
                     }
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

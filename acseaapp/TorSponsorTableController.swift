@@ -48,7 +48,7 @@ class TorSponsorTableViewController: UITableViewController {
     func torSponsor(){
         data = [TorSponsorCell.init(image: UIImage(named:"acsea.jpg"), sponsortype: "ORGANIZER"),
                 TorSponsorCell.init(image: UIImage(named:"hfc.jpg"), sponsortype: "CO-PRODUCER"),
-                TorSponsorCell.init(image: UIImage(named:"swact.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named:"swact.jpg"), sponsortype: "CO-ORGANIZER"),
                 TorSponsorCell.init(image: UIImage(named:"tcat.jpg"), sponsortype: ""),
                 
                 TorSponsorCell.init(image: UIImage(named:"govcanada.jpg"),sponsortype: "GOVERNMENT"),
