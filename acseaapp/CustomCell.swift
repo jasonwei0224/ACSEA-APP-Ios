@@ -78,6 +78,7 @@ class CustomCell: UITableViewCell{
         iconImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         iconImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         iconImageView.widthAnchor.constraint(equalToConstant: 50).isActive = true // width of image
+        //iconImageView.heightAnchor.constraint(equalToConstant: 60).isActive = true
         iconImageView.rightAnchor.constraint(equalTo: self.spaceImageView2.leftAnchor).isActive = true
        
         spaceImageView2.leftAnchor.constraint(equalTo: self.iconImageView.rightAnchor).isActive = true

@@ -16,7 +16,7 @@ class VanScheduleTableViewController2: UITableViewController {
         
         dayOne();
         
-        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom")     // Do any additional setup after loading the view.
+        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom8")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
         self.tableView.backgroundColor = UIColor.clear
@@ -24,7 +24,7 @@ class VanScheduleTableViewController2: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! CustomCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom8") as! CustomCell
         if((data[indexPath.row].programName?.contains("11:00 AM"))! ||
             (data[indexPath.row].programName?.contains("11:15 AM"))! ||
             (data[indexPath.row].programName?.contains("11:30 AM"))! ||

@@ -69,13 +69,13 @@ class Register: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
         agreeToReceiveEmail = agreeToReceiveEmailSwitch.isOn;
         agreeToProgramNotification = agreeToProgramNotificationSwitch.isOn;
         if(agreeToReceiveEmail == false ){
-            let alert = UIAlertController(title: "ERROR", message: "Must agree to use the app" ,preferredStyle: .alert)
+            let alert = UIAlertController(title: "ERROR", message: "You must agree to receive email notification to use the app" ,preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert,animated: true, completion: nil)
             return
         }
         if(agreeToProgramNotification == false){
-            let alert = UIAlertController(title: "ERROR", message: "Must agree to receive program notificaiont to use the app" ,preferredStyle: .alert)
+            let alert = UIAlertController(title: "ERROR", message: "You must agree to receive program notifications to use the app" ,preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert,animated: true, completion: nil)
             return

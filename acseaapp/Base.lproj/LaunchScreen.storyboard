@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tzw-g0-vux">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,12 +31,15 @@
                             <constraint firstAttribute="bottom" secondItem="Tzw-g0-vux" secondAttribute="bottom" id="BX5-G4-W4J"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Drl-qJ-Kd9"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FZD-Sb-BXq"/>
+                            <constraint firstAttribute="bottom" secondItem="Tzw-g0-vux" secondAttribute="bottom" id="G53-44-HNd"/>
                             <constraint firstAttribute="trailing" secondItem="Tzw-g0-vux" secondAttribute="trailing" id="MNt-Sh-3Di"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="MTs-aQ-hIH"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="WrM-0B-vmt"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZPL-3u-iCC"/>
-                            <constraint firstItem="Tzw-g0-vux" firstAttribute="bottom" secondItem="euV-SQ-4cT" secondAttribute="top" id="kXq-rE-9xf"/>
+                            <constraint firstItem="Tzw-g0-vux" firstAttribute="trailing" secondItem="kMr-Cg-X8r" secondAttribute="trailing" id="bX8-k2-L3Y"/>
+                            <constraint firstItem="Tzw-g0-vux" firstAttribute="leading" secondItem="kMr-Cg-X8r" secondAttribute="leading" id="c1l-h5-ky7"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lI9-sj-pQR"/>
+                            <constraint firstItem="Tzw-g0-vux" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="mPg-dH-L4E"/>
                             <constraint firstItem="Tzw-g0-vux" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="zTn-jC-OD7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kMr-Cg-X8r"/>

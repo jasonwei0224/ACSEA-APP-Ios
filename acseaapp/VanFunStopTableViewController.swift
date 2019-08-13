@@ -59,7 +59,7 @@ override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
     return data1.count
 }
     func chagedImage(newIcon: UIImage){
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! FunStopCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom5") as! FunStopCell
         
        // cell.iconImage = newIcon
     }

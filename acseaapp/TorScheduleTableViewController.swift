@@ -31,12 +31,13 @@ class TorScheduleTableViewController: UITableViewController {
         self.tableView.estimatedRowHeight = 200
         self.tableView.backgroundColor = UIColor.clear
         self.tableView.separatorColor = UIColor.clear
+        self.tableView.reloadData()
         
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-            let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! CustomCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom") as! CustomCell
         
         if((data[indexPath.row].programName?.contains("8:00 PM"))! ||
             (data[indexPath.row].programName?.contains("8:30 PM"))! ||
@@ -66,6 +67,7 @@ class TorScheduleTableViewController: UITableViewController {
             cell.programNameView.font = UIFont(name: "Arial-BoldMT", size: 24)
             cell.programNameView.textAlignment = .left
             cell.layoutSubviews()
+            //tableView.reloadData()
             return cell
         }
         else{
@@ -85,6 +87,7 @@ class TorScheduleTableViewController: UITableViewController {
             cell.programNameView.font = UIFont(name: "Arial", size: 20)
             cell.programNameView.textAlignment = .left
             cell.layoutSubviews()
+            //tableView.reloadData()
             return cell
         }
         

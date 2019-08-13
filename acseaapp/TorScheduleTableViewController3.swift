@@ -17,7 +17,7 @@ class TorScheduleTableViewController3: UITableViewController {
         tableView.delegate = self
         dayOne();
         
-        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom2")
+        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "custom3")
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
         self.tableView.backgroundColor = UIColor.clear
@@ -25,7 +25,7 @@ class TorScheduleTableViewController3: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom2") as! CustomCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "custom3") as! CustomCell
         
         if((data[indexPath.row].programName?.contains("12:00 PM"))! ||
             (data[indexPath.row].programName?.contains("12:30 PM"))! ||

@@ -106,7 +106,7 @@ class VanSponsorTableViewController: UITableViewController {
                 VanSponsorCellData.init(image: UIImage(named: "storyhouse.jpg"), sponsortype: ""),
                 //VanSponsorCellData.init(image: UIImage(named: ""), sponsortype: "")
         ]
-        self.tableView.register(SponsorTableCell.self, forCellReuseIdentifier: "custom2")
+        self.tableView.register(SponsorTableCell.self, forCellReuseIdentifier: "custom6")
     }
     
 }

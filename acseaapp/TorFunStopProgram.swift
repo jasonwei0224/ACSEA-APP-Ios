@@ -110,7 +110,7 @@ class TorFunStopProgram: UIViewController {
         
         
         if (torProgramOneComplete || torProgramCode == "1"){
-            torFunStopProgramList[0] = TorFunStopCellData.init( image: UIImage(named: torProgramOneImage), message: "COMPLETE")
+            torFunStopProgramList[0] = TorFunStopCellData.init(image: UIImage(named: torProgramOneImage), message: "COMPLETE")
            // print("Step 1 complete")
             
             torProgramOneComplete = true;
