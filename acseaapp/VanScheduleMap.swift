@@ -36,6 +36,7 @@ class VanScheduleMapTableViewController: UITableViewController {
         cell.typeView.textAlignment = .center
         
         cell.typeView.font = UIFont(name: "Arial-BoldMT", size: 24)
+        
         // cell.typeView.textAlignment = .center
         cell.layoutSubviews()
         return cell
@@ -46,16 +47,16 @@ class VanScheduleMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"vanday1-1.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday1-2.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday1-3.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday2-1.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday2-2.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday2-3.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday2-4.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday3-1.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday3-2.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vanday3-3.png"), sponsortype: ""),
+        data = [Map.init(image: UIImage(named:"vancouverday1.png"), sponsortype: ""),
+              
+                Map.init(image: UIImage(named:"vancouverday1-2.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vancouverday1-1.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vancouverday2.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vancouverday2-1.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vancouverday2-2.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vancouverday3.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vancouverday3-1.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vancouverday3-2"), sponsortype: ""),
         ]
     }
     

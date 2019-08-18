@@ -1,13 +1,4 @@
 //
-//  TorScheduleMapTableViewController.swift
-//  acseaapp
-//
-//  Created by Jason Wei on 2019-08-12.
-//  Copyright © 2019 ACSEA. All rights reserved.
-//
-
-import Foundation
-//
 //  SponsorTableViewController.swift
 //  acseaapp
 //
@@ -17,7 +8,7 @@ import Foundation
 
 import UIKit
 
-class TorMapTableViewController: UITableViewController {
+class TorScheduleMapTableViewController: UITableViewController {
     
     var data = [Map]()
     override func viewDidLoad() {
@@ -45,6 +36,7 @@ class TorMapTableViewController: UITableViewController {
         cell.typeView.textAlignment = .center
         
         cell.typeView.font = UIFont(name: "Arial-BoldMT", size: 24)
+        
         // cell.typeView.textAlignment = .center
         cell.layoutSubviews()
         return cell
@@ -55,7 +47,12 @@ class TorMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"vanfunstopmap.png"), sponsortype: "MAP"),
+        data = [Map.init(image: UIImage(named:"torontoday1.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torontoday2.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torontoday3.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torontoday3.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torontoday4.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torontoday5.png"), sponsortype: ""),
         ]
     }
     

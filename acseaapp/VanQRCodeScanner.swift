@@ -94,8 +94,10 @@ class VanQRCodeScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     }
     
     func found(code: String) {
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let VanFunStopProgram = storyBoard.instantiateViewController(withIdentifier: "VanFunStopProgram") as! VanFunStopProgram;
+        
         VanFunStopProgram.programCode = code
         self.present(VanFunStopProgram, animated: true, completion: nil)
         

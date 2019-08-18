@@ -49,16 +49,16 @@ import FirebaseDatabase
     var programTenText = "Hope Talk\n(Annex)"
     var programEleventText = "Fun Stop\n(Granville 700 Block)"
     
-    let programOnePhoto = "taiwanhandpuppet.jpg"
-    let programTwoPhoto = "letssavourtaiwan.jpg"
-    let programThreePhoto = "taiwanstage.jpg"
+    let programOnePhoto = "taiwanstage.jpg"
+    let programTwoPhoto = "taiwanbookstorephoto.png"
+    let programThreePhoto = "letssavourtaiwan.jpg"
     let programFourPhoto = "kidszonevanoucver.png"
-    let programFivePhoto = "taiwanbookstorephoto.png"
+    let programFivePhoto = "taiwanhandpuppet.jpg"
     let programSixPhoto = "friendshipkitchenphoto.png"
     let programSevenPhoto = "annexphoto.png"
     let programEightPhoto = "torontohomewinds.png"
     let programNinePhoto = "sorryyouthexhibition.png"
-    let programTenPhoto = "torontotaiwanewdna.png"
+    let programTenPhoto = "torontotaiwannewdna .png"
     let porgramElevenPhoto = "funstopstation.png"
     
     let defaults = UserDefaults.standard
@@ -68,7 +68,7 @@ import FirebaseDatabase
     
     override  func viewDidLoad() {
         super.viewDidLoad()
-        
+       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -179,7 +179,7 @@ import FirebaseDatabase
             }
         }
         if(programNineComplete || programCode == "9"){
-            funStopProgramList[8] = VanFunStopCellData.init(mainImage: UIImage(named:porgramElevenPhoto), message: "COMPLETED")
+            funStopProgramList[8] = VanFunStopCellData.init(mainImage: UIImage(named:programNinePhoto), message: "COMPLETED")
             programNineComplete = true
             self.defaults.set(self.programNineComplete, forKey: programNineKey)
             if(segue.identifier == "VanFunStopSegue"){

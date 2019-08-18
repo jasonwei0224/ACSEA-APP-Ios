@@ -36,6 +36,8 @@ class Register: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
         //pickerdataSource.append("Toronto")
        // pickerdataSource.append("Vancouver")
         //pickerView.dataSource=self.pickerdataSource
+        emailField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        passwordField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
           self.view.addGestureRecognizer(tapGesture)
         

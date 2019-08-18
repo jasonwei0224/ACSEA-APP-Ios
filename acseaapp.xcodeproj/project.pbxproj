@@ -62,6 +62,7 @@
 		FB0ECCB6230225AC002CF3EA /* TorFunStopMapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0ECCB5230225AC002CF3EA /* TorFunStopMapTableViewController.swift */; };
 		FB0ECCB823022A8C002CF3EA /* VanScheduleMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0ECCB723022A8C002CF3EA /* VanScheduleMap.swift */; };
 		FB0ECCBA230241B7002CF3EA /* ScheduleImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0ECCB9230241B7002CF3EA /* ScheduleImageCell.swift */; };
+		FB10CE2C23032B0300C705E1 /* TorScheduleMapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB10CE2B23032B0300C705E1 /* TorScheduleMapTableViewController.swift */; };
 		FB42D76322F0F71C00D446E9 /* SponsorTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42D76222F0F71C00D446E9 /* SponsorTableCell.swift */; };
 		FB42D76522F0F76B00D446E9 /* VanScheduleTableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42D76422F0F76B00D446E9 /* VanScheduleTableViewController2.swift */; };
 		FB42D76922F0FE2400D446E9 /* VanScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB42D76822F0FE2400D446E9 /* VanScheduleTableViewController.swift */; };
@@ -153,6 +154,7 @@
 		FB0ECCB5230225AC002CF3EA /* TorFunStopMapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorFunStopMapTableViewController.swift; sourceTree = "<group>"; };
 		FB0ECCB723022A8C002CF3EA /* VanScheduleMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanScheduleMap.swift; sourceTree = "<group>"; };
 		FB0ECCB9230241B7002CF3EA /* ScheduleImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleImageCell.swift; sourceTree = "<group>"; };
+		FB10CE2B23032B0300C705E1 /* TorScheduleMapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorScheduleMapTableViewController.swift; sourceTree = "<group>"; };
 		FB42D75722F0EBB700D446E9 /* acseaapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = acseaapp.entitlements; sourceTree = "<group>"; };
 		FB42D76222F0F71C00D446E9 /* SponsorTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorTableCell.swift; sourceTree = "<group>"; };
 		FB42D76422F0F76B00D446E9 /* VanScheduleTableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanScheduleTableViewController2.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				969D8A9C22C15F34009CEC53 /* Register.swift */,
 				96E68DF722B19A9B00C116D0 /* LaunchScreen.storyboard */,
 				96E68DF222B19A9B00C116D0 /* Main.storyboard */,
+				FB10CE2B23032B0300C705E1 /* TorScheduleMapTableViewController.swift */,
 				FB0ECCB723022A8C002CF3EA /* VanScheduleMap.swift */,
 				FB0ECCB3230224B7002CF3EA /* VanFunStopMapTableViewController.swift */,
 				FB0ECCAD230210FF002CF3EA /* VanMapTableViewController.swift */,
@@ -590,6 +593,7 @@
 				FB0ECCB6230225AC002CF3EA /* TorFunStopMapTableViewController.swift in Sources */,
 				FB42D76522F0F76B00D446E9 /* VanScheduleTableViewController2.swift in Sources */,
 				FB0ECCB223022058002CF3EA /* TorMapTableViewController.swift in Sources */,
+				FB10CE2C23032B0300C705E1 /* TorScheduleMapTableViewController.swift in Sources */,
 				FB42D76922F0FE2400D446E9 /* VanScheduleTableViewController.swift in Sources */,
 				96B9340E22D6BEA10078FE19 /* VanFunStopData.swift in Sources */,
 				969D8AAF22C162D4009CEC53 /* TorFunStopMap.swift in Sources */,

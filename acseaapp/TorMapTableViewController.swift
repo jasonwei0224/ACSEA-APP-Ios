@@ -28,9 +28,11 @@ class TorMapTableViewController: UITableViewController {
         
         self.tableView.register(MapCell.self, forCellReuseIdentifier: "map2")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 200
+        self.tableView.estimatedRowHeight = 100
+        self.tableView.rowHeight = 600
+        self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.clear
-        self.tableView.separatorColor = UIColor.black
+        //self.tableView.separatorColor = UIColor.black
         
     }
     
@@ -55,7 +57,7 @@ class TorMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"torontofunstopmap.png"), sponsortype: "Map"),
+        data = [Map.init(image: UIImage(named:"funstoptorfinal.png"), sponsortype: "FUN STOP MAP")
         ]
     }
     

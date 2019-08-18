@@ -42,14 +42,14 @@ class TorFunStopProgram: UIViewController {
     var torProgramOneText = "Glove Puppet\n(North Orchard)"
     let torProgramTwoText = "Let's Savour Taiwan\n(South Lawn)"
     let torProgramThreeText = "Taiwan Stage\n(Boulevard Pavillion)"
-    let torProgramFourText = "Kids Zone\n(Harbour Kids)"
-    let torProgramFiveText = "Taiwan Bookstore\n(West Corridor Bays)"
-    let torProgramSixText = "Friendship Kitchen\n(Lakeside Terrace)"
-    let torProgramSevenText = "Hope Talk\n(Studio Theatre)"
-    let torProgramEightText = "Home Winds\n(MBCS)"
-    let torProgramNineText = "Sorry Youth Exhibition\n(Brigantine Room)"
-    let torProgramTenText = "Taiwan New DNA\n(Brigantine Patio)"
-    let torProgramElevenText = "Fun Stop Station\n(West Corridor Bays)"
+    let torProgramFourText = "Taiwan Bookstore\n(West Corridor Bays)"
+    let torProgramFiveText = "Hope Talk\n(Studio Theatre)"
+    let torProgramSixText = "Island Scream Exhibition\n(Brigantine Room)"
+    let torProgramSevenText = "Fun Stop Station\n(Boulevard Pavillion)"
+    //let torProgramEightText = "Home Winds\n(MBCS)"
+    //let torProgramNineText = "Island Scream Exhibition\n(Brigantine Room)"
+    //let torProgramTenText = "Taiwan New DNA\n(Brigantine Patio)"
+    //let torProgramElevenText = "Fun Stop Station\n(Boulevard Pavillion)"
     
     let torProgramOneImage = "taiwanhandpuppet.jpg"
     let torProgramTwoImage = "letssavourtaiwan.jpg"
@@ -57,11 +57,11 @@ class TorFunStopProgram: UIViewController {
     let torProgramFourImage = "kidszonevanoucver.png"
     let torProgramFiveImage = "taiwanbookstorephoto.jpg"
     let torProgramSixImage = "friendshipkitchenphoto.jpg"
-    let torProgramSevenImage = "torontohopetalk.png"
-    let torProgramEightImage = "torontohomewinds.png"
-    let torProgramNineImage = "sorryyouthexhibition.png"
-    let torProgramTenImage = "torontotaiwannewdna.png"
-    let torProgramElevenImage = "funstopstation.png"
+    //let torProgramSevenImage = "torontohopetalk.png"
+    //let torProgramEightImage = "torontohomewinds.png"
+    //let torProgramNineImage = "sorryyouthexhibition.png"
+    //let torProgramTenImage = "torontotaiwannewdna.png"
+    //let torProgramElevenImage = "funstopstation.png"
     
     
     let torontoDefaults = UserDefaults.standard
@@ -83,11 +83,11 @@ class TorFunStopProgram: UIViewController {
             TorFunStopCellData.init(image: UIImage(named:torProgramFourImage), message: torProgramFourText),
             TorFunStopCellData.init(image: UIImage(named:torProgramFiveImage), message: torProgramFiveText),
             TorFunStopCellData.init(image: UIImage(named:torProgramSixImage), message: torProgramSixText),
-            TorFunStopCellData.init(image: UIImage(named:torProgramSevenImage), message: torProgramSevenText),
-            TorFunStopCellData.init(image: UIImage(named:torProgramEightImage), message: torProgramEightText),
-            TorFunStopCellData.init(image: UIImage(named:torProgramNineImage), message: torProgramNineText),
-            TorFunStopCellData.init(image: UIImage(named:torProgramTenImage), message: torProgramTenText),
-            TorFunStopCellData.init(image: UIImage(named:torProgramElevenImage), message: torProgramElevenText)
+            //TorFunStopCellData.init(image: UIImage(named:torProgramSevenImage), message: torProgramSevenText),
+            //TorFunStopCellData.init(image: UIImage(named:torProgramEightImage), message: torProgramEightText),
+            //TorFunStopCellData.init(image: UIImage(named:torProgramNineImage), message: torProgramNineText),
+            //TorFunStopCellData.init(image: UIImage(named:torProgramTenImage), message: torProgramTenText),
+            //TorFunStopCellData.init(image: UIImage(named:torProgramElevenImage), message: torProgramElevenText)
             
             ];
         
@@ -98,11 +98,11 @@ class TorFunStopProgram: UIViewController {
         torProgramFourComplete = (torontoDefaults.bool(forKey: torProgramFourKey))
         torProgramFiveComplete = (torontoDefaults.bool(forKey: torProgramFiveKey))
         torProgramSixComplete = (torontoDefaults.bool(forKey: torProgramSixKey))
-        torProgramSevenComplete = (torontoDefaults.bool(forKey: torProgramSevenKey))
-        torProgramEightComplete = (torontoDefaults.bool(forKey: torProgramEightKey))
-        torProgramNineComplete = (torontoDefaults.bool(forKey: torProgramNineKey))
-        torProgramTenComplete = (torontoDefaults.bool(forKey: torProgramTenKey))
-        torProgramElevenComplete = (torontoDefaults.bool(forKey: torProgramElevenKey))
+        //torProgramSevenComplete = (torontoDefaults.bool(forKey: torProgramSevenKey))
+        //torProgramEightComplete = (torontoDefaults.bool(forKey: torProgramEightKey))
+        //torProgramNineComplete = (torontoDefaults.bool(forKey: torProgramNineKey))
+        //torProgramTenComplete = (torontoDefaults.bool(forKey: torProgramTenKey))
+        //torProgramElevenComplete = (torontoDefaults.bool(forKey: torProgramElevenKey))
         if(segue.identifier == segueID){
             let table = segue.destination as! TorFunStopTableViewController
             table.data1 = torFunStopProgramList
@@ -158,6 +158,25 @@ class TorFunStopProgram: UIViewController {
             }
         }
         if(torProgramSixComplete || torProgramCode == "6"){
+            if(torProgramOneComplete && torProgramTwoComplete && torProgramThreeComplete
+                && torProgramFourComplete && torProgramFiveComplete){ torFunStopProgramList[5]=TorFunStopCellData.init(image: UIImage(named:torProgramSixImage), message: "COMPLETE")
+                torProgramSixComplete = true;
+                self.torontoDefaults.set(self.torProgramSixComplete, forKey: torProgramSixKey)
+                if(segue.identifier == segueID){
+                    let table = segue.destination as!
+                    TorFunStopTableViewController
+                    table.data1 = torFunStopProgramList
+                    let user = Auth.auth().currentUser
+                    let uid = user!.uid
+                    let myDatabase = Database.database().reference()
+                    funStopComplete = true;
+                    myDatabase.child("users").child(uid).child("Complete Fun Stop").setValue("Yes")
+                }else{
+                    let alert = UIAlertController(title: "Not Yet!", message: "Please complete all other stations before coming to the funstop staiton", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert,animated: true, completion: nil)
+                }
+            }
             torFunStopProgramList[5] = TorFunStopCellData.init(image: UIImage(named:torProgramSixImage), message: "COMPLETE")
             torProgramSixComplete = true
             self.torontoDefaults.set(self.torProgramSixComplete, forKey: torProgramSixKey)
@@ -166,7 +185,7 @@ class TorFunStopProgram: UIViewController {
                 table.data1 = torFunStopProgramList;
             }
         }
-        if(torProgramSevenComplete || torProgramCode == "7"){
+        /*if(torProgramSevenComplete || torProgramCode == "7"){
             torFunStopProgramList[6] = TorFunStopCellData.init(image: UIImage(named:torProgramSevenImage), message: "COMPLETE")
             torProgramSevenComplete = true
             self.torontoDefaults.set(self.torProgramSevenComplete, forKey: torProgramSevenKey)
@@ -221,7 +240,7 @@ class TorFunStopProgram: UIViewController {
                 self.present(alert,animated: true, completion: nil)
             }
         }
-    }
+    }*/
 }
     
     @IBAction func startTorFunStopMap(_ sender: Any) {

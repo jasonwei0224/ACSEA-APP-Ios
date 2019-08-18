@@ -7,13 +7,31 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class VanMainMenu: UIViewController {
-
+    
+    var bannerView: GADBannerView!
+    
+    @IBOutlet weak var aboutbtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-1748064502558088~4171565215"
+        
+        //Test Unit ID: ca-app-pub-3940256099942544/2934735716
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
         // Do any additional setup after loading the view.
+    }
+    func addBannerViewToView(_ bannerView: GADBannerView){
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints([NSLayoutConstraint(item: bannerView, attribute: .bottom, relatedBy: .equal, toItem: self.aboutbtn, attribute: .top, multiplier: 1, constant: -20),
+            NSLayoutConstraint(item: bannerView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)])
     }
     
 
@@ -26,6 +44,11 @@ class VanMainMenu: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func startlocation(_ sender:Any, forEvent event:UIEvent){
+        let storyBoard: UIStoryboard =  UIStoryboard(name:"Main" ,bundle:nil)
+        let LocationMenu = storyBoard.instantiateViewController(withIdentifier: "LocationMenu") as! LocationMenu
+        self.present(LocationMenu, animated: true, completion: nil)
+    }
 
     @IBAction func startVanMap(_ sender: Any, forEvent event: UIEvent) {
 

@@ -7,25 +7,33 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class TorMainMenu: UIViewController {
-
+class TorMainMenu: UIViewController, GADInterstitialDelegate{
+    
+    var bannerView: GADBannerView!
+    
+    @IBOutlet weak var aboutbtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-1748064502558088~4171565215"
+        
+        //Test Unit ID: ca-app-pub-3940256099942544/2934735716
+        
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func addBannerViewToView(_ bannerView: GADBannerView){
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints([NSLayoutConstraint(item: bannerView, attribute: .bottom, relatedBy: .equal, toItem: self.aboutbtn, attribute: .top, multiplier: 1, constant: -20),
+                             NSLayoutConstraint(item: bannerView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0)])
     }
-    */
 
     @IBAction func startTorAbout(_ sender: Any,forEvent event: UIEvent) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -69,4 +77,10 @@ class TorMainMenu: UIViewController {
         TorTermOfUse.loggedIn = true
         self.present(TorTermOfUse, animated: true, completion: nil)
     }
+    @IBAction func startlocation(_ sender:Any, forEvent event:UIEvent){
+        let storyBoard: UIStoryboard =  UIStoryboard(name:"Main" ,bundle:nil)
+        let LocationMenu = storyBoard.instantiateViewController(withIdentifier: "LocationMenu") as! LocationMenu
+        self.present(LocationMenu, animated: true, completion: nil)
+    }
+
 }

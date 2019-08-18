@@ -22,9 +22,11 @@ class VanMapTableViewController: UITableViewController {
         
         self.tableView.register(MapCell.self, forCellReuseIdentifier: "map")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 200
+        self.tableView.estimatedRowHeight = 500
+        self.tableView.rowHeight = 650
         self.tableView.backgroundColor = UIColor.clear
-        self.tableView.separatorColor = UIColor.black
+        //self.tableView.separatorColor = UIColor.black
+        self.tableView.separatorColor = UIColor.clear
         
     }
     
@@ -34,10 +36,11 @@ class VanMapTableViewController: UITableViewController {
         cell.mainImageView.backgroundColor = UIColor.clear
         //cell.typeView.backgroundColor = UIColor.clear
         cell.mainImage = data[indexPath.row].image
+        
         cell.type = data[indexPath.row].sponsortype
         cell.typeView.backgroundColor = UIColor.clear
         cell.typeView.textAlignment = .center
-    
+        
         cell.typeView.font = UIFont(name: "Arial-BoldMT", size: 24)
        // cell.typeView.textAlignment = .center
         cell.layoutSubviews()
@@ -49,7 +52,7 @@ class VanMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"vanfunstopmap.png"), sponsortype: "MAP"),
+        data = [Map.init(image: UIImage(named:"funstopvanfinal.png"), sponsortype: "FUN STOP MAP"),
         ]
     }
     

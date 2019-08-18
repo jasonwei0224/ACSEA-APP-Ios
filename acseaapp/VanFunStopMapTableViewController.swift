@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class VanFunStopMapTableViewController: UITableViewController {
     
     var data = [Map]()
