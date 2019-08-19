@@ -230,7 +230,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB0-St-cvI">
                                 <rect key="frame" x="103" y="459" width="114" height="30"/>
-                                <state key="normal" title="TERM OF USE">
+                                <state key="normal" title="TERMS OF USE">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -459,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vn-mX-6P7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="1486"/>
+            <point key="canvasLocation" x="1054" y="1484"/>
         </scene>
         <!--TorQRCodeScanner-->
         <scene sceneID="FoT-Bf-2VZ">
@@ -1081,13 +1081,16 @@ These linked sites are only for your convenience and therefore you access them a
                                 <rect key="frame" x="44" y="185" width="234" height="278"/>
                                 <string key="text">Rules
 
-1. Visit all stations shown on the Fun Stop Map 
+1. Visit all stations shown on the Fun Stop map.
 
-2. At each station, ask a volunteer for the Fun Stop QR Code
+2. At each station, ask a volunteer for the Fun Stop QR Code.
 
-3. Tap camera and scan the QR Code
+3. Tap camera and scan the QR Code.
 
-4. All who complete the game are entered into a draw to win a round-trip flight to Taipei!</string>
+4. Once all QR codes are scanned, visit the Fun Stop Booth for a chance to win a prize!
+
+5. All who complete the game are entered into a draw to win a round-trip flight to Taipei! 
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1220,7 +1223,7 @@ These linked sites are only for your convenience and therefore you access them a
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="662-eJ-9Ap"/>
                                     <constraint firstAttribute="height" constant="39" id="OBM-XG-zZb"/>
                                 </constraints>
-                                <state key="normal" title="TERM OF USE">
+                                <state key="normal" title="TERMS OF USE">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1833,13 +1836,14 @@ These linked sites are only for your convenience and therefore you access them a
                                 <rect key="frame" x="44" y="185" width="234" height="249"/>
                                 <string key="text">Rules
 
-1. Visit all locations shown on the Fun Stop map 
+1. Visit all stations shown on the Fun Stop map.
 
-2. At each station, ask a volunteer for the Fun Stop QR Code
+2. At each station, ask a volunteer for the Fun Stop QR Code.
 
-3. Tap camera and scan the QR Code
+3. Tap camera and scan the QR Code.
 
-4. All who complete the game are entered into a draw to win a round-trip flight to Taipei!</string>
+4. All who complete the game are entered into a draw to win a round-trip flight to Taipei! 
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2413,7 +2417,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="KZY-eG-eL9"/>
                                     <constraint firstAttribute="height" constant="39" id="UgL-HH-kqn"/>
                                 </constraints>
-                                <state key="normal" title="TERM OF USE">
+                                <state key="normal" title="TERMS OF USE">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -2823,7 +2827,7 @@ Should an error be made by ACSEA or its financial institution, full refunds will
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fd3-0b-PaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1607" y="1183"/>
+            <point key="canvasLocation" x="1766" y="1252"/>
         </scene>
         <!--VanFunStopMap-->
         <scene sceneID="Kr2-E8-K26">

@@ -39,27 +39,27 @@ import FirebaseDatabase
    
     var programOneText = "Taiwan Stage \n(Granville 800 Block)"
     var programTwoText = "Taiwan Bookstore\n(Granville 800 Block)"
-    var programThreeText = "Soy Sauce Test\n(Granville 700 Block)"
-    var programFourText = "Let's Savour Tawian\n(Granville 700 Block)"
-    var programFiveText = "Friendship Kitchen\n(Granville 700 Block)"
-    var programSixText = "Taiwan New DNA\n(Granville 600 Block)"
-    var programSevenText = "Glove Puppet\n(Granville 600 Block)"
-    var programEightText = "VAG Stage \n(VAG Plaza)"
-    var programNineText = "Home Winds\n(Robson Plaza)"
-    var programTenText = "Hope Talk\n(Annex)"
-    var programEleventText = "Fun Stop\n(Granville 700 Block)"
+    var programThreeText = "Hope Talk\n(Annex)"
+    var programFourText = "Home Winds\n(Robson Plaza)"
+    var programFiveText = "VAG Stage \n(VAG Plaza)"
+    var programSixText = "Let's Savour Tawian\n(Granville 700 Block)"
+    var programSevenText = "Taiwan New DNA\n(Granville 600 Block)"
+    var programEightText = "Glove Puppet\n(Granville 600 Block)"
+    var programNineText = "Fun Stop\n(Granville 700 Block)"
+   // var programTenText =
+    //var programEleventText =
     
     let programOnePhoto = "taiwanstage.jpg"
     let programTwoPhoto = "taiwanbookstorephoto.png"
-    let programThreePhoto = "letssavourtaiwan.jpg"
-    let programFourPhoto = "kidszonevanoucver.png"
-    let programFivePhoto = "taiwanhandpuppet.jpg"
-    let programSixPhoto = "friendshipkitchenphoto.png"
-    let programSevenPhoto = "annexphoto.png"
-    let programEightPhoto = "torontohomewinds.png"
-    let programNinePhoto = "sorryyouthexhibition.png"
-    let programTenPhoto = "torontotaiwannewdna .png"
-    let porgramElevenPhoto = "funstopstation.png"
+    let programThreePhoto = "annexphoto.png"
+    let programFourPhoto = "torontohomewinds.png"
+    let programFivePhoto = "vagplazaphoto.jpg"
+    let programSixPhoto = "letssavourtaiwan.png"
+    let programSevenPhoto = "vancouvertaiwanewdna.png"
+    let programEightPhoto = "taiwanhandpuppet.jpg"
+    let programNinePhoto = "funstopstation.png"
+   // let programTenPhoto = ""
+    //let porgramElevenPhoto = ""
     
     let defaults = UserDefaults.standard
     
@@ -83,8 +83,8 @@ import FirebaseDatabase
             VanFunStopCellData.init(mainImage: UIImage(named:programSevenPhoto), message: programSevenText),
             VanFunStopCellData.init(mainImage: UIImage(named:programEightPhoto), message: programEightText),
             VanFunStopCellData.init(mainImage: UIImage(named:programNinePhoto), message: programNineText),
-            VanFunStopCellData.init(mainImage: UIImage(named:programTenPhoto), message: programTenText),
-            VanFunStopCellData.init(mainImage: UIImage(named:porgramElevenPhoto), message: programEleventText),
+           // VanFunStopCellData.init(mainImage: UIImage(named:programTenPhoto), message: programTenText),
+            //VanFunStopCellData.init(mainImage: UIImage(named:porgramElevenPhoto), message: programEleventText),
             ];
         
         
@@ -97,8 +97,8 @@ import FirebaseDatabase
         programSevenComplete = (defaults.bool(forKey: programSevenKey))
         programEightComplete = (defaults.bool(forKey: programEightKey))
         programNineComplete = (defaults.bool(forKey: programNineKey))
-        programTenComplete = (defaults.bool(forKey: programTenKey))
-        programElevenComplete = (defaults.bool(forKey: programElevenKey))
+       //programTenComplete = (defaults.bool(forKey: programTenKey))
+        //programElevenComplete = (defaults.bool(forKey: programElevenKey))
         if(segue.identifier == "VanFunStopSegue"){
             let table = segue.destination as! VanFunStopTableViewController
             table.data1 = funStopProgramList
@@ -179,6 +179,23 @@ import FirebaseDatabase
             }
         }
         if(programNineComplete || programCode == "9"){
+            if(programOneComplete && programTwoComplete && programThreeComplete && programFourComplete && programFiveComplete && programSixComplete && programSevenComplete && programEightComplete){
+                funStopProgramList[8] = VanFunStopCellData.init(mainImage: UIImage(named: programNinePhoto), message: "COMPLETED")
+                programNineComplete = true
+                self.defaults.set(self.programNineComplete, forKey: programNineKey)
+                if(segue.identifier == "VanFunStopSegue"){
+                    let table = segue.destination as! VanFunStopTableViewController
+                    table.data1 = funStopProgramList;
+                    let user = Auth.auth().currentUser
+                    let uid = user!.uid
+                    let myDatabse = Database.database().reference()
+                    funStopComplete = true;
+                    myDatabse.child("users").child(uid).child("Complete Fun Stop").setValue("Yes")
+                }
+            }else{
+                let alert = UIAlertController(title: "Not Yet!", message: "Please complete all other stations before coming to the funstop staiton", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert,animated: true, completion: nil)
             funStopProgramList[8] = VanFunStopCellData.init(mainImage: UIImage(named:programNinePhoto), message: "COMPLETED")
             programNineComplete = true
             self.defaults.set(self.programNineComplete, forKey: programNineKey)
@@ -187,7 +204,7 @@ import FirebaseDatabase
                 table.data1 = funStopProgramList;
             }
         }
-        if(programTenComplete || programCode == "10"){
+        /*if(programTenComplete || programCode == "10"){
             funStopProgramList[9] = VanFunStopCellData.init(mainImage: UIImage(named:programTenPhoto), message: "COMPLETED")
             programTenComplete = true
             self.defaults.set(self.programTenComplete, forKey: programTenKey)
@@ -214,7 +231,7 @@ import FirebaseDatabase
                 let alert = UIAlertController(title: "Not Yet!", message: "Please complete all other stations before coming to the funstop staiton", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                 self.present(alert,animated: true, completion: nil)
-            }
+            }*/
         }
     }
     

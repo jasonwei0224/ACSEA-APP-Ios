@@ -23,7 +23,7 @@ class VanMapTableViewController: UITableViewController {
         self.tableView.register(MapCell.self, forCellReuseIdentifier: "map")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 500
-        self.tableView.rowHeight = 650
+        self.tableView.rowHeight = 1900
         self.tableView.backgroundColor = UIColor.clear
         //self.tableView.separatorColor = UIColor.black
         self.tableView.separatorColor = UIColor.clear
@@ -52,7 +52,7 @@ class VanMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"funstopvanfinal.png"), sponsortype: "FUN STOP MAP"),
+        data = [Map.init(image: UIImage(named:"vanvenuemapv2.jpg"), sponsortype: "MAP"),
         ]
     }
     

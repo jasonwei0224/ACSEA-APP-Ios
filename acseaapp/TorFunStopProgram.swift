@@ -41,11 +41,11 @@ class TorFunStopProgram: UIViewController {
     
     var torProgramOneText = "Glove Puppet\n(North Orchard)"
     let torProgramTwoText = "Let's Savour Taiwan\n(South Lawn)"
-    let torProgramThreeText = "Taiwan Stage\n(Boulevard Pavillion)"
-    let torProgramFourText = "Taiwan Bookstore\n(West Corridor Bays)"
-    let torProgramFiveText = "Hope Talk\n(Studio Theatre)"
-    let torProgramSixText = "Island Scream Exhibition\n(Brigantine Room)"
-    let torProgramSevenText = "Fun Stop Station\n(Boulevard Pavillion)"
+    let torProgramThreeText = "Taiwan Bookstore\n(West Corridor Bays)"
+    let torProgramFourText = "Hope Talk\n(Studio Theatre)"
+    let torProgramFiveText = "Island Scream Exhibition\n(Brigantine Room)"
+    let torProgramSixText = "Fun Stop Station\n(Boulevard Pavillion)"
+    //let torProgramSevenText =
     //let torProgramEightText = "Home Winds\n(MBCS)"
     //let torProgramNineText = "Island Scream Exhibition\n(Brigantine Room)"
     //let torProgramTenText = "Taiwan New DNA\n(Brigantine Patio)"
@@ -53,10 +53,10 @@ class TorFunStopProgram: UIViewController {
     
     let torProgramOneImage = "taiwanhandpuppet.jpg"
     let torProgramTwoImage = "letssavourtaiwan.jpg"
-    let torProgramThreeImage = "taiwanstage.jpg"
-    let torProgramFourImage = "kidszonevanoucver.png"
-    let torProgramFiveImage = "taiwanbookstorephoto.jpg"
-    let torProgramSixImage = "friendshipkitchenphoto.jpg"
+    let torProgramThreeImage = "taiwanbookstorephoto.jpg"
+    let torProgramFourImage = "torontohopetalk.png" // hope talk
+    let torProgramFiveImage = "sorryyouthexhibition.jpg" //islandscream
+    let torProgramSixImage = "funstopstation.png" // fun stop
     //let torProgramSevenImage = "torontohopetalk.png"
     //let torProgramEightImage = "torontohomewinds.png"
     //let torProgramNineImage = "sorryyouthexhibition.png"
