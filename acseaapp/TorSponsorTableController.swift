@@ -78,7 +78,7 @@ class TorSponsorTableViewController: UITableViewController {
                 TorSponsorCell.init(image: UIImage(named: "ytmat.jpg"), sponsortype: ""),
                 TorSponsorCell.init(image: UIImage(named: "shihchien.jpg"), sponsortype: ""),
                 TorSponsorCell.init(image: UIImage(named: "shenyi.jpg" ), sponsortype: ""),
-                TorSponsorCell.init(image: UIImage(named: "storyhouse.jpg"), sponsortype: ""),
+                TorSponsorCell.init(image: UIImage(named: "storyhousetw.jpg"), sponsortype: ""),
                 
         ]
     }

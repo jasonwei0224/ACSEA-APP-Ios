@@ -20,6 +20,7 @@ class VanScheduleMapTableViewController: UITableViewController {
         self.tableView.register(MapCell.self, forCellReuseIdentifier: "map")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
+        self.tableView.rowHeight = 1600
         self.tableView.backgroundColor = UIColor.clear
         self.tableView.separatorColor = UIColor.black
         
@@ -47,16 +48,20 @@ class VanScheduleMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"vancouverday1.png"), sponsortype: ""),
+        data = [Map.init(image: UIImage(named:"van-1.png"), sponsortype: ""),
               
-                Map.init(image: UIImage(named:"vancouverday1-2.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vancouverday1-1.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vancouverday2.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vancouverday2-1.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vancouverday2-2.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vancouverday3.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vancouverday3-1.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"vancouverday3-2"), sponsortype: ""),
+                Map.init(image: UIImage(named:"van-2.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"van-3.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"van-4.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"van-5.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"van-6.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"van-7.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"van-8.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"van-9.png"), sponsortype: ""),
+                 Map.init(image: UIImage(named:"van-10.png"), sponsortype: ""),
+                  Map.init(image: UIImage(named:"van-11.png"), sponsortype: ""),
+                   Map.init(image: UIImage(named:"van-12.png"), sponsortype: ""),
+                    Map.init(image: UIImage(named:"van-13.png"), sponsortype: ""),
         ]
     }
     

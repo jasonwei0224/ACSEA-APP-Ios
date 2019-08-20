@@ -29,7 +29,7 @@ class TorFunStopMapTableViewController: UITableViewController {
             self.tableView.register(MapCell.self, forCellReuseIdentifier: "map")     // Do any additional setup after loading the view.
             self.tableView.rowHeight = UITableView.automaticDimension
             self.tableView.estimatedRowHeight = 100
-            
+            self.tableView.rowHeight = 700
             self.tableView.backgroundColor = UIColor.clear
             self.tableView.separatorColor = UIColor.black
             
@@ -57,7 +57,7 @@ class TorFunStopMapTableViewController: UITableViewController {
         }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"torfunstopmap2019817.png"), sponsortype: "Map"),
+        data = [Map.init(image: UIImage(named:"torfunstopmapfinalversion.png"), sponsortype: "Fun Stop Map"),
         ]
     }
     

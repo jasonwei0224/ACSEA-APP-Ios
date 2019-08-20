@@ -103,7 +103,7 @@ class VanSponsorTableViewController: UITableViewController {
                 VanSponsorCellData.init(image: UIImage(named: "cuppy.jpg"), sponsortype: ""),
                 VanSponsorCellData.init(image: UIImage(named: "shihchien.jpg"), sponsortype: ""),
                 VanSponsorCellData.init(image: UIImage(named: "shenyi.jpg" ), sponsortype: ""),
-                VanSponsorCellData.init(image: UIImage(named: "storyhouse.jpg"), sponsortype: ""),
+                VanSponsorCellData.init(image: UIImage(named: "storyhousetw.jpg"), sponsortype: ""),
                 //VanSponsorCellData.init(image: UIImage(named: ""), sponsortype: "")
         ]
         self.tableView.register(SponsorTableCell.self, forCellReuseIdentifier: "custom6")

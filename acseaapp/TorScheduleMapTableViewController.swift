@@ -20,6 +20,7 @@ class TorScheduleMapTableViewController: UITableViewController {
         self.tableView.register(MapCell.self, forCellReuseIdentifier: "map")     // Do any additional setup after loading the view.
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 200
+        self.tableView.rowHeight = 1600
         self.tableView.backgroundColor = UIColor.clear
         self.tableView.separatorColor = UIColor.black
         
@@ -47,12 +48,14 @@ class TorScheduleMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"torontoday1.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"torontoday2.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"torontoday3.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"torontoday3.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"torontoday4.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"torontoday5.png"), sponsortype: ""),
+        data = [Map.init(image: UIImage(named:"torday1.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torday1-2.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torday1-3.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torday2-1.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torday2-2.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torday2-3.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torday3-1.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"torday3-2.png"), sponsortype: ""),
         ]
     }
     

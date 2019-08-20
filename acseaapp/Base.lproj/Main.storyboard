@@ -2909,10 +2909,10 @@ Should an error be made by ACSEA or its financial institution, full refunds will
             </objects>
             <point key="canvasLocation" x="6900" y="-1518"/>
         </scene>
-        <!--Van Map Table View Controller-->
+        <!--Van Fun Stop Map Table View Controller-->
         <scene sceneID="a3x-2Z-2B8">
             <objects>
-                <tableViewController id="ZVe-Uz-Ybp" customClass="VanMapTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ZVe-Uz-Ybp" customClass="VanFunStopMapTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nHh-sC-xAN">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="438"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3341,10 +3341,10 @@ Should an error be made by ACSEA or its financial institution, full refunds will
             </objects>
             <point key="canvasLocation" x="7815" y="-1517"/>
         </scene>
-        <!--Tor Map Table View Controller-->
+        <!--Tor Fun Stop Map Table View Controller-->
         <scene sceneID="s6K-wO-rFT">
             <objects>
-                <tableViewController id="HvF-BG-oHk" customClass="TorMapTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="HvF-BG-oHk" customClass="TorFunStopMapTableViewController" customModule="acseaapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gFU-RP-4sl">
                         <rect key="frame" x="0.0" y="0.0" width="288" height="438"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
