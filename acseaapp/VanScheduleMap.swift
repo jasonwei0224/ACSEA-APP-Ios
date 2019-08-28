@@ -48,20 +48,20 @@ class VanScheduleMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"van-1.png"), sponsortype: ""),
+        data = [Map.init(image: UIImage(named:"vanday1--1"), sponsortype: ""),
               
-                Map.init(image: UIImage(named:"van-2.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"van-3.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"van-4.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"van-5.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"van-6.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"van-7.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"van-8.png"), sponsortype: ""),
-                Map.init(image: UIImage(named:"van-9.png"), sponsortype: ""),
-                 Map.init(image: UIImage(named:"van-10.png"), sponsortype: ""),
-                  Map.init(image: UIImage(named:"van-11.png"), sponsortype: ""),
-                   Map.init(image: UIImage(named:"van-12.png"), sponsortype: ""),
-                    Map.init(image: UIImage(named:"van-13.png"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vanday1--2"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vanday1--3"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vanday2--1"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vanday2--2"), sponsortype: ""),
+                Map.init(image: UIImage(named:"vanday2--3"), sponsortype: ""),
+                // Map.init(image: UIImage(named:"vanday1--2"), sponsortype: ""),
+               // Map.init(image: UIImage(named:"van-8.png"), sponsortype: ""),
+               // Map.init(image: UIImage(named:"van-9.png"), sponsortype: ""),
+               // Map.init(image: UIImage(named:"van-10.png"), sponsortype: ""),
+               // Map.init(image: UIImage(named:"van-11.png"), sponsortype: ""),
+               // Map.init(image: UIImage(named:"van-12.png"), sponsortype: ""),
+               // Map.init(image: UIImage(named:"van-13.png"), sponsortype: ""),
         ]
     }
     

@@ -52,7 +52,7 @@ class VanMapTableViewController: UITableViewController {
     }
     
     func torSponsor(){
-        data = [Map.init(image: UIImage(named:"vanvenuemapv2.jpg"), sponsortype: "MAP"),
+        data = [Map.init(image: UIImage(named:"vanmap0828.jpg"), sponsortype: "MAP"),
         ]
     }
     

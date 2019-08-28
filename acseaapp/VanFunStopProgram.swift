@@ -22,8 +22,8 @@ import FirebaseDatabase
     var programSevenComplete = false;
     var programEightComplete = false;
     var programNineComplete = false;
-    var programTenComplete = false;
-    var programElevenComplete = false;
+    //var programTenComplete = false;
+    //var programElevenComplete = false;
     
     let programOneKey = "programOneComplete"
     let programTwoKey = "programTwoComplete"
@@ -34,10 +34,10 @@ import FirebaseDatabase
     let programSevenKey = "programSevenComplete"
     let programEightKey = "programEightComplete"
     let programNineKey = "programNineComplete"
-    let programTenKey = "programTenComplete"
-    let programElevenKey = "porgramElevenComplete"
+    //let programTenKey = "programTenComplete"
+    //let programElevenKey = "porgramElevenComplete"
    
-    var programOneText = "Taiwan Stage \n(Granville 800 Block)"
+    var programOneText = "Robot Prince \n(Granville 800 Block)"
     var programTwoText = "Taiwan Bookstore\n(Granville 800 Block)"
     var programThreeText = "Hope Talk\n(Annex)"
     var programFourText = "Home Winds\n(Robson Plaza)"
@@ -49,7 +49,7 @@ import FirebaseDatabase
    // var programTenText =
     //var programEleventText =
     
-    let programOnePhoto = "taiwanstage.jpg"
+    let programOnePhoto = "robotprince.jpg"
     let programTwoPhoto = "taiwanbookstorephoto.png"
     let programThreePhoto = "annexphoto.png"
     let programFourPhoto = "torontohomewinds.png"
